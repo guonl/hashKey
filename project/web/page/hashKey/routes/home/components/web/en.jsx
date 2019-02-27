@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import { Row, Col, Carousel, Popover } from 'antd';
 import { WrapperWebView } from './styled'
 import { hashHistory } from 'react-router'
+import { observer } from 'mobx-react';
+import LocaleStore from 'web-hashKey-mobx/locale'
 const logo = require("web-hashKey-imgs/home/web/hashkeyLogo.png");
 const banner01 = require("web-hashKey-imgs/home/web/en/banner_01eg.png");
 const banner02 = require("web-hashKey-imgs/home/web/banner_02.png");
 const banner03 = require("web-hashKey-imgs/home/web/en/banner_03eg.png");
 
+@observer
 class WebEN extends React.Component {
     constructor(props) {
         super(props);
@@ -62,23 +65,23 @@ class WebEN extends React.Component {
         return result;
     }
 
-    // renderPartnersList() {
-    //     var dom = [];
-    //     for (var i = 0; i < 8; i++) {
-    //         var img = require(`web-hashKey-imgs/home/web/en/partners${i + 1}.png`);
-    //         dom.push(
-    //             <Col key={i} span={5}><img src={img} style={{ width: '100%', marginBottom: 50 }} /></Col>
-    //         )
-    //     }
-    //     return dom;
-    // }
+    renderPartnersList() {
+        var dom = [];
+        for (var i = 13; i < 22; i++) {
+            var img = require(`web-hashKey-imgs/home/web/gw_${i + 1}.png`);
+            dom.push(
+                <Col key={i} span={5}><img src={img} style={{ width: '100%', marginBottom: 50 }} /></Col>
+            )
+        }
+        return dom;
+    }
 
     render() {
         return (
             <WrapperWebView>
                 <Row className="headerMenu" type="flex" justify="center">
-                    <Col span={20}>
-                        <Col span={6} className="title">
+                    <Col span={22}>
+                        <Col span={4} className="title">
                             <img className="logo" src={logo} />
                         </Col>
                         <Col span={14}>
@@ -91,6 +94,10 @@ class WebEN extends React.Component {
                                 <div className={this.state.activeMenu == "parteners" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "parteners")}>Partners</div>
                                 <div className={this.state.activeMenu == "contact" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "contact")}>Contact Us</div>
                             </Row>
+                        </Col>
+                        <Col span={6}>
+                            <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
+                            <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>中文</a>
                         </Col>
                     </Col>
                 </Row>
@@ -146,9 +153,9 @@ class WebEN extends React.Component {
                             <Col span={16}>
                                 <Row type="flex" justify="space-around" className="member">
                                     <Popover content={
-                                        <div>fsdsdf</div>
+                                        <div>Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry.</div>
                                     }>
-                                        <Col span={12}>
+                                        <Col span={10}>
                                             <Col span={8}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_06.png")} /></Col>
                                             <Col offset={1} span={14}>
                                                 <Row className="name">Xiao Feng</Row>
@@ -157,54 +164,136 @@ class WebEN extends React.Component {
                                             </Col>
                                         </Col>
                                     </Popover>
+                                    <Popover content={
+                                        <div>Over 20 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong.   Ex-board of directors of UBS Securities.  Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London.</div>
+                                    }>
+                                        <Col span={10} offset={4}>
+                                            <Col span={8}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
+                                            <Col offset={1} span={14}>
+                                                <Row className="name">Michel Lee</Row>
+                                                <Row className="position">Executive President</Row>
+                                                <Row className="position"> HashKey Group</Row>
+                                            </Col>
+                                        </Col>
+                                    </Popover>
                                 </Row>
                             </Col>
                         </Row>
-                        {/* <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
-                        <Row>
+                        <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
+                        <Row type="flex" justify="space-around" className="member">
+                            <Popover content={
+                                <div>Former senior manager at Bosera Asset Management, China Wanxiang Holding, DataYes. 10+ years of experience in asset management and fintech, early founding employee at Wanxiang Blockchain.</div>
+                            }>
+                                <Col span={6} className="eachMember">
+                                    <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
+                                    <Row className="name">Deng Chao</Row>
+                                    <Row className="position">CEO, HashKey Capital</Row>
+                                </Col>
+                            </Popover>
+                            <Popover content={
+                                <div>20+ years of experience in global investment markets; former MD, Head of Greater China, BNP Paribas Asset Management. Active angel investor in fintech, biotech and consumer tech.</div>
+                            }>
+                                <Col span={6} className="eachMember">
+                                    <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
+                                    <Row className="name">TF Cheng CFA</Row>
+                                    <Row className="position">CEO HashKey Pro</Row>
+                                </Col>
+                            </Popover>
+                            <Popover content={
+                                <div>12 years of experience, former head of financial cloud and intelligent investment research at DataYes. Holds several patents, creator of BaaS platform, blockchain technology specialist.</div>
+                            }>
+                                <Col span={6} className="eachMember">
+                                    <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
+                                    <Row className="name">Leo Li </Row>
+                                    <Row className="position">CEO, HashQuark</Row>
+                                </Col>
+                            </Popover>
                             <Col span={6} className="eachMember">
-                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/en/dengc.png")} /></Row>
-                                <Row className="name">Deng Chao</Row>
-                                <Row className="position">CEO, HashKey Capital</Row>
-                                <Row className="desc">Former senior manager at Bosera Asset Management, China Wanxiang Holding, DataYes. Holds Responsible Officer qualification in HK, early founding employee at Wanxiang Blockchain.</Row>
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
+                                <Row className="name">Andy Duan</Row>
+                                <Row className="position">CEO, Tokyo Hash </Row>
                             </Col>
-                            <Col span={6} offset={3} className="eachMember">
-                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/en/simon.png")} /></Row>
-                                <Row className="name">Simon AuYeung</Row>
-                                <Row className="position"> COO, Trading Platforms</Row>
-                                <Row className="desc">17+ years experience, former head of compliance and senior manager in Ant Financial, RBC Wealth Management, RBS, HSBC, BNP Paribas. Former manager in Hong Kong SFC. HKUST, CUHK, Tsinghua degrees</Row>
-                            </Col>
-                            <Col span={6} offset={3} className="eachMember">
-                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/en/ben.png")} /></Row>
-                                <Row className="name">Ben El-Baz</Row>
-                                <Row className="position"> CSO, HashKey Pro</Row>
-                                <Row className="desc">Stanford GSB, co-founded Stanford's largest student-led blockchain group. +10 years executive experience in high-tech startups in both Silicon Valley and China, started career as derivatives trader and analyst.</Row>
-                            </Col>
-                        </Row> */}
+                        </Row>
+                        <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
+                        <Row type="flex" justify="space-around" className="member">
+                            <Popover content={
+                                <div>Stanford GSB, co-founder of Stanford's largest student-led blockchain group. 10+ years of executive experience in high-tech startups in both Silicon Valley and China. Started career as derivatives trader and analyst.</div>
+                            }>
+                                <Col span={6} className="eachMember">
+                                    <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
+                                    <Row className="name">Ben EL-Baz</Row>
+                                    <Row className="position">CSO, HashKey Pro</Row>
+                                </Col>
+                            </Popover>
+                            <Popover content={
+                                <div>Simon has over 17 years of experience in the financial industry. He is the former North East Asia Head of Compliance at Ant Financial, and he has held senior positions at leading financial institutions including RBC Wealth Management, HSBC, BNP Paribas, SFC and Morgan Stanley.</div>
+                            }>
+                                <Col span={6} className="eachMember">
+                                    <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
+                                    <Row className="name">Simon AuYeung</Row>
+                                    <Row className="position">COO, Trading Platforms</Row>
+                                </Col>
+                            </Popover>
+                        </Row>
+                        <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                     </Col>
                 </Row>
-                {/* <Row id="parteners" className="partnersFrame" type="flex" justify="center">
+                <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
+                    <Col span={16}>
+                        <Row className="title">Offerings under HashKey Group</Row>
+                        <Row type="flex" justify="center"><Col span={1} className="shortLine"></Col></Row>
+                        <Row type="flex" justify="space-between" className="eachItem">
+                            <Col span={6}>
+                                <Row className="subTitle">HashKey Pro</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">A secure and trustworthy digital asset exchange platform</Row>
+                            </Col>
+                            <Col span={6}>
+                                <Row className="subTitle">HashKey Capital</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">A leading blockchain investor and digital asset manager</Row>
+                            </Col>
+                            <Col span={6}>
+                                <Row className="subTitle">HashQuark</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">Mining Made Easier</Row>
+                            </Col>
+                        </Row>
+                        <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
+                        <Row type="flex" justify="space-between" className="eachItem">
+                            <Col span={6}>
+                                <Row className="subTitle">Tokyo Hash</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">Your local business partner in Japan</Row>
+                            </Col>
+                            <Col span={6}>
+                                <Row className="subTitle">Axonomy</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">Distributed Business Accelerator</Row>
+                            </Col>
+                            <Col span={6}></Col>
+                        </Row>
+                    </Col>
+                    <a href="javascript:;" className="learnMore">LEARN MORE</a>
+                </Row>
+                <Row id="parteners" className="partnersFrame" type="flex" justify="center">
                     <Col span={16}>
                         <Row className="title">Partners</Row>
-                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
+                        <Row type="flex" justify="center"><Col className="shortLine" span={1}></Col></Row>
                         <Row className="partnersList" type="flex" justify="space-between">
                             {this.renderPartnersList()}
                         </Row>
-                        <Row>
-                            <Col span={5} style={{ marginRight: '5.555%' }}><img src={require("web-hashKey-imgs/home/web/en/partners9.png")} style={{ width: '100%', marginBottom: 50 }} /></Col>
-                            <Col span={5}><img src={require("web-hashKey-imgs/home/web/en/partners10.png")} style={{ width: '100%', marginBottom: 50 }} /></Col>
-                        </Row>
                     </Col>
-                </Row> */}
-                {/* <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
+                </Row>
+                <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18}>
                         <Row className="title">Contact</Row>
-                        <Row className="text">Address: Unit 614-615, Core D, Cyberport 3, Hong Kong SAR</Row>
+                        <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
                         <Row className="text">Email: contact@hashkey.com</Row>
-                        <Row className="text hashkey" onClick={() => {location.href="https://pro.hashkey.com"}}>HaskKey Pro: https://pro.hashkey.com</Row>
-                        <Row className="text hashquark" onClick={() => {location.href="https://www.hashquark.io"}}>HaskQuark: https://www.hashquark.io</Row>
+                        <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-830631077275937/?modal=admin_todo_tour" }}>Facebook</Row>
+                        <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
                     </Col>
-                </Row> */}
+                </Row>
             </WrapperWebView >
         )
     }

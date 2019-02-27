@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, {injectGlobal} from 'styled-components';
+const offeringsBG = require("web-hashKey-imgs/home/web/offeringsBG.png");
 
 const WrapperWebView = styled.div`
     .headerMenu {
@@ -40,6 +41,27 @@ const WrapperWebView = styled.div`
                 &:hover, &.active {
                     color: #effcff;
                 }
+            }
+        }
+        a {
+            &:first-child {
+                margin-left: 100px;
+            }
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 15px;
+            background: #416f87;
+            opacity: 0.8;
+            font-size: 20px;
+            color: #c2cdd2;
+            border-radius: 5px;
+            margin-right: 20px;
+            text-decoration: none;
+            text-align: center;
+            &.selected {
+                background: #4c94ff;
+                opacity: 1;
+                color: #ebf9ff;
             }
         }
     }
@@ -109,6 +131,9 @@ const WrapperWebView = styled.div`
         }
         .member {
             margin-bottom: 45px;
+            .desc {
+                width: 500px;
+            }
         }
         .avator {
             width: 150px;
@@ -138,6 +163,53 @@ const WrapperWebView = styled.div`
             text-align: center;
         }
     }
+    .offeringsFrame {
+        position: relative;
+        height: ${document.body.clientWidth/1920*860}px;
+        width: 100%;
+        background: url(${offeringsBG}) no-repeat;
+        background-size: 100%;
+        .title {
+            font-size: 50px;
+            color: #e8f3ff;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+        .shortLine {
+            height: 1px;
+            background: #10CEFF;
+            border-radius: 3px;
+        }
+        .eachItem {
+            margin-top: 62px;
+            margin-bottom: 51px;
+            color: #E8F3FF;
+            text-align: center;
+            .subTitle {
+                font-size: 42px;
+                margin-bottom: 20px;
+            }
+            .text {
+                margin-top: 20px;
+                font-size: 15px;
+            }
+        }
+        .learnMore {
+            position: absolute;
+            left: 50%;
+            margin-left: -80px;
+            bottom: 122px;
+            font-size: 16px;
+            display: inline-block;
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #3e8aff;
+            border-radius: 5px;
+        }
+    }
     .partnersFrame {
         padding: 100px 0;
         background: #2e2f30;
@@ -147,11 +219,11 @@ const WrapperWebView = styled.div`
             margin: 0 0 15px 0;
             text-align: center;
         }
-        .line {
-            width: 160px;
-            height: 2px;
-            background: #f2f2f2;
-            margin-bottom: 126px;
+        .shortLine {
+            height: 1px;
+            background: #10CEFF;
+            border-radius: 3px;
+            margin-bottom: 76px;
         }
     }
     .contactFrame {
@@ -181,4 +253,10 @@ const WrapperWebView = styled.div`
     }
 `;
 
+injectGlobal `
+    .ant-popover-inner-content {
+        font-size: 14px;
+        width: 500px;
+    }
+`
 module.exports = { WrapperWebView }

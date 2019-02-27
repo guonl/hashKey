@@ -6,31 +6,31 @@ import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
 
 const bannerImg = require("web-hashKey-imgs/hk/web/bannerContent.png");
-const aboutTextImg = require("web-hashKey-imgs/hk/web/cn/hash002-1.png");
-const aboutFullTextImg = require("web-hashKey-imgs/hk/web/cn/hash002-3.png");
-const aboutOrnImg = require("web-hashKey-imgs/hk/web/cn/hash002-2.png");
-const addressImg = require("web-hashKey-imgs/hk/web/cn/hash004.png");
-const ticketImg = require("web-hashKey-imgs/hk/web/cn/hash006.png");
-const buyImg = require("web-hashKey-imgs/hk/web/cn/hash008.png");
-const agendaTitleImg = require("web-hashKey-imgs/hk/web/cn/hash009-1.png");
-const agendaAMImg = require("web-hashKey-imgs/hk/web/cn/hash009-2.png");
-const agendaPMImg = require("web-hashKey-imgs/hk/web/cn/hash009-3.png");
-const agendaSPImg = require("web-hashKey-imgs/hk/web/cn/hash009-4.png");
-const partnerImg = require("web-hashKey-imgs/hk/web/cn/hash0012.png");
-const infoImg1 = require("web-hashKey-imgs/hk/web/cn/zw_01.png");
-const infoImg2 = require("web-hashKey-imgs/hk/web/cn/zw_02.png");
-const infoImg3 = require("web-hashKey-imgs/hk/web/cn/zw_03.png");
-const infoImg4 = require("web-hashKey-imgs/hk/web/cn/zw_04.png");
-const infoImg5 = require("web-hashKey-imgs/hk/web/cn/zw_05.png");
-const infoImg6 = require("web-hashKey-imgs/hk/web/cn/zw_06.png");
-const previousPartnerImg = require("web-hashKey-imgs/hk/web/cn/pervious_ch.png");
-const GMBtn = require("web-hashKey-imgs/hk/web/cn/gmBtn.png");
-const trans = require("web-hashKey-imgs/hk/web/cn/transCN.png");
+const aboutTextImg = require("web-hashKey-imgs/hk/web/gk/hash002-1.png");
+const aboutFullTextImg = require("web-hashKey-imgs/hk/web/gk/hash002-3.png");
+const aboutOrgImg = require("web-hashKey-imgs/hk/web/gk/hash002-2.png");
+const addressImg = require("web-hashKey-imgs/hk/web/gk/hash004.png");
+const ticketImg = require("web-hashKey-imgs/hk/web/gk/hash006.png");
+const buyImg = require("web-hashKey-imgs/hk/web/gk/hash008.png");
+const agendaTitleImg = require("web-hashKey-imgs/hk/web/gk/hash009-1.png");
+const agendaAMImg = require("web-hashKey-imgs/hk/web/gk/hash009-2.png");
+const agendaPMImg = require("web-hashKey-imgs/hk/web/gk/hash009-3.png");
+const agendaSPImg = require("web-hashKey-imgs/hk/web/gk/hash009-4.png");
+const partnerImg = require("web-hashKey-imgs/hk/web/gk/hash0012.png");
+const infoImg1 = require("web-hashKey-imgs/hk/web/gk/zw_01.png");
+const infoImg2 = require("web-hashKey-imgs/hk/web/gk/zw_02.png");
+const infoImg3 = require("web-hashKey-imgs/hk/web/gk/zw_03.png");
+const infoImg4 = require("web-hashKey-imgs/hk/web/gk/zw_04.png");
+const infoImg5 = require("web-hashKey-imgs/hk/web/gk/zw_05.png");
+const infoImg6 = require("web-hashKey-imgs/hk/web/gk/zw_06.png");
+const previousPartnerImg = require("web-hashKey-imgs/hk/web/gk/pervious_ch.png");
+const GMBtn = require("web-hashKey-imgs/hk/web/gk/gmBtn.png");
+const trans = require("web-hashKey-imgs/hk/web/gk/transCN.png");
 const showBtn = require("web-hashKey-imgs/hk/web/show.png");
 const hideBtn = require("web-hashKey-imgs/hk/web/hide.png");
 
 @observer
-class WebCN extends React.Component {
+class WebGK extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -50,10 +50,10 @@ class WebCN extends React.Component {
                 <Row className="bannerFrame" type="flex" justify="center" align="middle">
                     <div className="langChange">
                         <a href="javascript:;" className="" onClick={() => hashHistory.push("/")}>Home</a>
-                        <a href="javascript:;" className={LocalesStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocalesStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                        <a href="javascript:;" className={LocalesStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocalesStore.changeLocaleConfig.call(this, "cn") }}>中文</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>中文</a>
                     </div>
-                    <Col span={16}>
+                    <Col span={24}>
                         <img src={bannerImg} />
                     </Col>
                 </Row>
@@ -161,4 +161,4 @@ class WebCN extends React.Component {
     }
 }
 
-module.exports = WebCN;
+module.exports = WebGK;

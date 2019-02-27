@@ -6,7 +6,7 @@ import {
 useStrict(true);
 
 class Locale {
-    @observable currentLocales = location.hash.match(/\?\w+\=(\w+)/) ? location.hash.match(/\?\w+\=(\w+)/)[1] : "en";
+    @observable currentLocales = location.hash.match(/langType/) ? location.hash.match(/\?\w+\=(\w+)/)[1] : "en";
     @action changeLocaleConfig = (value) => {
         this.currentLocales = value;
     };

@@ -138,6 +138,7 @@ const WrapperFrame = styled.div`
     }
     .partnerFrame {
         background: url(${partnerBG}) no-repeat;
+        background-size: 100%;
         padding: 50px 0;
         img {
             width: 100%;
@@ -183,6 +184,7 @@ const WrapperFrame = styled.div`
     .transFrame {
         padding: 50px 0 30px 0;
         background: url(${transBG}) no-repeat;
+        background-size: 100%;
         img {
             width: 100%;
         }
