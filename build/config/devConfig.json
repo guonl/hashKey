@@ -1,0 +1,11 @@
+{
+    "host": "",
+    "port": "5050",
+    "projectName": "hashKey",
+    "deployContent": {
+        "web": [
+            "hashKey"
+        ]
+    },
+    "mode": "local"
+  }

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <title>HashKey</title>
+</head>
+<body>
+<div id="app"></div>
+<div style="display:none">
+    Digital assets 数字资产
+    Digital assets summit 数字资产峰会
+    hashquark
+    hkdag
+    hashkey pro
+    hashkey capital
+    HashKey Group
+    HashKey International Digital Asset Summit 
+    HashKey数字资产全球峰会
+    hashkey blockchain
+    hashkey fintech
+    blockchain summit
+    Hong Kong Blockchain Summit
+    Hone Kong Blockchain Meet Up
+</div>
+<script>
+    window.dc = {
+        pl: "<%= htmlWebpackPlugin.options.deployConf.platform %>",
+        pg: "<%= htmlWebpackPlugin.options.deployConf.page %>"
+    }
+    let screenWidth = window.screen.width;
+    document.getElementsByTagName("html")[0].style.fontSize = (100*(screenWidth/750)).toString() + "px";
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+{
+    "vendorConf": ["react", "react-router", "react-dom", "mobx-react"]
+}
