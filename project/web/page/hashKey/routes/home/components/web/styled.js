@@ -166,9 +166,10 @@ const WrapperWebView = styled.div`
     .offeringsFrame {
         position: relative;
         height: ${document.body.clientWidth/1920*860}px;
+        min-height: 650px;
         width: 100%;
         background: url(${offeringsBG}) no-repeat;
-        background-size: 100%;
+        background-size: 100% 100%;
         .title {
             font-size: 50px;
             color: #e8f3ff;
@@ -181,8 +182,7 @@ const WrapperWebView = styled.div`
             border-radius: 3px;
         }
         .eachItem {
-            margin-top: 62px;
-            margin-bottom: 51px;
+            margin-bottom: 35px;
             color: #E8F3FF;
             text-align: center;
             .subTitle {
@@ -195,10 +195,6 @@ const WrapperWebView = styled.div`
             }
         }
         .learnMore {
-            position: absolute;
-            left: 50%;
-            margin-left: -80px;
-            bottom: 122px;
             font-size: 16px;
             display: inline-block;
             width: 160px;
@@ -208,6 +204,8 @@ const WrapperWebView = styled.div`
             color: #fff;
             background: #3e8aff;
             border-radius: 5px;
+            margin-top: 30px;
+            text-decoration: none;
         }
     }
     .partnersFrame {

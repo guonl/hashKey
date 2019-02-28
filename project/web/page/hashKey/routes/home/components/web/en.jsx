@@ -146,11 +146,11 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="team" className="teamFrame" type="flex" justify="center">
-                    <Col span={16}>
+                    <Col lg={22} xl={16}>
                         <Row className="title">Core Team</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
-                            <Col span={16}>
+                            <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
                                     <Popover content={
                                         <div>Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry.</div>
@@ -239,21 +239,21 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
-                    <Col span={16}>
+                    <Col lg={22} xl={16}>
                         <Row className="title">Offerings under HashKey Group</Row>
-                        <Row type="flex" justify="center"><Col span={1} className="shortLine"></Col></Row>
+                        <Row type="flex" justify="center" style={{marginBottom: 35}}><Col span={1} className="shortLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">HashKey Pro</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">A secure and trustworthy digital asset exchange platform</Row>
                             </Col>
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">HashKey Capital</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">A leading blockchain investor and digital asset manager</Row>
                             </Col>
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">HashQuark</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Mining Made Easier</Row>
@@ -261,20 +261,22 @@ class WebEN extends React.Component {
                         </Row>
                         <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">Tokyo Hash</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Your local business partner in Japan</Row>
                             </Col>
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">Axonomy</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Distributed Business Accelerator</Row>
                             </Col>
-                            <Col span={6}></Col>
+                            <Col xl={6} lg={8}></Col>
                         </Row>
                     </Col>
-                    <a href="javascript:;" className="learnMore">LEARN MORE</a>
+                    <Col span={24} style={{textAlign: 'center'}}>
+                        <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>LEARN MORE</a>
+                    </Col>
                 </Row>
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
                     <Col span={16}>

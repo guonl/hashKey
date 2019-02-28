@@ -146,11 +146,11 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row id="team" className="teamFrame" type="flex" justify="center">
-                    <Col span={16}>
+                    <Col lg={22} xl={16}>
                         <Row className="title">核心團隊</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
-                            <Col span={16}>
+                            <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
                                     <Popover content={
                                         <div>中國萬向控股有限公司副董事長兼執行董事，上海萬向區塊鏈股份公司董事長兼總經理。在證券和資產管理行業有超過25年的相關豐富經驗。</div>
@@ -237,21 +237,21 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
-                    <Col span={16}>
+                    <Col lg={22} xl={16}>
                         <Row className="title">产品</Row>
-                        <Row type="flex" justify="center"><Col span={1} className="shortLine"></Col></Row>
+                        <Row type="flex" justify="center" style={{marginBottom: 35}}><Col span={1} className="shortLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">HashKey Pro</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">安全可靠的數碼資產交易平台</Row>
                             </Col>
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">HashKey Capital</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">面向合格和專業投資者的區塊鏈投資基金</Row>
                             </Col>
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">HashQuark</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">存幣即挖礦</Row>
@@ -259,20 +259,20 @@ class WebGK extends React.Component {
                         </Row>
                         <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">Tokyo Hash</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">您在日本當地的商業夥伴</Row>
                             </Col>
-                            <Col span={6}>
+                            <Col xl={6} lg={8}>
                                 <Row className="subTitle">Axonomy</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">分布式商業加速器</Row>
                             </Col>
-                            <Col span={6}></Col>
+                            <Col xl={6} lg={8}></Col>
                         </Row>
                     </Col>
-                    <a href="javascript:;" className="learnMore">详细介绍</a>
+                    <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
                 </Row>
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
                     <Col span={16}>
