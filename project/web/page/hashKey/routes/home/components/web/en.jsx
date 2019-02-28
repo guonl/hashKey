@@ -111,7 +111,7 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
-                    <Col span={16}>
+                    <Col lg={22} xl={16}>
                         <Row className="ourVision">Our Vision</Row>
                         <Row className="text">We believe that distributed ledgers, blockchain technology, and digital tokens will revolutionize how value is created, captured, and distributed across multiple asset classes through greater efficiency, lower costs, and increased liquidity.</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>

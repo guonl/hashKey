@@ -99,6 +99,7 @@ const WrapperWebView = styled.div`
         .focusContent {
             img {
                 width: 120px;
+                height: 140px;
                 margin-bottom: 15px;
             }
             .text {
