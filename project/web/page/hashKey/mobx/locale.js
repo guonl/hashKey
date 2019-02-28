@@ -18,7 +18,7 @@ class Locale {
     @action changeLocaleConfig = (value) => {
         this.currentLocales = value;
         localStorage.setItem("langType", value);
-        location.hash = "#/";
+        if(!location.hash.match(/digital/)) {location.hash = "#/";}
         location.reload();
     };
 }

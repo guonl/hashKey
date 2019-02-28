@@ -28,7 +28,7 @@ class WebEN extends React.Component {
     }
 
     goToHK() {
-        location.hash = `#/hk`;
+        location.hash = `#/digital-asset-summit-2019`;
     }
 
     componentDidMount() {

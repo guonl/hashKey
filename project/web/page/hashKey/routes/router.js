@@ -6,7 +6,7 @@ module.exports = [
         }
     },
     {
-        path: "/hk",
+        path: "/digital-asset-summit-2019",
         getComponent: function (location, cb) {
             cb(null, require("./hk/components/hk.jsx"))
         }

@@ -28,7 +28,7 @@ class WebGK extends React.Component {
     }
 
     goToHK() {
-        location.hash = `#/hk`;
+        location.hash = `#/digital-asset-summit-2019`;
     }
 
     componentDidMount() {
@@ -287,7 +287,7 @@ class WebGK extends React.Component {
                     <Col span={18}>
                         <Row className="title">聯絡我們</Row>
                         <Row className="text">地址：香港數碼港道100號3座D區6樓614-615室</Row>
-                        <Row className="text">Email: contact@hashkey.com</Row>
+                        <Row className="text">電郵: contact@hashkey.com</Row>
                         <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-830631077275937/?modal=admin_todo_tour" }}>Facebook</Row>
                         <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
                     </Col>
