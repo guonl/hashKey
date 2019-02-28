@@ -164,7 +164,7 @@ class WebGK extends React.Component {
                                         </Col>
                                     </Popover>
                                     <Popover content={
-                                        <div>20年以上投資銀行經驗，服务于瑞银集团投资银行伦敦, 东京,北京及香港, 前瑞银证券董事会成员。领导過百項大型融資和併購業務項目，並于衍生與另類私募產品市場开拓了大量創新業務及核心盈利模式。英國倫敦大學帝國學院 計算機科學碩士。</div>
+                                        <div>20年以上投資銀行經驗，服務於瑞銀集團投資銀行倫敦，東京，北京及香港，前瑞銀證券董事會成員。 領導過百項大型融資和併購業務項目，並於衍生與另類私募產品市場開拓了大量創新業務及核心盈利模式。英國倫敦大學帝國學院計算機科學碩士。</div>
                                     }>
                                         <Col span={10} offset={4}>
                                             <Col span={8}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
