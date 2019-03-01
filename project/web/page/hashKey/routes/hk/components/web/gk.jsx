@@ -112,11 +112,6 @@ class WebGK extends React.Component {
                         </div>
                     </Col>
                 </Row>
-                <Row className="previousVIPFrame" type="flex" justify="center" align="middle">
-                    <Col span={16} style={{maxWidth: 900}}>
-                        <img src={previousVIPImg} />
-                    </Col>
-                </Row>
                 <Row className="partnerFrame" type="flex" justify="center" align="middle">
                     <Col span={16}>
                         <img src={partnerImg} />
@@ -145,6 +140,7 @@ class WebGK extends React.Component {
                                 </a>
                             </Col>
                         </Row>
+                        <img src={previousVIPImg} style={{width: '100%', marginTop: 50}} />
                         <img src={previousPartnerImg} className="second" />
                     </Col>
                 </Row>
