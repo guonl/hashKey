@@ -83,9 +83,10 @@ const WrapperMobileFrame = styled.div`
                 }
             }
         }
-        img {
+        img {width: 100%;}
+        .banner {
             width: 100%;
-            height: ${window.innerHeight};
+            height: ${window.innerHeight}px;
             background-size: 100% ${window.innerHeight}px;
         }
     }

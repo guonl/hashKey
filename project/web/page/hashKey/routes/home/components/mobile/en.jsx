@@ -39,9 +39,9 @@ class MobileEN extends React.Component {
                         <a href="javascript:;" className="" onClick={() => this.setState({ langChangeModal: true })}><img src={langChangeBG} /></a>
                     </div>
                     <Carousel autoplay>
-                        <img src={banner01} />
-                        <img src={banner02} />
-                        <img src={banner03} />
+                        <img src={banner01} className="banner" />
+                        <img src={banner02} className="banner" />
+                        <img src={banner03} className="banner" />
                     </Carousel>
                 </Row>
                 <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/en/gw_m_01eg.png")} /></Row>
