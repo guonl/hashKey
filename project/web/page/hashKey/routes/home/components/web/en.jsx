@@ -113,10 +113,10 @@ class WebEN extends React.Component {
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
                     <Col lg={22} xl={16}>
                         <Row className="ourVision">Our Vision</Row>
+                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="text">We believe that distributed ledgers, blockchain technology, and digital tokens will revolutionize how value is created, captured, and distributed across multiple asset classes through greater efficiency, lower costs, and increased liquidity.</Row>
-                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
-                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="ourFocus">Our Focus</Row>
+                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="focusContent">
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_01.png")} /></Row>
@@ -150,7 +150,7 @@ class WebEN extends React.Component {
                         <Row className="title">Core Team</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
-                            <Col span={24}>
+                            <Col span={22}>
                                 <Row type="flex" justify="space-around" className="member">
                                     <Popover content={
                                         <div>Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry.</div>

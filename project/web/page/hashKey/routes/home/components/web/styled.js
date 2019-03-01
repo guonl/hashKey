@@ -77,8 +77,7 @@ const WrapperWebView = styled.div`
         text-align: center;
         .ourVision {
             color: #2d4358;
-            font-size: 50px;
-            margin-bottom: 27px;
+            font-size: 36px;
         }
         .text {
             font-size: 22px;
@@ -86,15 +85,15 @@ const WrapperWebView = styled.div`
             margin-bottom: 107px;
             }
         .line {
-            width: 160px;
+            width: 68px;
             height: 2px;
             background: #2d4358;
+            margin: 36px 0px;
         }
         .ourFocus, .ourBrands {
             color: #2d4358;
-            font-size: 50px;
+            font-size: 36px;
             margin-top: 61px;
-            margin-bottom: 64px;
         }
         .focusContent {
             img {
@@ -103,7 +102,7 @@ const WrapperWebView = styled.div`
                 margin-bottom: 15px;
             }
             .text {
-                font-size: 24px;
+                font-size: 16px;
                 color: #34495e;
                 margin-bottom: 36px;
             }
@@ -119,13 +118,13 @@ const WrapperWebView = styled.div`
         padding: 100px 0;
         background: #f9fdff;
         .title {
-            font-size: 50px;
+            font-size: 36px;
             color: #2d4358;
             margin: 0 0 15px 0;
             text-align: center;
         }
         .line {
-            width: 160px;
+            width: 68px;
             height: 2px;
             background: #2d4358;
             margin-bottom: 93px;
@@ -141,13 +140,13 @@ const WrapperWebView = styled.div`
             height: 150px;
         }
         .name {
-            font-size: 30px;
+            font-size: 22px;
             margin-bottom: 10px;
             margin-top: 12px;
             color: #373d42;
         }
         .position {
-            font-size: 20px;
+            font-size: 16px;
             color: #373d42;
             margin-bottom: 8px;
         }
@@ -172,7 +171,7 @@ const WrapperWebView = styled.div`
         background: url(${offeringsBG}) no-repeat;
         background-size: 100% 100%;
         .title {
-            font-size: 50px;
+            font-size: 36px;
             color: #e8f3ff;
             margin-bottom: 28px;
             text-align: center;
@@ -187,16 +186,16 @@ const WrapperWebView = styled.div`
             color: #E8F3FF;
             text-align: center;
             .subTitle {
-                font-size: 42px;
+                font-size: 32px;
                 margin-bottom: 20px;
             }
             .text {
                 margin-top: 20px;
-                font-size: 15px;
+                font-size: 12px;
             }
         }
         .learnMore {
-            font-size: 16px;
+            font-size: 14px;
             display: inline-block;
             width: 160px;
             height: 40px;
@@ -213,7 +212,7 @@ const WrapperWebView = styled.div`
         padding: 100px 0;
         background: #2e2f30;
         .title {
-            font-size: 50px;
+            font-size: 36px;
             color: #f2f2f2;
             margin: 0 0 15px 0;
             text-align: center;

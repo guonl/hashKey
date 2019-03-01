@@ -113,10 +113,10 @@ class WebGK extends React.Component {
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
                     <Col lg={22} xl={16}>
                         <Row className="ourVision">我們的願景</Row>
+                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="text">我們堅信，分布式賬本、區塊鏈技術和數碼貨幣將徹底改變多個資產類別的價值創造、獲取和分配方式，提高效率、降低成本和增加流動性。</Row>
+                        <Row className="ourFocus">關注領域</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
-                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
-                        <Row className="ourFocus">Our Focus</Row>
                         <Row className="focusContent">
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_01.png")} /></Row>
@@ -150,7 +150,7 @@ class WebGK extends React.Component {
                         <Row className="title">核心團隊</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
-                            <Col span={24}>
+                            <Col span={22}>
                                 <Row type="flex" justify="space-around" className="member">
                                     <Popover content={
                                         <div>中國萬向控股有限公司副董事長兼執行董事，上海萬向區塊鏈股份公司董事長兼總經理。在證券和資產管理行業有超過25年的相關豐富經驗。</div>
