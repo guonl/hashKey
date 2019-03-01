@@ -68,7 +68,7 @@ const WrapperWebView = styled.div`
     .aboutFrame {
         img {
             width: 100%;
-            height: ${window.innerHeight};
+            height: ${window.innerHeight}px;
             background-size: 100% ${window.innerHeight}px;
         }
     }
