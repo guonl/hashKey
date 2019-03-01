@@ -23,7 +23,7 @@ platformList.map(platform => {
     pageList.map(page => {
         var fileName = `${process.cwd()}/${projectName}-output/${platform}/${page}/${page}.html`
         var htmlContent = fs.readFileSync(fileName, 'utf-8');
-        var newHtmlContent = htmlContent.replace("favicon.png", "web/hashKey/favicon.png").replace(/..\/..\/(web|mobile)\/hashKey/g, "");;
+        var newHtmlContent = htmlContent.replace("favicon.png", "web/hashKey/favicon.png").replace(/..\/..\/(web|mobile)\/hashKey/g, ".");;
         fs.writeFileSync(fileName, newHtmlContent);
     })
 })
