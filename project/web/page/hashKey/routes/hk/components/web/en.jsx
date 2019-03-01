@@ -17,6 +17,7 @@ const agendaAMImg = require("web-hashKey-imgs/hk/web/en/hashkey008-2.png");
 const agendaPMImg = require("web-hashKey-imgs/hk/web/en/hashkey008-3.png");
 const agendaSPImg = require("web-hashKey-imgs/hk/web/en/hashkey008-4.png");
 const partnerImg = require("web-hashKey-imgs/hk/web/en/hashkey010.png");
+const previousVIPImg = require("web-hashKey-imgs/hk/web/en/jiabin_eg.png");
 const infoImg1 = require("web-hashKey-imgs/hk/web/en/en_01.png");
 const infoImg2 = require("web-hashKey-imgs/hk/web/en/en_02.png");
 const infoImg3 = require("web-hashKey-imgs/hk/web/en/en_03.png");
@@ -108,6 +109,11 @@ class WebEN extends React.Component {
                                 <img src={agendaSPImg} />
                             </a>
                         </div>
+                    </Col>
+                </Row>
+                <Row className="previousVIPFrame" type="flex" justify="center" align="middle">
+                    <Col span={16} style={{maxWidth: 900}}>
+                        <img src={previousVIPImg} />
                     </Col>
                 </Row>
                 <Row className="partnerFrame" type="flex" justify="center" align="middle">

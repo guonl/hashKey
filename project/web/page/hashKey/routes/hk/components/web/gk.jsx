@@ -16,6 +16,7 @@ const agendaTitleImg = require("web-hashKey-imgs/hk/web/gk/hash009-1.png");
 const agendaAMImg = require("web-hashKey-imgs/hk/web/gk/hash009-2.png");
 const agendaPMImg = require("web-hashKey-imgs/hk/web/gk/hash009-3.png");
 const agendaSPImg = require("web-hashKey-imgs/hk/web/gk/hash009-4.png");
+const previousVIPImg = require("web-hashKey-imgs/hk/web/gk/jiabin_ch.png");
 const partnerImg = require("web-hashKey-imgs/hk/web/gk/hash0012.png");
 const infoImg1 = require("web-hashKey-imgs/hk/web/gk/zw_01.png");
 const infoImg2 = require("web-hashKey-imgs/hk/web/gk/zw_02.png");
@@ -109,6 +110,11 @@ class WebGK extends React.Component {
                                 <img src={agendaSPImg} />
                             </a>
                         </div>
+                    </Col>
+                </Row>
+                <Row className="previousVIPFrame" type="flex" justify="center" align="middle">
+                    <Col span={16} style={{maxWidth: 900}}>
+                        <img src={previousVIPImg} />
                     </Col>
                 </Row>
                 <Row className="partnerFrame" type="flex" justify="center" align="middle">

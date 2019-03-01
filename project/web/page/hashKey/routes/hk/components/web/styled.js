@@ -136,6 +136,12 @@ const WrapperFrame = styled.div`
             cursor: pointer;
         }
     }
+    .previousVIPFrame {
+        padding: 50px 0;
+        img {
+            width: 100%;
+        }
+    }
     .partnerFrame {
         background: url(${partnerBG}) no-repeat;
         background-size: 100%;
