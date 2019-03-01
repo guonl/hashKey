@@ -111,7 +111,7 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
-                    <Col lg={22} xl={16}>
+                    <Col lg={22} xl={16} style={{maxWidth: 900}}>
                         <Row className="ourVision">Our Vision</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="text">We believe that distributed ledgers, blockchain technology, and digital tokens will revolutionize how value is created, captured, and distributed across multiple asset classes through greater efficiency, lower costs, and increased liquidity.</Row>
@@ -146,7 +146,7 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="team" className="teamFrame" type="flex" justify="center">
-                    <Col lg={22} xl={16}>
+                    <Col lg={22} xl={16} style={{maxWidth: 900}}>
                         <Row className="title">Core Team</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
@@ -235,25 +235,25 @@ class WebEN extends React.Component {
                                 </Col>
                             </Popover>
                         </Row>
-                        <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
+                        <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>
                 </Row>
                 <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
-                    <Col lg={22} xl={16}>
+                    <Col lg={20} xl={16} style={{maxWidth: 900}}>
                         <Row className="title">Offerings under HashKey Group</Row>
                         <Row type="flex" justify="center" style={{marginBottom: 35}}><Col span={1} className="shortLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Pro</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">A secure and trustworthy digital asset exchange platform</Row>
                             </Col>
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Capital</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">A leading blockchain investor and digital asset manager</Row>
                             </Col>
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashQuark</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Mining Made Easier</Row>
@@ -261,17 +261,17 @@ class WebEN extends React.Component {
                         </Row>
                         <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">Tokyo Hash</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Your local business partner in Japan</Row>
                             </Col>
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">Axonomy</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Distributed Business Accelerator</Row>
                             </Col>
-                            <Col xl={6} lg={8}></Col>
+                            <Col xl={6} lg={7}></Col>
                         </Row>
                     </Col>
                     <Col span={24} style={{textAlign: 'center'}}>
@@ -287,8 +287,8 @@ class WebEN extends React.Component {
                         </Row>
                     </Col>
                 </Row>
-                <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
-                    <Col span={18}>
+                <Row id="contact"className="contactFrame" type="flex" justify="center" align="middle">
+                    <Col span={18} style={{maxWidth: 900}} >
                         <Row className="title">Contact</Row>
                         <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
                         <Row className="text">Email: contact@hashkey.com</Row>

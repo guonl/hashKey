@@ -111,7 +111,7 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
-                    <Col lg={22} xl={16}>
+                    <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="ourVision">我們的願景</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="text">我們堅信，分布式賬本、區塊鏈技術和數碼貨幣將徹底改變多個資產類別的價值創造、獲取和分配方式，提高效率、降低成本和增加流動性。</Row>
@@ -146,7 +146,7 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row id="team" className="teamFrame" type="flex" justify="center">
-                    <Col lg={22} xl={16}>
+                    <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="title">核心團隊</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
@@ -237,21 +237,21 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
-                    <Col lg={22} xl={16}>
+                    <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="title">产品</Row>
-                        <Row type="flex" justify="center" style={{marginBottom: 35}}><Col span={1} className="shortLine"></Col></Row>
+                        <Row type="flex" justify="center" style={{ marginBottom: 35 }}><Col span={1} className="shortLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Pro</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">安全可靠的數碼資產交易平台</Row>
                             </Col>
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Capital</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">面向合格和專業投資者的區塊鏈投資基金</Row>
                             </Col>
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashQuark</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">存幣即挖礦</Row>
@@ -259,23 +259,25 @@ class WebGK extends React.Component {
                         </Row>
                         <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">Tokyo Hash</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">您在日本當地的商業夥伴</Row>
                             </Col>
-                            <Col xl={6} lg={8}>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">Axonomy</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">分布式商業加速器</Row>
                             </Col>
-                            <Col xl={6} lg={8}></Col>
+                            <Col xl={6} lg={7}></Col>
                         </Row>
                     </Col>
-                    <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
+                    <Col span={24} style={{ textAlign: 'center' }}>
+                        <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
+                    </Col>
                 </Row>
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
-                    <Col span={16}>
+                    <Col span={16} style={{ maxWidth: 900 }}>
                         <Row className="title">合作夥伴</Row>
                         <Row type="flex" justify="center"><Col className="shortLine" span={1}></Col></Row>
                         <Row className="partnersList" type="flex" justify="space-between">
@@ -284,7 +286,7 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
-                    <Col span={18}>
+                    <Col span={18} style={{ maxWidth: 900 }}>
                         <Row className="title">聯絡我們</Row>
                         <Row className="text">地址：香港數碼港道100號3座D區6樓614-615室</Row>
                         <Row className="text">電郵: contact@hashkey.com</Row>

@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
+import { Row, Col } from 'antd';
 import { observer } from 'mobx-react';
+import WebEN from './web/en.jsx'
+// import WebCN from './web/cn.jsx';
+import WebGK from './web/gk.jsx';
+import MobileEN from './mobile/en.jsx'
+// import MobileCN from './mobile/cn.jsx'
+import MobileGK from './mobile/gk.jsx'
 import LocaleStore from 'web-hashKey-mobx/locale'
 
 @observer
-class PrdDetail extends React.Component {
+class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             innerWidth: window.innerWidth,
         }
-    };
+    }
 
     componentDidMount() {
         let that = this;
@@ -18,25 +25,46 @@ class PrdDetail extends React.Component {
         }
     }
 
-    render() {
-        let img;
-        if(this.state.innerWidth > 999) {
-            if(LocaleStore.currentLocales == "en") {
-                img = require("web-hashKey-imgs/prdDetail/web/en/offerings_eg.png");
-            } else if(LocaleStore.currentLocales == "gk") {
-                img = require("web-hashKey-imgs/prdDetail/web/gk/offerings_ch.png");
-            }
-        } else {
-            if(LocaleStore.currentLocales == "en") {
-                img = require("web-hashKey-imgs/prdDetail/mobile/en/m_b_offeringeg.png");
-            } else if(LocaleStore.currentLocales == "gk") {
-                img = require("web-hashKey-imgs/prdDetail/mobile/gk/m_b_offeringch.png");
-            }
+    getWebPage() {
+        switch(LocaleStore.currentLocales) {
+            case "en":
+                return <WebEN></WebEN>;
+                break;
+            // case "cn": 
+            //     return <WebCN></WebCN>;
+            //     break;
+            case "gk": 
+                return <WebGK></WebGK>;
+                break;
+            default:
+                return <WebEN></WebEN>;
         }
+    }
+
+    getMobilePage() {
+        switch(LocaleStore.currentLocales) {
+            case "en":
+                return <MobileEN></MobileEN>;
+                break;
+            // case "cn": 
+            //     return <MobileCN></MobileCN>;
+            //     break;
+            case "gk": 
+                return <MobileGK></MobileGK>;
+                break;
+            default:
+                return <MobileEN></MobileEN>;
+        }
+    }
+    render() {        
         return (
-            <img src={img} style={{width: '100%'}}/>
+            <Row>
+                {this.state.innerWidth > 999 ?
+                    this.getWebPage() : this.getMobilePage()
+                }
+            </Row>
         )
     }
 }
 
-module.exports = PrdDetail;
+module.exports = Home;

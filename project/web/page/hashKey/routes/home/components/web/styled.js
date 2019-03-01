@@ -73,32 +73,32 @@ const WrapperWebView = styled.div`
         }
     }
     .assetsFrame {
-        margin: 100px 0px;
+        margin: 100px 0px 50px 0px;
         text-align: center;
         .ourVision {
             color: #2d4358;
-            font-size: 36px;
+            font-size: 32px;
         }
         .text {
-            font-size: 22px;
+            font-size: 18px;
             color: #34495e;
-            margin-bottom: 107px;
+            margin-bottom: 67px;
             }
         .line {
             width: 68px;
             height: 2px;
             background: #2d4358;
-            margin: 36px 0px;
+            margin: 28px 0px;
         }
         .ourFocus, .ourBrands {
             color: #2d4358;
-            font-size: 36px;
-            margin-top: 61px;
+            font-size: 32px;
+            margin-top: 41px;
         }
         .focusContent {
             img {
-                width: 120px;
-                height: 140px;
+                width: 100px;
+                height: 120px;
                 margin-bottom: 15px;
             }
             .text {
@@ -115,10 +115,10 @@ const WrapperWebView = styled.div`
         }
     }
     .teamFrame {
-        padding: 100px 0;
+        padding: 50px 0;
         background: #f9fdff;
         .title {
-            font-size: 36px;
+            font-size: 32px;
             color: #2d4358;
             margin: 0 0 15px 0;
             text-align: center;
@@ -127,22 +127,22 @@ const WrapperWebView = styled.div`
             width: 68px;
             height: 2px;
             background: #2d4358;
-            margin-bottom: 93px;
+            margin-bottom: 63px;
         }
         .member {
-            margin-bottom: 45px;
+            margin-bottom: 35px;
             .desc {
                 width: 500px;
             }
         }
         .avator {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
         }
         .name {
             font-size: 22px;
             margin-bottom: 10px;
-            margin-top: 12px;
+            margin-top: 16px;
             color: #373d42;
         }
         .position {
@@ -165,13 +165,13 @@ const WrapperWebView = styled.div`
     }
     .offeringsFrame {
         position: relative;
-        height: ${document.body.clientWidth/1920*860}px;
-        min-height: 650px;
+        height: ${document.body.clientWidth/1920*760}px;
+        min-height: 600px;
         width: 100%;
         background: url(${offeringsBG}) no-repeat;
         background-size: 100% 100%;
         .title {
-            font-size: 36px;
+            font-size: 32px;
             color: #e8f3ff;
             margin-bottom: 28px;
             text-align: center;
@@ -182,7 +182,7 @@ const WrapperWebView = styled.div`
             border-radius: 3px;
         }
         .eachItem {
-            margin-bottom: 35px;
+            margin-bottom: 65px;
             color: #E8F3FF;
             text-align: center;
             .subTitle {
@@ -204,15 +204,15 @@ const WrapperWebView = styled.div`
             color: #fff;
             background: #3e8aff;
             border-radius: 5px;
-            margin-top: 30px;
+            margin-botom: 30px;
             text-decoration: none;
         }
     }
     .partnersFrame {
-        padding: 100px 0;
+        padding: 50px 0;
         background: #2e2f30;
         .title {
-            font-size: 36px;
+            font-size: 32px;
             color: #f2f2f2;
             margin: 0 0 15px 0;
             text-align: center;
@@ -221,13 +221,13 @@ const WrapperWebView = styled.div`
             height: 1px;
             background: #10CEFF;
             border-radius: 3px;
-            margin-bottom: 76px;
+            margin-bottom: 56px;
         }
     }
     .contactFrame {
         color: #f2f2f2;
         background: #171723;
-        height: 370px;
+        height: 270px;
         .title {
             font-size: 32px;
             margin-bottom: 10px;
