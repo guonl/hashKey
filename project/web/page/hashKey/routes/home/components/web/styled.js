@@ -157,6 +157,7 @@ const WrapperWebView = styled.div`
         .longLine {
             height: 1px;
             background-color: #c9c9c9;
+            opacity: 0.5;
             margin-bottom: 55px;
         }
         .eachMember {
@@ -254,7 +255,16 @@ const WrapperWebView = styled.div`
 injectGlobal `
     .ant-popover-inner-content {
         font-size: 14px;
-        width: 500px;
+        width: 400px;
+    }
+    .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-topRight > .ant-popover-content > .ant-popover-arrow {
+        border-top-color: #6888C8;
+    }
+    .ant-popover-inner-content {
+        border: 1px solid #6888C8;
+    }
+    .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-topRight > .ant-popover-content > .ant-popover-arrow {
+        bottom: 4px;
     }
 `
 module.exports = { WrapperWebView }
