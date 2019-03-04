@@ -5,6 +5,7 @@ import { WrapperFrame } from './styled'
 import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
 
+const speakersList = require("./speakersGK.json");
 const bannerImg = require("web-hashKey-imgs/hk/web/bannerContent.png");
 const aboutTextImg = require("web-hashKey-imgs/hk/web/gk/hash002-1.png");
 const aboutFullTextImg = require("web-hashKey-imgs/hk/web/gk/hash002-3.png");
@@ -40,8 +41,24 @@ class WebGK extends React.Component {
         };
     }
 
+    componentWillMount() {
+        speakersList.map((item, index) => {
+            this.state[`speaker${index}`] = false;
+        })
+    }
+
     componentDidMount() {
         document.documentElement.scrollTop = 0;
+    }
+
+    showSpeakerDesc(index) {
+        let key = `speaker${index}`;
+        this.setState({[key]: true})
+    }
+
+    hideSpeakerDesc(index) {
+        let key = `speaker${index}`;
+        this.setState({[key]: false})
     }
 
     render() {
@@ -94,7 +111,7 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">
-                    <Col span={16}>
+                    <Col span={20}>
                         <div style={{ width: '100%', textAlign: 'center' }}>
                             <img src={agendaTitleImg} className="title" />
                         </div>
@@ -110,6 +127,31 @@ class WebGK extends React.Component {
                                 <img src={agendaSPImg} />
                             </a>
                         </div>
+                        <Row type="flex" justify="space-between" className="speakerFrame">
+                            {speakersList.map((item, index) => {
+                                return (<Col key={index} span={5} onMouseEnter={this.showSpeakerDesc.bind(this,index)} onMouseLeave={this.hideSpeakerDesc.bind(this, index)}> {
+                                    !this.state[`speaker${index}`] ? 
+                                        <Row type="flex" justify="center" className="eachSpeaker">
+                                            <Col span={22} style={{ width: 200 }}>
+                                                <img src={require(`web-hashKey-imgs/hk/web/gk/speaker_ch/${(index+1).toString().padStart(2, "0")}.png`)} className="avator" />
+                                            </Col>
+                                            <Col span={22}>
+                                                <Row className="name">{item.name}</Row>
+                                                <Row type="flex" justify="center"><div className="shortLine"></div></Row>
+                                                <Row className="info">{item.position}</Row>
+                                            </Col>
+                                        </Row> : 
+                                        <Row className="eachSpeakerDesc">
+                                            <Row type="flex" className="name">
+                                                <div className="label"></div>
+                                                <div className="text">{item.name}</div>
+                                            </Row>
+                                            <Row type="flex" justify="center"><Col span={21}>{item.desc}</Col></Row>
+                                        </Row>
+                                    }
+                                </Col>
+                            )})}
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="partnerFrame" type="flex" justify="center" align="middle">
