@@ -5,6 +5,7 @@ import { WrapperFrame } from './styled'
 import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
 
+const speakersList = require("./speakersEN.json");
 const bannerImg = require("web-hashKey-imgs/hk/web/bannerContent.png");
 const aboutTextImg = require("web-hashKey-imgs/hk/web/en/hashkey003-1.png");
 const aboutFullTextImg = require("web-hashKey-imgs/hk/web/en/hashkey003-3.png");
@@ -38,6 +39,12 @@ class WebEN extends React.Component {
             showMoreAbout: false,
             agendAM: true
         }
+    }
+
+    componentWillMount() {
+        speakersList.map((item, index) => {
+            this.state[`speaker${index}`] = false;
+        })
     }
 
     componentDidMount() {
@@ -93,7 +100,7 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">
-                    <Col span={16}>
+                    <Col span={20}>
                         <div style={{ width: '100%', textAlign: 'center' }}>
                             <img src={agendaTitleImg} className="title" />
                         </div>
@@ -109,6 +116,31 @@ class WebEN extends React.Component {
                                 <img src={agendaSPImg} />
                             </a>
                         </div>
+                        <Row type="flex" justify="space-between" className="speakerFrame">
+                            {speakersList.map((item, index) => {
+                                return (<Col span={5}> {
+                                    !this.state[`speaker${index}`] ? 
+                                        <Row type="flex" justify="center" className="eachSpeaker">
+                                            <Col span={22} style={{ width: 200 }}>
+                                                <img src={bannerImg} className="avator" />
+                                            </Col>
+                                            <Col span={22}>
+                                                <Row className="name">{item.name}</Row>
+                                                <Row type="flex" justify="center"><div className="shortLine"></div></Row>
+                                                <Row className="info">{item.position}</Row>
+                                            </Col>
+                                        </Row> : 
+                                        <Row className="eachSpeakerDesc">
+                                            <Row type="flex" className="name">
+                                                <div className="label"></div>
+                                                <div className="text">{item.name}</div>
+                                            </Row>
+                                            <Row type="flex" justify="center"><Col span={21}>{item.desc}</Col></Row>
+                                        </Row>
+                                    }
+                                </Col>
+                            )})}
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="partnerFrame" type="flex" justify="center" align="middle">
@@ -142,7 +174,7 @@ class WebEN extends React.Component {
                                 </a>
                             </Col>
                         </Row>
-                        <img src={previousVIPImg} style={{width: '100%', marginTop: 50}} />
+                        <img src={previousVIPImg} style={{ width: '100%', marginTop: 50 }} />
                         <img src={previousPartnerImg} className="second" />
                     </Col>
                 </Row>

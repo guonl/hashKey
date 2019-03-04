@@ -6,10 +6,10 @@ const transBG = require("web-hashKey-imgs/hk/web/transBG.png");
 const WrapperFrame = styled.div`
     .bannerFrame {
         position: relative;
-        height: ${document.body.clientWidth/1920*960}px;
+        height: ${document.body.clientWidth / 1920 * 960}px;
         img {
             width: 100%;
-            height: ${document.body.clientWidth/1920*960}px;
+            height: ${document.body.clientWidth / 1920 * 960}px;
         }
         .langChange {
             position: absolute;
@@ -57,20 +57,20 @@ const WrapperFrame = styled.div`
         position: relative;
         background: url(${addressBG}) no-repeat;
         background-size: 100% 100%;
-        height: ${document.body.clientWidth/1920*600}px;
+        height: ${document.body.clientWidth / 1920 * 600}px;
         .content {
             width: 100%;
-            height: ${document.body.clientWidth/1920*357}px;
-            margin-top: -${document.body.clientWidth/1920*100}px;
+            height: ${document.body.clientWidth / 1920 * 357}px;
+            margin-top: -${document.body.clientWidth / 1920 * 100}px;
         }
         .gmBtn {
             display: inline-block;
             position: absolute;
-            top: ${document.body.clientWidth/1920*320}px;
-            width: ${document.body.clientWidth/1920*278}px;
-            height: ${document.body.clientWidth/1920*55}px;
+            top: ${document.body.clientWidth / 1920 * 320}px;
+            width: ${document.body.clientWidth / 1920 * 278}px;
+            height: ${document.body.clientWidth / 1920 * 55}px;
             left: 50%;
-            margin-left: -${document.body.clientWidth/1920*139}px;;
+            margin-left: -${document.body.clientWidth / 1920 * 139}px;;
             img {
                 width: 100%;
             }
@@ -134,6 +134,60 @@ const WrapperFrame = styled.div`
             width: 332px;
             height: 234px;
             cursor: pointer;
+        }
+        .speakerFrame {
+            margin-bottom: 30px;
+            .eachSpeaker {
+                cursor: pointer;
+                min-width 265px;
+                height: 347px;
+                margin-bottom: 20px;
+                text-align: center;
+                background: #fff;
+                .avator {
+                    margin-top: 20px;
+                    width: 100%;
+                    height: 200px;
+                }
+                .name {
+                    margin-top: 20px;
+                    margin-bottom: 19px;
+                    font-size: 18px;
+                    color: #393939;
+                }
+                .info {
+                    font-size: 12px;
+                    color: #393939;
+                    margin-bottom: 20px;
+                }
+            }
+            .eachSpeakerDesc {
+                cursor: pointer;
+                color: #C3E4FF;
+                height: 347px;
+                max-width: 265px;
+                background-image: linear-gradient(0deg, #05334E 0%, #0D4664 100%);
+                box-shadow: 0 0 16px 0 rgba(27,47,76,0.50);
+                margin-bottom: 20px;
+                overflow-y: scroll;
+                .name {
+                    position: relative;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    .label {
+                        position: absolute;
+                        display: inline-block;
+                        height: 8px;
+                        width: 20px;
+                        background: #5B9DFF;
+                        top: 6px;
+                    }
+                    .text {
+                        margin-left: 30px;
+                        font-size: 14px;
+                    }
+                }
+            }
         }
     }
     .previousVIPFrame {

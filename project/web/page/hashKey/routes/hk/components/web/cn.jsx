@@ -4,7 +4,6 @@ import { Row, Col } from 'antd';
 import { WrapperFrame } from './styled'
 import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
-
 const bannerImg = require("web-hashKey-imgs/hk/web/bannerContent.png");
 const aboutTextImg = require("web-hashKey-imgs/hk/web/cn/hash002-1.png");
 const aboutFullTextImg = require("web-hashKey-imgs/hk/web/cn/hash002-3.png");
@@ -111,54 +110,54 @@ class WebCN extends React.Component {
                         </div>
                     </Col>
                 </Row>
-                <Row className="partnerFrame" type="flex" justify="center" align="middle">
-                    <Col span={16}>
-                        <img src={partnerImg} />
-                    </Col>
-                </Row>
-                <Row className="infoFrame" type="flex" justify="center" align="middle">
-                    <Col span={16}>
-                        <img src={infoImg1} className="first" />
-                        <Row type="flex" justify="space-between">
-                            <Col span={5}>
-                                <img src={infoImg2} className="outerLink" />
-                            </Col>
-                            <Col span={5}>
-                                <a href="http://www.blockchainlabs.org/summit2016/index_cn.html">
-                                    <img src={infoImg3} className="outerLink" />
-                                </a>
-                            </Col>
-                            <Col span={5}>
-                                <a href="http://www.blockchainlabs.org/summit2017/index_cn.html?again4">
-                                    <img src={infoImg4} className="outerLink" />
-                                </a>
-                            </Col>
-                            <Col span={5}>
-                                <a href="http://www.blockchainlabs.org/week2018/index_cn.html">
-                                    <img src={infoImg5} className="outerLink" />
-                                </a>
-                            </Col>
-                        </Row>
-                        <img src={previousPartnerImg} className="second" />
-                    </Col>
-                </Row>
-                <Row className="transFrame" type="flex" justify="center" align="middle">
-                    <Col span={16}>
-                        <img src={trans} />
-                    </Col>
-                </Row>
-                <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
-                    <Col span={18}>
-                        <Row className="title">Contact Us</Row>
-                        <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
-                        <Row className="text">Email: contact@hashkey.com</Row>
-                        <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-830631077275937/?modal=admin_todo_tour" }}>Facebook</Row>
-                        <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
-                    </Col>
-                </Row>
+                    <Row className="partnerFrame" type="flex" justify="center" align="middle">
+                        <Col span={16}>
+                            <img src={partnerImg} />
+                        </Col>
+                    </Row>
+                    <Row className="infoFrame" type="flex" justify="center" align="middle">
+                        <Col span={16}>
+                            <img src={infoImg1} className="first" />
+                            <Row type="flex" justify="space-between">
+                                <Col span={5}>
+                                    <img src={infoImg2} className="outerLink" />
+                                </Col>
+                                <Col span={5}>
+                                    <a href="http://www.blockchainlabs.org/summit2016/index_cn.html">
+                                        <img src={infoImg3} className="outerLink" />
+                                    </a>
+                                </Col>
+                                <Col span={5}>
+                                    <a href="http://www.blockchainlabs.org/summit2017/index_cn.html?again4">
+                                        <img src={infoImg4} className="outerLink" />
+                                    </a>
+                                </Col>
+                                <Col span={5}>
+                                    <a href="http://www.blockchainlabs.org/week2018/index_cn.html">
+                                        <img src={infoImg5} className="outerLink" />
+                                    </a>
+                                </Col>
+                            </Row>
+                            <img src={previousPartnerImg} className="second" />
+                        </Col>
+                    </Row>
+                    <Row className="transFrame" type="flex" justify="center" align="middle">
+                        <Col span={16}>
+                            <img src={trans} />
+                        </Col>
+                    </Row>
+                    <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
+                        <Col span={18}>
+                            <Row className="title">Contact Us</Row>
+                            <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
+                            <Row className="text">Email: contact@hashkey.com</Row>
+                            <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-830631077275937/?modal=admin_todo_tour" }}>Facebook</Row>
+                            <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
+                        </Col>
+                    </Row>
             </WrapperFrame>
-        )
-    }
-}
-
+                )
+            }
+        }
+        
 module.exports = WebCN;
