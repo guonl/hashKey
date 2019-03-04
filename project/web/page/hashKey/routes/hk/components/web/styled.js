@@ -165,7 +165,7 @@ const WrapperFrame = styled.div`
                 cursor: pointer;
                 color: #C3E4FF;
                 height: 347px;
-                max-width: 265px;
+                min-width: 265px;
                 background-image: linear-gradient(0deg, #05334E 0%, #0D4664 100%);
                 box-shadow: 0 0 16px 0 rgba(27,47,76,0.50);
                 margin-bottom: 20px;

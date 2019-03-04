@@ -51,6 +51,16 @@ class WebEN extends React.Component {
         document.documentElement.scrollTop = 0;
     }
 
+    showSpeakerDesc(index) {
+        let key = `speaker${index}`;
+        this.setState({[key]: true})
+    }
+
+    hideSpeakerDesc(index) {
+        let key = `speaker${index}`;
+        this.setState({[key]: false})
+    }
+
     render() {
         return (
             <WrapperFrame>
@@ -118,11 +128,11 @@ class WebEN extends React.Component {
                         </div>
                         <Row type="flex" justify="space-between" className="speakerFrame">
                             {speakersList.map((item, index) => {
-                                return (<Col span={5}> {
+                                return (<Col key={index} span={5} onMouseEnter={this.showSpeakerDesc.bind(this,index)} onMouseLeave={this.hideSpeakerDesc.bind(this, index)}> {
                                     !this.state[`speaker${index}`] ? 
                                         <Row type="flex" justify="center" className="eachSpeaker">
                                             <Col span={22} style={{ width: 200 }}>
-                                                <img src={bannerImg} className="avator" />
+                                                <img src={require(`web-hashKey-imgs/hk/web/en/speaker_eh/${(index+1).toString().padStart(2, "0")}.png`)} className="avator" />
                                             </Col>
                                             <Col span={22}>
                                                 <Row className="name">{item.name}</Row>
