@@ -199,7 +199,7 @@ class WebEN extends React.Component {
                         <Row className="title">Contact Us</Row>
                         <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
                         <Row className="text">Email: contact@hashkey.com</Row>
-                        <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/key.hash.3" }}>Facebook</Row>
+                        <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-Limited-461036224433414/" }}>Facebook</Row>
                         <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
                     </Col>
                 </Row>
