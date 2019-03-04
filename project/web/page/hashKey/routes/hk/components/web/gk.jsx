@@ -129,28 +129,29 @@ class WebGK extends React.Component {
                         </div>
                         <Row type="flex" justify="space-between" className="speakerFrame">
                             {speakersList.map((item, index) => {
-                                return (<Col key={index} span={5} onMouseEnter={this.showSpeakerDesc.bind(this,index)} onMouseLeave={this.hideSpeakerDesc.bind(this, index)}> {
-                                    !this.state[`speaker${index}`] ? 
+                                return (<Col key={index} span={5} onMouseEnter={this.showSpeakerDesc.bind(this, index)} onMouseLeave={this.hideSpeakerDesc.bind(this, index)}> {
+                                    index != 27 ? !this.state[`speaker${index}`] ?
                                         <Row type="flex" justify="center" className="eachSpeaker">
                                             <Col span={22} style={{ width: 200 }}>
-                                                <img src={require(`web-hashKey-imgs/hk/web/gk/speaker_ch/${(index+1).toString().padStart(2, "0")}.png`)} className="avator" />
+                                                {index != 27 ? <img src={require(`web-hashKey-imgs/hk/web/en/speaker_eh/${(index + 1).toString().padStart(2, "0")}.png`)} className="avator" />
+                                                    : null}
                                             </Col>
                                             <Col span={22}>
                                                 <Row className="name">{item.name}</Row>
                                                 <Row type="flex" justify="center"><div className="shortLine"></div></Row>
                                                 <Row className="info">{item.position}</Row>
                                             </Col>
-                                        </Row> : 
+                                        </Row> :
                                         <Row className="eachSpeakerDesc">
                                             <Row type="flex" className="name">
                                                 <div className="label"></div>
                                                 <div className="text">{item.name}</div>
                                             </Row>
                                             <Row type="flex" justify="center"><Col span={21}>{item.desc}</Col></Row>
-                                        </Row>
-                                    }
+                                        </Row> : null}
                                 </Col>
-                            )})}
+                                )
+                            })}
                         </Row>
                     </Col>
                 </Row>
