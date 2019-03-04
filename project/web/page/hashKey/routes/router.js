@@ -17,4 +17,10 @@ module.exports = [
             cb(null, require("./prdDetail/components/prdDetail.jsx"))
         }
     },
+    {
+        path: "/hk",
+        getComponent: function (location, cb) {
+            cb(null, require("./hkOld/components/hk.jsx"))
+        }
+    }
 ];
