@@ -133,7 +133,7 @@ class WebGK extends React.Component {
                                     index != 27 ? !this.state[`speaker${index}`] ?
                                         <Row type="flex" justify="center" className="eachSpeaker">
                                             <Col span={22} style={{ width: 200 }}>
-                                                {index != 27 ? <img src={require(`web-hashKey-imgs/hk/web/en/speaker_eh/${(index + 1).toString().padStart(2, "0")}.png`)} className="avator" />
+                                                {index != 27 ? <img src={require(`web-hashKey-imgs/hk/web/gk/speaker_ch/${(index + 1).toString().padStart(2, "0")}.png`)} className="avator" />
                                                     : null}
                                             </Col>
                                             <Col span={22}>
