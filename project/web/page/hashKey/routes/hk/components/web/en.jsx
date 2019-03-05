@@ -68,7 +68,8 @@ class WebEN extends React.Component {
                     <div className="langChange">
                         <a href="javascript:;" className="" onClick={() => hashHistory.push("/")}>Home</a>
                         <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>中文</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
                         <img src={bannerImg} />

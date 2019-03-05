@@ -69,7 +69,8 @@ class WebGK extends React.Component {
                     <div className="langChange">
                         <a href="javascript:;" className="" onClick={() => hashHistory.push("/")}>Home</a>
                         <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>中文</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
                         <img src={bannerImg} />
@@ -194,9 +195,9 @@ class WebGK extends React.Component {
                 </Row>
                 <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18}>
-                        <Row className="title">Contact Us</Row>
-                        <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
-                        <Row className="text">Email: contact@hashkey.com</Row>
+                        <Row className="title">聯絡我們</Row>
+                        <Row className="text">地址：香港數碼港道100號3座D區6樓614-615室</Row>
+                        <Row className="text">電郵: contact@hashkey.com</Row>
                         <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-Limited-461036224433414/" }}>Facebook</Row>
                         <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
                     </Col>

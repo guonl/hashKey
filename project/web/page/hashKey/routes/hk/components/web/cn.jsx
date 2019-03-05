@@ -4,27 +4,29 @@ import { Row, Col } from 'antd';
 import { WrapperFrame } from './styled'
 import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
+
+const speakersList = require("./speakersCN.json");
 const bannerImg = require("web-hashKey-imgs/hk/web/bannerContent.png");
-const aboutTextImg = require("web-hashKey-imgs/hk/web/cn/hash002-1.png");
-const aboutFullTextImg = require("web-hashKey-imgs/hk/web/cn/hash002-3.png");
-const aboutOrgImg = require("web-hashKey-imgs/hk/web/cn/hash002-2.png");
-const addressImg = require("web-hashKey-imgs/hk/web/cn/hash004.png");
-const ticketImg = require("web-hashKey-imgs/hk/web/cn/hash006.png");
+const aboutTextImg = require("web-hashKey-imgs/hk/web/cn/jt_02_01ch.png");
+const aboutFullTextImg = require("web-hashKey-imgs/hk/web/cn/jt_02_02ch.png");
+const aboutOrgImg = require("web-hashKey-imgs/hk/web/cn/jt_02_03ch.png");
+const addressImg = require("web-hashKey-imgs/hk/web/cn/jt_03_01ch.png");
+const ticketImg = require("web-hashKey-imgs/hk/web/cn/jt_04_01ch.png");
 const buyImg = require("web-hashKey-imgs/hk/web/cn/hash008.png");
 const agendaTitleImg = require("web-hashKey-imgs/hk/web/cn/hash009-1.png");
 const agendaAMImg = require("web-hashKey-imgs/hk/web/cn/hash009-2.png");
 const agendaPMImg = require("web-hashKey-imgs/hk/web/cn/hash009-3.png");
 const agendaSPImg = require("web-hashKey-imgs/hk/web/cn/hash009-4.png");
-const partnerImg = require("web-hashKey-imgs/hk/web/cn/hash0012.png");
-const infoImg1 = require("web-hashKey-imgs/hk/web/cn/zw_01.png");
-const infoImg2 = require("web-hashKey-imgs/hk/web/cn/zw_02.png");
-const infoImg3 = require("web-hashKey-imgs/hk/web/cn/zw_03.png");
-const infoImg4 = require("web-hashKey-imgs/hk/web/cn/zw_04.png");
-const infoImg5 = require("web-hashKey-imgs/hk/web/cn/zw_05.png");
-const infoImg6 = require("web-hashKey-imgs/hk/web/cn/zw_06.png");
-const previousPartnerImg = require("web-hashKey-imgs/hk/web/cn/pervious_ch.png");
+const previousVIPImg = require("web-hashKey-imgs/hk/web/cn/jiabin_jt.png");
+const partnerImg = require("web-hashKey-imgs/hk/web/cn/jt_06_02ch.png");
+const infoImg1 = require("web-hashKey-imgs/hk/web/cn/jt_07_01ch.png");
+const infoImg2 = require("web-hashKey-imgs/hk/web/cn/jt_07_02ch.png");
+const infoImg3 = require("web-hashKey-imgs/hk/web/cn/jt_07_03ch.png");
+const infoImg4 = require("web-hashKey-imgs/hk/web/cn/jt_07_04ch.png");
+const infoImg5 = require("web-hashKey-imgs/hk/web/cn/jt_07_05ch.png");
+const previousPartnerImg = require("web-hashKey-imgs/hk/web/cn/jt_07_06ch.png");
 const GMBtn = require("web-hashKey-imgs/hk/web/cn/gmBtn.png");
-const trans = require("web-hashKey-imgs/hk/web/cn/transCN.png");
+const trans = require("web-hashKey-imgs/hk/web/cn/jt_08_01ch.png");
 const showBtn = require("web-hashKey-imgs/hk/web/show.png");
 const hideBtn = require("web-hashKey-imgs/hk/web/hide.png");
 
@@ -38,19 +40,35 @@ class WebCN extends React.Component {
         };
     }
 
+    componentWillMount() {
+        speakersList.map((item, index) => {
+            this.state[`speaker${index}`] = false;
+        })
+    }
+
     componentDidMount() {
         document.documentElement.scrollTop = 0;
     }
 
-    render() {
+    showSpeakerDesc(index) {
+        let key = `speaker${index}`;
+        this.setState({ [key]: true })
+    }
 
+    hideSpeakerDesc(index) {
+        let key = `speaker${index}`;
+        this.setState({ [key]: false })
+    }
+
+    render() {
         return (
             <WrapperFrame>
                 <Row className="bannerFrame" type="flex" justify="center" align="middle">
                     <div className="langChange">
                         <a href="javascript:;" className="" onClick={() => hashHistory.push("/")}>Home</a>
                         <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                        <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>中文</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
                         <img src={bannerImg} />
@@ -92,7 +110,7 @@ class WebCN extends React.Component {
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">
-                    <Col span={16}>
+                    <Col span={20}>
                         <div style={{ width: '100%', textAlign: 'center' }}>
                             <img src={agendaTitleImg} className="title" />
                         </div>
@@ -108,56 +126,83 @@ class WebCN extends React.Component {
                                 <img src={agendaSPImg} />
                             </a>
                         </div>
+                        <Row type="flex" justify="space-between" className="speakerFrame">
+                            {speakersList.map((item, index) => {
+                                return (<Col key={index} span={5} onMouseEnter={this.showSpeakerDesc.bind(this, index)} onMouseLeave={this.hideSpeakerDesc.bind(this, index)}> {
+                                    index != 27 ? !this.state[`speaker${index}`] ?
+                                        <Row type="flex" justify="center" className="eachSpeaker">
+                                            <Col span={22} style={{ width: 200 }}>
+                                                {index != 27 ? <img src={require(`web-hashKey-imgs/hk/web/cn/speaker_ch/${(index + 1).toString().padStart(2, "0")}.png`)} className="avator" />
+                                                    : null}
+                                            </Col>
+                                            <Col span={22}>
+                                                <Row className="name">{item.name}</Row>
+                                                <Row type="flex" justify="center"><div className="shortLine"></div></Row>
+                                                <Row className="info">{item.position}</Row>
+                                            </Col>
+                                        </Row> :
+                                        <Row className="eachSpeakerDesc">
+                                            <Row type="flex" className="name">
+                                                <div className="label"></div>
+                                                <div className="text">{item.name}</div>
+                                            </Row>
+                                            <Row type="flex" justify="center"><Col span={21}>{item.desc}</Col></Row>
+                                        </Row> : null}
+                                </Col>
+                                )
+                            })}
+                        </Row>
                     </Col>
                 </Row>
-                    <Row className="partnerFrame" type="flex" justify="center" align="middle">
-                        <Col span={16}>
-                            <img src={partnerImg} />
-                        </Col>
-                    </Row>
-                    <Row className="infoFrame" type="flex" justify="center" align="middle">
-                        <Col span={16}>
-                            <img src={infoImg1} className="first" />
-                            <Row type="flex" justify="space-between">
-                                <Col span={5}>
-                                    <img src={infoImg2} className="outerLink" />
-                                </Col>
-                                <Col span={5}>
-                                    <a href="http://www.blockchainlabs.org/summit2016/index_cn.html">
-                                        <img src={infoImg3} className="outerLink" />
-                                    </a>
-                                </Col>
-                                <Col span={5}>
-                                    <a href="http://www.blockchainlabs.org/summit2017/index_cn.html?again4">
-                                        <img src={infoImg4} className="outerLink" />
-                                    </a>
-                                </Col>
-                                <Col span={5}>
-                                    <a href="http://www.blockchainlabs.org/week2018/index_cn.html">
-                                        <img src={infoImg5} className="outerLink" />
-                                    </a>
-                                </Col>
-                            </Row>
-                            <img src={previousPartnerImg} className="second" />
-                        </Col>
-                    </Row>
-                    <Row className="transFrame" type="flex" justify="center" align="middle">
-                        <Col span={16}>
-                            <img src={trans} />
-                        </Col>
-                    </Row>
-                    <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
-                        <Col span={18}>
-                            <Row className="title">Contact Us</Row>
-                            <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
-                            <Row className="text">Email: contact@hashkey.com</Row>
-                            <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-830631077275937/?modal=admin_todo_tour" }}>Facebook</Row>
-                            <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
-                        </Col>
-                    </Row>
+                <Row className="partnerFrame" type="flex" justify="center" align="middle">
+                    <Col span={16}>
+                        <img src={partnerImg} />
+                    </Col>
+                </Row>
+                <Row className="infoFrame" type="flex" justify="center" align="middle">
+                    <Col span={16}>
+                        <img src={infoImg1} className="first" />
+                        <Row type="flex" justify="space-between">
+                            <Col span={5}>
+                                <img src={infoImg2} className="outerLink" />
+                            </Col>
+                            <Col span={5}>
+                                <a href="http://www.blockchainlabs.org/summit2016/index_cn.html">
+                                    <img src={infoImg3} className="outerLink" />
+                                </a>
+                            </Col>
+                            <Col span={5}>
+                                <a href="http://www.blockchainlabs.org/summit2017/index_cn.html?again4">
+                                    <img src={infoImg4} className="outerLink" />
+                                </a>
+                            </Col>
+                            <Col span={5}>
+                                <a href="http://www.blockchainlabs.org/week2018/index_cn.html">
+                                    <img src={infoImg5} className="outerLink" />
+                                </a>
+                            </Col>
+                        </Row>
+                        <img src={previousVIPImg} style={{ width: '100%', marginTop: 50 }} />
+                        <img src={previousPartnerImg} className="second" />
+                    </Col>
+                </Row>
+                <Row className="transFrame" type="flex" justify="center" align="middle">
+                    <Col span={16}>
+                        <img src={trans} />
+                    </Col>
+                </Row>
+                <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
+                    <Col span={18}>
+                        <Row className="title">联系我们</Row>
+                        <Row className="text">地址：香港数码港道100号3座D区6楼614-615室</Row>
+                        <Row className="text">邮箱: contact@hashkey.com</Row>
+                        <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-Limited-461036224433414/" }}>Facebook</Row>
+                        <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
+                    </Col>
+                </Row>
             </WrapperFrame>
-                )
-            }
-        }
-        
+        )
+    }
+}
+
 module.exports = WebCN;

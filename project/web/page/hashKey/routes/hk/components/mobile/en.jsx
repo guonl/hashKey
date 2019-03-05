@@ -20,6 +20,8 @@ const infoImg2 = require("web-hashKey-imgs/hk/mobile/en/07_02eg.png");
 const infoImg3 = require("web-hashKey-imgs/hk/mobile/en/07_03eg.png");
 const infoImg4 = require("web-hashKey-imgs/hk/mobile/en/07_04eg.png");
 const infoImg5 = require("web-hashKey-imgs/hk/mobile/en/07_05eg.png");
+const speakerList = require("web-hashKey-imgs/hk/mobile/en/benjie_eg.png");
+const previousVIP = require("web-hashKey-imgs/hk/mobile/en/wangjie_shouji_eg.png");
 const previousPartnerImg = require("web-hashKey-imgs/hk/mobile/en/fh_eg010.png");
 const trans = require("web-hashKey-imgs/hk/mobile/en/fh_eg011.png");
 const showBtn = require("web-hashKey-imgs/hk/web/show.png");
@@ -52,6 +54,7 @@ class MobileEN extends React.Component {
                             <div className="title">语言</div>
                             <div span={10} className={LocaleStore.currentLocales == "en" ? "ops selected" : "ops"} onClick={() => LocaleStore.changeLocaleConfig("en")}>En</div>
                             <div span={10} className={LocaleStore.currentLocales == "gk" ? "ops selected" : "ops"} onClick={() => LocaleStore.changeLocaleConfig("gk")}>繁体中文</div>
+                            <div span={10} className={LocaleStore.currentLocales == "cn" ? "ops selected" : "ops"} onClick={() => LocaleStore.changeLocaleConfig("cn")}>简体中文</div>
                         </Row>
                     </Row> : null
                 }
@@ -91,6 +94,7 @@ class MobileEN extends React.Component {
                             <img src={agendaAMImg} className="agend" /> : <img src={agendaPMImg} className="agend" />
                         }
                         <a href="http://vyr5r8zs2p3jhaqh.mikecrm.com/foUjQZQ" className="apply">Apply to be a speaker</a>
+                        <img src={speakerList} style={{width: '100%'}} />
                     </Col>
                 </Row>
                 <Row className="partnerFrame" type="flex" justify="center" align="middle">
@@ -121,6 +125,7 @@ class MobileEN extends React.Component {
                                 </a>
                             </Col>
                         </Row>
+                        <img src={previousVIP} className="second" />
                         <img src={previousPartnerImg} className="second" />
                     </Col>
                 </Row>
