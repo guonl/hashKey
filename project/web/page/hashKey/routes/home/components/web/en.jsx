@@ -172,7 +172,6 @@ class WebEN extends React.Component {
                                             <Col span={24}>
                                                 <Row className="name">Michel Lee</Row>
                                                 <Row className="position">Executive President,HashKey Group</Row>
-                                                <Row className="position">Ex-director of the board of UBS Securities</Row>
                                             </Col>
                                         </Col>
                                     </Popover>

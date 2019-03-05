@@ -171,7 +171,6 @@ class WebGK extends React.Component {
                                             <Col span={24}>
                                                 <Row className="name">李啟泰</Row>
                                                 <Row className="position">HashKey Group 行政總裁</Row>
-                                                <Row className="position">前瑞銀證券董事 </Row>
                                             </Col>
                                         </Col>
                                     </Popover>
@@ -289,7 +288,7 @@ class WebGK extends React.Component {
                 <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18} style={{ maxWidth: 900 }}>
                         <Row className="title">聯絡我們</Row>
-                        <Row className="text">地址：香港數碼港道100號3座D區6樓614-615室</Row>
+                        <Row className="text">地址: 香港數碼港道100號3座D區6樓614-615室</Row>
                         <Row className="text">電郵: contact@hashkey.com</Row>
                         <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-Limited-461036224433414/" }}>Facebook</Row>
                         <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>

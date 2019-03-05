@@ -1,10 +1,10 @@
 [{
-    "name": "Xiao Feng",
+    "name": "XIAO Feng",
     "position": "the Vice Chairman& Executive Director, China Wanxiang Holding Co., Ltd；Chairman&CEO, Wanxiang Blockchain",
     "desc": "Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry."
 },{
     "name": "Michel Lee",
-    "position": "Executive President, Hashkey Group& Ex-director of the board of UBS Securities",
+    "position": "Executive President, Hashkey Group",
     "desc": "Over 20 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong.   Ex-board of directors of UBS Securities.  Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London. "
 },{
     "name": "Raof Latiff",
@@ -19,7 +19,7 @@
     "position": "Senior Manager, Fintech, InvestHK",
     "desc": "InvestHK’s fintech team provide practical support and assistance on setting up offices, facilitating visa and banks accounts, regulators introductions, networking opportunities, guidance in government grants and funding. Patricia graduated from the University of Bristol and worked in the private sector before joining InvestHK."
 },{
-    "name": "Qu Junjie",
+    "name": "QU Junjie",
     "position": "CTO，PlatON.",
     "desc": "Co-founder of Genus Finance which is a leading algorithm trading service provider on China market. Before that, was Executive Director of Morgan Stanley Algorithm trading development team in Shanghai, head of Real Time Market Data development and integration team of Asia. As UBS AD, was manager of Asia DAT team, electronic trading system developer.25+ years track record of software delivery, management in multi-national firms.20+ years’experience in top level finance industry firms.More than 15+ years working experience in Tokyo."
 },{
@@ -59,13 +59,13 @@
     "position": "CEO and Co-founder，UnBlock Analysis",
     "desc": "Ernie Ho, the CEO and Co-founder of UnBlock Analysis Inc. , is an AI Researcher from Massachusetts Institute of Technology (MIT) and Carnegie Mellon University (CMU). Ernie won several international blockchain competitions including MIT Bitcoin Hackathon and Tokyo Longhash Blockchain Hackathon. He utilized his expertise in AI and Blockchain to disclose intention and risk behind every transaction across different blockchain ledgers. He dedicated his team, a group of genius hackers, professionals and professors in AI, blockchain, cybersecurity and compliance, to build an intelligent blockchain analysis platform for crypto exchanges and financial institutions to comply with strict KYC/AML regulations."
 },{
+    "name": "FAN Hongda",
+    "position": "CEO，TokenGazer Inc.",
+    "desc": "Hongda is the founder and CEO of TokenGazer and hefocuses on data analysis, technology research and asset valuation in blockchain area. He was the Chief Operating Officer of the New Third Board Listed Company and the Director of Manufacturing Projects in China. He received his MBA Degree from The University of Hong Kong and the Senior Management Certificate of Block Chain Innovation from Massachusetts Institute of Technology."
+},{
     "name": "Han Ming Ho",
     "position": "Partner and Co-leader, Asia Investment Funds Practice, Sidley Austin LLP",
     "desc": "Han Ming Ho is a co-leader of the firm’s Asia Investment Funds practice. He focuses on fund formation of open-ended and close-ended entities and related regulatory matters as well as regularly advises fund managers on the establishment of business operations in Singapore, together with the establishment, structuring and registration of investment funds in Singapore and other Asia Pacific jurisdictions. Han Ming’s regulatory experience includes advising on compliance and licensing issues relating to securities and financial advisory law as well as liaising regularly with Singapore regulators."
-},{
-    "name": "Hongda Fan",
-    "position": "CEO，TokenGazer Inc.",
-    "desc": "Hongda is the founder and CEO of TokenGazer and hefocuses on data analysis, technology research and asset valuation in blockchain area. He was the Chief Operating Officer of the New Third Board Listed Company and the Director of Manufacturing Projects in China. He received his MBA Degree from The University of Hong Kong and the Senior Management Certificate of Block Chain Innovation from Massachusetts Institute of Technology."
 },{
     "name": "ISME",
     "position": "SlowMist Security Director",

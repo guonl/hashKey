@@ -194,7 +194,7 @@ class WebCN extends React.Component {
                 <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18}>
                         <Row className="title">联系我们</Row>
-                        <Row className="text">地址：香港数码港道100号3座D区6楼614-615室</Row>
+                        <Row className="text">地址: 香港数码港道100号3座D区6楼614-615室</Row>
                         <Row className="text">邮箱: contact@hashkey.com</Row>
                         <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-Limited-461036224433414/" }}>Facebook</Row>
                         <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
