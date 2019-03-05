@@ -112,7 +112,7 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">
-                    <Col span={20}>
+                    <Col span={18}>
                         <div style={{ width: '100%', textAlign: 'center' }}>
                             <img src={agendaTitleImg} className="title" />
                         </div>
