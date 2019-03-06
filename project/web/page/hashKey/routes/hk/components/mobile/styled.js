@@ -67,6 +67,10 @@ const WrapperFrame = styled.div`
                 }
             }
         }
+        .bannerImg {
+            width: 100%;
+            img {width: 100%;}
+        }
     }
     .aboutFrame {
         background: #fff;

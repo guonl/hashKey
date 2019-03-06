@@ -40,7 +40,9 @@ class MobileEN extends React.Component {
                     </div>
                     <Carousel autoplay>
                         <img src={banner01} className="banner" />
-                        <img src={banner02} className="banner" />
+                        <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
+                            <img src={banner02} className="banner" />
+                        </a>
                         <img src={banner03} className="banner" />
                     </Carousel>
                 </Row>

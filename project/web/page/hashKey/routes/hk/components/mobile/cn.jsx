@@ -63,7 +63,9 @@ class MobileCN extends React.Component {
                         <a href="javascript:;" className="" onClick={() => this.setState({ langChangeModal: true })}><img src={langChangeBG} /></a>
                     </div>
                     <Col span={24}>
-                        <img src={bannerImg} />
+                        <a href="javascript:;" onClick={() => hashHistory.push("/")} className="bannerImg">
+                            <img src={bannerImg} />
+                        </a>
                     </Col>
                 </Row>
                 <Row className="aboutFrame" type="flex" justify="center" align="middle">
@@ -94,7 +96,7 @@ class MobileCN extends React.Component {
                             <img src={agendaAMImg} className="agend" /> : <img src={agendaPMImg} className="agend" />
                         }
                         <a href="http://vyr5r8zs2p3jhaqh.mikecrm.com/foUjQZQ" className="apply">申请成为演讲嘉宾</a>
-                        <img src={speakerList} style={{width: '100%'}} />
+                        <img src={speakerList} style={{ width: '100%' }} />
                     </Col>
                 </Row>
                 <Row className="partnerFrame" type="flex" justify="center" align="middle">

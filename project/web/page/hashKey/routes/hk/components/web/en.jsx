@@ -72,7 +72,9 @@ class WebEN extends React.Component {
                         <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
-                        <img src={bannerImg} />
+                        <a href="javascript:;" onClick={() => hashHistory.push("/")} className="bannerImg">
+                            <img src={bannerImg} />
+                        </a>
                     </Col>
                 </Row>
                 <Row className="aboutFrame" type="flex" justify="center" align="middle">

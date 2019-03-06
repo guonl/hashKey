@@ -53,12 +53,12 @@ class WebGK extends React.Component {
 
     showSpeakerDesc(index) {
         let key = `speaker${index}`;
-        this.setState({[key]: true})
+        this.setState({ [key]: true })
     }
 
     hideSpeakerDesc(index) {
         let key = `speaker${index}`;
-        this.setState({[key]: false})
+        this.setState({ [key]: false })
     }
 
     render() {
@@ -73,7 +73,9 @@ class WebGK extends React.Component {
                         <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
-                        <img src={bannerImg} />
+                        <a href="javascript:;" onClick={() => hashHistory.push("/")} className="bannerImg">
+                            <img src={bannerImg} />
+                        </a>
                     </Col>
                 </Row>
                 <Row className="aboutFrame" type="flex" justify="center" align="middle">
@@ -184,7 +186,7 @@ class WebGK extends React.Component {
                                 </a>
                             </Col>
                         </Row>
-                        <img src={previousVIPImg} style={{width: '100%', marginTop: 50}} />
+                        <img src={previousVIPImg} style={{ width: '100%', marginTop: 50 }} />
                         <img src={previousPartnerImg} className="second" />
                     </Col>
                 </Row>

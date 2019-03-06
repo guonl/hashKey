@@ -34,6 +34,13 @@ const WrapperFrame = styled.div`
                 }
             }
         }
+        .bannerImg {
+            cursor: pointer;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
     }
     .aboutFrame {
         background: #fff;
