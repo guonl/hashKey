@@ -105,13 +105,15 @@ class WebEN extends React.Component {
                     <Col span={24}>
                         <Carousel autoplay>
                             <img src={banner01} />
-                            <img src={banner02} />
+                            <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
+                                <img src={banner02} className="banner" />
+                            </a>
                             <img src={banner03} />
                         </Carousel>
                     </Col>
                 </Row>
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
-                    <Col lg={22} xl={16} style={{maxWidth: 900}}>
+                    <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="ourVision">Our Vision</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="text">We believe that distributed ledgers, blockchain technology, and digital tokens will revolutionize how value is created, captured, and distributed across multiple asset classes through greater efficiency, lower costs, and increased liquidity.</Row>
@@ -146,7 +148,7 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="team" className="teamFrame" type="flex" justify="center">
-                    <Col lg={22} xl={16} style={{maxWidth: 900}}>
+                    <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="title">Core Team</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
@@ -167,7 +169,7 @@ class WebEN extends React.Component {
                                     <Popover placement="top" content={
                                         <div>Over 20 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong.   Ex-board of directors of UBS Securities.  Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London.</div>
                                     }>
-                                        <Col span={10} offset={4} style={{textAlign: 'right'}}>
+                                        <Col span={10} offset={4} style={{ textAlign: 'right' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">Michel Lee</Row>
@@ -183,7 +185,7 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>Former senior manager at Bosera Asset Management, China Wanxiang Holding, DataYes. 10+ years of experience in asset management and fintech, early founding employee at Wanxiang Blockchain.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{textAlign: 'left'}}>
+                                <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">Deng Chao</Row>
                                     <Row className="position">CEO, HashKey Capital</Row>
@@ -207,7 +209,7 @@ class WebEN extends React.Component {
                                     <Row className="position">CEO, HashQuark</Row>
                                 </Col>
                             </Popover>
-                            <Col span={6} className="eachMember" style={{textAlign: 'right'}}>
+                            <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">Andy Duan</Row>
                                 <Row className="position">CEO, Tokyo Hash </Row>
@@ -218,7 +220,7 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>Stanford GSB, co-founder of Stanford's largest student-led blockchain group. 10+ years of executive experience in high-tech startups in both Silicon Valley and China. Started career as derivatives trader and analyst.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{textAlign: 'left'}}>
+                                <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben EL-Baz</Row>
                                     <Row className="position">CSO, HashKey Pro</Row>
@@ -227,7 +229,7 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>Simon has over 17 years of experience in the financial industry. He is the former North East Asia Head of Compliance at Ant Financial, and he has held senior positions at leading financial institutions including RBC Wealth Management, HSBC, BNP Paribas, SFC and Morgan Stanley.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{textAlign: 'right'}}>
+                                <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">Simon AuYeung</Row>
                                     <Row className="position">COO，HashKey Pro</Row>
@@ -238,9 +240,9 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
-                    <Col lg={20} xl={16} style={{maxWidth: 900}}>
+                    <Col lg={20} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="title">Offerings under HashKey Group</Row>
-                        <Row type="flex" justify="center" style={{marginBottom: 35}}><Col span={1} className="shortLine"></Col></Row>
+                        <Row type="flex" justify="center" style={{ marginBottom: 35 }}><Col span={1} className="shortLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
                             <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Pro</Row>
@@ -273,7 +275,7 @@ class WebEN extends React.Component {
                             <Col xl={6} lg={7}></Col>
                         </Row>
                     </Col>
-                    <Col span={24} style={{textAlign: 'center'}}>
+                    <Col span={24} style={{ textAlign: 'center' }}>
                         <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>LEARN MORE</a>
                     </Col>
                 </Row>
@@ -286,8 +288,8 @@ class WebEN extends React.Component {
                         </Row>
                     </Col>
                 </Row>
-                <Row id="contact"className="contactFrame" type="flex" justify="center" align="middle">
-                    <Col span={18} style={{maxWidth: 900}} >
+                <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
+                    <Col span={18} style={{ maxWidth: 900 }} >
                         <Row className="title">Contact</Row>
                         <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
                         <Row className="text">Email: contact@hashkey.com</Row>
