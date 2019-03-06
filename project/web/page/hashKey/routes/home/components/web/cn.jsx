@@ -117,7 +117,7 @@ class WebCN extends React.Component {
                     <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="ourVision">我们的愿景</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
-                        <Row className="text">我们坚信，分布式账本、区块链技术和数码货币将彻底改变多个资产类别的价值创造、获取和分配方式，提高效率、降低成本和增加流动性。</Row>
+                        <Row className="text">我们坚信，分布式账本、区块链技术和数字货币将彻底改变多个资产类别的价值创造、获取和分配方式，提高效率、降低成本和增加流动性。</Row>
                         <Row className="ourFocus">关注领域</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="focusContent">
@@ -167,7 +167,7 @@ class WebCN extends React.Component {
                                         </Col>
                                     </Popover>
                                     <Popover placement="top" content={
-                                        <div>20年以上投资银行经验，服务于瑞银集团投资银行伦敦，东京，北京及香港，前瑞银证券董事会成员。领导过百项大型融资和并购业务项目，并与衍生与另类私募产品市场开拓了大量创新业务及核心盈利模式。英国伦敦大学帝国学院计算机科学硕士。</div>
+                                        <div>20年以上投资银行经验，曾服务于瑞银集团投资银行伦敦、东京、北京及香港。领导过百项大型融资和并购业务项目，并于衍生与另类私募产品市场开拓了大量创新业务及核心盈利模式。英国伦敦大学帝国学院计算机科学硕士</div>
                                     }>
                                         <Col span={10} offset={4} style={{ textAlign: 'right' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
@@ -211,14 +211,14 @@ class WebCN extends React.Component {
                             </Popover>
                             <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
-                                <Row className="name">段璽</Row>
+                                <Row className="name">段玺</Row>
                                 <Row className="position">Tokyo Hash首席执行官</Row>
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="member">
                             <Popover placement="top" content={
-                                <div>毕业于斯坦福商学院，并为斯坦福大学最大得学生区块链组织联合创始人。具有10年以上硅谷和中国高科技初创企业高管经验，职业生涯从衍生品交易员和分析师开始。</div>
+                                <div>毕业于斯坦福商学院，并为斯坦福大学最大的学生区块链组织联合创始人。具有10年以上硅谷和中国高科技初创企业高管经验，职业生涯从衍生品交易员和分析师开始。</div>
                             }>
                                 <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
@@ -227,7 +227,7 @@ class WebCN extends React.Component {
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
-                                <div>具有17年以上工作经验，曾任蚂蚁紧肤东北亚合规主管；于加皇财富管理、汇丰银行、法巴银行、香港证监会、摩根士丹利等大机构担任要职。</div>
+                                <div>具有17年以上工作经验，曾任蚂蚁金服东北亚合规主管；于加皇财富管理、汇丰银行、法巴银行、香港证监会、摩根士丹利等大机构担任要职。</div>
                             }>
                                 <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
@@ -247,7 +247,7 @@ class WebCN extends React.Component {
                             <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Pro</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
-                                <Row className="text">安全可靠的数码资产交易平台</Row>
+                                <Row className="text">安全可靠的数字资产交易平台</Row>
                             </Col>
                             <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Capital</Row>
