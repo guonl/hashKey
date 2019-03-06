@@ -47,13 +47,13 @@ class MobileCN extends React.Component {
                         <img src={banner03} className="banner" />
                     </Carousel>
                 </Row>
-                <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_01jt.png")} /></Row>
-                <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_02jt.png")} /></Row>
+                <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_01jt.png")} /></Row>
+                <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_02jt.png")} /></Row>
                 <Row className="imgFrame offerings">
                     <a href="javascript:;" className="btn" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
-                    <img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_03jt.png")} />
+                    <img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_03jt.png")} />
                 </Row>
-                <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_04jt.png")} /></Row>
+                <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_04jt.png")} /></Row>
                 <Row className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18}>
                         <Row className="title">联系我們</Row>
