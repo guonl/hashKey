@@ -80,11 +80,11 @@ class WebEN extends React.Component {
         return (
             <WrapperWebView>
                 <Row className="headerMenu" type="flex" justify="center">
-                    <Col span={22}>
-                        <Col span={4} className="title">
+                    <Col span={23}>
+                        <Col span={3} className="title">
                             <img className="logo" src={logo} />
                         </Col>
-                        <Col span={14}>
+                        <Col span={13}>
                             <Row type="flex" justify="end" className="menuList">
                                 <div className={this.state.activeMenu == "about" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "about")}>About</div>
                                 <div className="eachMenu" onClick={() => this.goToHK.call(this)}>Summit</div>
@@ -95,7 +95,7 @@ class WebEN extends React.Component {
                                 <div className={this.state.activeMenu == "contact" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "contact")}>Contact Us</div>
                             </Row>
                         </Col>
-                        <Col span={6}>
+                        <Col span={8} style={{textAlign: 'right'}}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>

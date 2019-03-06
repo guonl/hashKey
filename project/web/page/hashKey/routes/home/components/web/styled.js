@@ -58,6 +58,7 @@ const WrapperWebView = styled.div`
             margin-right: 20px;
             text-decoration: none;
             text-align: center;
+            width: 70px;
             &.selected {
                 background: #4c94ff;
                 opacity: 1;
