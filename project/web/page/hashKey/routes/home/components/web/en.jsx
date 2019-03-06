@@ -174,7 +174,7 @@ class WebEN extends React.Component {
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">Michel Lee</Row>
-                                                <Row className="position">Executive President,HashKey Group</Row>
+                                                <Row className="position">Executive President， HashKey Group</Row>
                                             </Col>
                                         </Col>
                                     </Popover>
@@ -198,7 +198,7 @@ class WebEN extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">TF Cheng CFA</Row>
-                                    <Row className="position">CEO HashKey Pro</Row>
+                                    <Row className="position">CEO, HashKey Pro</Row>
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -233,7 +233,7 @@ class WebEN extends React.Component {
                                 <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">Simon AuYeung</Row>
-                                    <Row className="position">COO，HashKey Pro</Row>
+                                    <Row className="position">COO, HashKey Pro</Row>
                                 </Col>
                             </Popover>
                         </Row>
