@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { Row, Col } from 'antd';
 import { observer } from 'mobx-react';
 import WebEN from './web/en.jsx'
-// import WebCN from './web/cn.jsx';
+import WebCN from './web/cn.jsx';
 import WebGK from './web/gk.jsx';
 import MobileEN from './mobile/en.jsx'
-// import MobileCN from './mobile/cn.jsx'
+import MobileCN from './mobile/cn.jsx'
 import MobileGK from './mobile/gk.jsx'
 import LocaleStore from 'web-hashKey-mobx/locale'
 
@@ -30,9 +30,9 @@ class Home extends React.Component {
             case "en":
                 return <WebEN></WebEN>;
                 break;
-            // case "cn": 
-            //     return <WebCN></WebCN>;
-            //     break;
+             case "cn": 
+                 return <WebCN></WebCN>;
+                 break;
             case "gk": 
                 return <WebGK></WebGK>;
                 break;
@@ -46,9 +46,9 @@ class Home extends React.Component {
             case "en":
                 return <MobileEN></MobileEN>;
                 break;
-            // case "cn": 
-            //     return <MobileCN></MobileCN>;
-            //     break;
+            case "cn": 
+                return <MobileCN></MobileCN>;
+                break;
             case "gk": 
                 return <MobileGK></MobileGK>;
                 break;

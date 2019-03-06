@@ -4,12 +4,12 @@ import { WrapperFrame } from './styled'
 import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
 const logo = require("web-hashKey-imgs/home/web/hashkeyLogo.png");
-const img01 = require("web-hashKey-imgs/prdDetail/web/en/offerings2_01.png");
-const img02 = require("web-hashKey-imgs/prdDetail/web/en/offerings2_02.png");
-const img03 = require("web-hashKey-imgs/prdDetail/web/en/offerings2_03.png");
-const img04 = require("web-hashKey-imgs/prdDetail/web/en/offerings2_04.png");
-const img05 = require("web-hashKey-imgs/prdDetail/web/en/offerings2_05.png");
-const img06 = require("web-hashKey-imgs/prdDetail/web/en/offerings2_06.png");
+const img01 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_01.png");
+const img02 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_02.png");
+const img03 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_03.png");
+const img04 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_04.png");
+const img05 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_05.png");
+const img06 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_06.png");
 
 @observer
 class WebEN extends React.Component {
@@ -34,7 +34,7 @@ class WebEN extends React.Component {
                 </Row>
                 <Row type="flex" justify="center" className="contentFrame">
                     <Col span={20} style={{ maxWidth: 1280 }}>
-                        <img src={img01} className="title en" />
+                        <img src={img01} className="title" />
                         <a href="https://pro.hashkey.com">
                             <img src={img02} />
                         </a>

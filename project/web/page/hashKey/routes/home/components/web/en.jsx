@@ -97,7 +97,8 @@ class WebEN extends React.Component {
                         </Col>
                         <Col span={6}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                            <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>中文</a>
+                            <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
+                            <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                         </Col>
                     </Col>
                 </Row>
@@ -280,7 +281,7 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
-                    <Col span={16}>
+                    <Col span={16} style={{maxWidth: 900}}>
                         <Row className="title">Partners</Row>
                         <Row type="flex" justify="center"><Col className="shortLine" span={1}></Col></Row>
                         <Row className="partnersList" type="flex" justify="space-between">
