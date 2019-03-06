@@ -174,7 +174,8 @@ class WebEN extends React.Component {
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">Michel Lee</Row>
-                                                <Row className="position">Executive President， HashKey Group</Row>
+                                                <Row className="position">Executive President</Row>
+                                                <Row className="position">HashKey Group</Row>
                                             </Col>
                                         </Col>
                                     </Popover>

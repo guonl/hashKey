@@ -27,6 +27,7 @@ const WrapperFrame = styled.div`
                 margin-right: 20px;
                 text-decoration: none;
                 text-align: center;
+                width: 85px;
                 &.selected {
                     background: #4c94ff;
                     opacity: 1;
