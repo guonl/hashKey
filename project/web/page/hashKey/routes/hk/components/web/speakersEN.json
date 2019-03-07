@@ -20,11 +20,11 @@
     "desc": "InvestHK’s fintech team provide practical support and assistance on setting up offices, facilitating visa and banks accounts, regulators introductions, networking opportunities, guidance in government grants and funding. Patricia graduated from the University of Bristol and worked in the private sector before joining InvestHK."
 },{
     "name": "QU Junjie",
-    "position": "CTO，PlatON.",
+    "position": "CTO，PlatON",
     "desc": "Co-founder of Genus Finance which is a leading algorithm trading service provider on China market. Before that, Mr Qu was Executive Director of Morgan Stanley Algorithm trading development team in Shanghai, head of Real Time Market Data development and integration team of Asia. As UBS AD, Mr Qu was manager of Asia DAT team, electronic trading system developer.25+ years track record of software delivery, management in multi-national firms.20+ years’experience in top level finance industry firms.More than 15+ years working experience in Tokyo."
 },{
     "name": "Aaron L. Kaplan",
-    "position": "Founder and CO-CEO, Prometheum, Inc.",
+    "position": "Founder and Co-CEO, Prometheum, Inc.",
     "desc": "Aaron is the founder and co-CEO of Prometheum, Inc., a NYC based fintech company building a Federal Securities Law compliant, blockchain native, ecosystem for the entire security token lifecycle. Aaron is also an attorney at Gusrae Kaplan Nusbaum, where he has focused his practice on the applications of distributed ledger technology in the securities industry. Since 2016, Aaron has served as the Managing Member of EquityArcade Services LLC, a technology provider focused on online capital formation solutions. In 2015, Aaron was a co-founder of Deckbound LLC, a blockchain video gaming and digital asset technology company. From 2007-2008 Aaron was an associated person with StockCross Financial Services, Inc., a broker-dealer, where he held Series 7, 63, 55, 4, 24, 27 and 53 securities licenses."
 },{
     "name": "Alan Taylor",
@@ -76,7 +76,7 @@
     "desc": "Mr. Don Guo is Chief Investment Officer for Asia Capital Reinsurance Group (ACR) in Singapore.  MR. Guo and his team are responsible for the Group’s global asset allocation and investments. Prior to joining ACR in 2008, Mr. Guo worked with XL Capital Group in New York, mainly responsible for originating, structuring and executing asset-backed transactions and investments globally with particular focus on Asia, US and Latin America. Prior to that, He was with Swiss Re Group in Zurich, London and Hong Kong and worked on various Asian and European credit transactions. Mr. Guo received his MBA Degree from Columbia University in New York. He also holds MS. Economics Degree from Shanghai University of Finance & Economics. Mr. Guo is a CFA charterholder."
 },{
     "name": "DU Yu",
-    "position": "Vice General Manager of Shanghai Wanxiang Blockchain Inc.",
+    "position": "Vice General Manager, Shanghai Wanxiang Blockchain Inc.",
     "desc": "Mr.Yu Du is the Vice General Manager of Wanxiang Blockchain Inc. and general director of Wanxiang Blockchain Labs. He holds a Master degree from Zhejiang University and a MBA degree from Lehigh University. Since joining Wanxiang Holdings in August 2015, Yu Du is in charge of operation and products of Wanxiang Blockchain Inc and the management of Wanxiang Blockchain Labs. He is one of the initiators of ChinaLedger and works for the Secretariat in ChinaLedger. Besides, he is Under-Secretary-General of CBD Forum. Du Yu has many years’ R&D working experience in communication industry. Previously, he worked in H3C for several years."
 },{
     "name": "E David Ellington",
@@ -96,7 +96,7 @@
     "desc": "Han Ming Ho is a co-leader of the firm’s Asia Investment Funds practice. He focuses on fund formation of open-ended and close-ended entities and related regulatory matters as well as regularly advises fund managers on the establishment of business operations in Singapore, together with the establishment, structuring and registration of investment funds in Singapore and other Asia Pacific jurisdictions. Han Ming’s regulatory experience includes advising on compliance and licensing issues relating to securities and financial advisory law as well as liaising regularly with Singapore regulators."
 },{
     "name": "ISME",
-    "position": "SlowMist Security Director",
+    "position": "Security Director，SlowMist",
     "desc": "Xiamen SlowMist Technology Co., Ltd., headquartered in Xiamen and founded by the team with over ten years of front-line cybersecurity defensive experience, specializes in ecology security of blockchain industry. Our team member formerly worked in numerous company such as Google, Microsoft, W3C, The Ministry of Public Security of the People's Republic of China, Tencent, Alibaba, Baidu, etc. And our achievements were acknowledged by global security conferences such as Black Hat. With core technological capabilities of security audits, defence deployment and underground threat intelligence tracking, SlowMist delivers security audits and defence deployments for exchanges, wallets and smart contracts around the world. Through tracking the engine with a unique weathervane of underground hackers, we continue to provide threat intelligence for partner companies and governments."
 },{
     "name": "Jonathan Ha",
@@ -108,7 +108,7 @@
     "desc": "Jason has been in the technology, corporate strategy, sales and marketing sector for over 20 years. He started his career in Silicon Valley, and subsequent moved to Asia where he consulted, co-founded, and raised angel & venture funding for start-ups. He has also been a part of mentoring and growing startups from inception to exit. Jason currently runs a Venture Capital firm focused on investing in early-stage tech startups around Asia, and has made investments in various types of industries including Logistics, AI, SaaS, Marketing Tech and more. Prior to being involved in VC work, he was the Regional Head for National Sales in Groupon, where he was in charge of business development and partnerships for strategic accounts. He led the Asia-Pacific teams in Singapore, Malaysia, Indonesia, Taiwan and Hong Kong."
 },{
     "name": "Jason Qiao",
-    "position": "Chief Ecosystem Officer of platON",
+    "position": "Chief Ecosystem Officer, platON",
     "desc": "Former Executive Director of J.P. Morgan Asset Management Master of FinMath, UChicago. Former Executive Director of J.P.Morgan Asset Management. Head of Portfolio Construction and Quant Strategy for Specialized Strategy Team of Private Bank in NYC, sitting as member of the Investment Committee. With 12+ years of experience in JPMorgan, he had extensive experience in asset management, private wealth management, and Investment. His recent focuses cover innovative investment product design, especially with big data, AI, and Blockchain."
 },{
     "name": "JIANG Changhao",
@@ -122,6 +122,10 @@
     "name": "Leo Li",
     "position": "CEO, HashQuark",
     "desc": "12 years of experience, former head of financial cloud and intelligent investment research at DataYes. Holds several patents, creator of BaaS platform, blockchain technology specialist."
+},{
+    "name": "LIU Feng",
+    "position": "Chief Editor, ChainNews",
+    "desc": "Mr. Feng Liu is co-founder and editor-in-chief of ChainNews, a Chinese leading online news outlet dedicated to blockchain and cryptocurrency industry. Striving to report news accurately and objectively, ChainNews provides comprehensive information as well as in-depth analyses on blockchain ecosystem and cryptocurrency developments. Mr. Liu is a professional journalist with 20 years of experience in business reporting and newsroom management. Previously, Mr. Liu was Chief-in-Editor of Bloomberg Businessweek Chinese Edition, which is one of top business publications in China."
 },{
     "name": "Malcolm Wright",
     "position": "Chief Compliance Officer, Diginex Limited",
@@ -140,15 +144,15 @@
     "desc": "As General Counsel, Mr Paul Yuen heads the Legal Department, which oversees legal matters in MAS and supports all departments in discharging the functions of MAS. This includes advising on issues emanating from MAS’ role as a central bank and financial regulator. Before assuming the role of General Counsel, Mr Paul Yuen was Executive Director of the Market Conduct Department and Corporate Finance & Consumer Department, where he oversaw capital markets issues relating to corporate finance, market misconduct enforcement and consumer interests. Prior to that, he served as Chief Executive Officer at the Institute of Banking and Finance and Head of Strategic Development Division in the Development Group in MAS. Mr Yuen graduated from the National University of Singapore and is an advocate and solicitor of the Supreme Court of Singapore."
 },{
     "name": "Peter Luo",
-    "position": "Shanghai Wanxiang Blockchain Inc.",
+    "position": "CTO, Shanghai Wanxiang Blockchain Inc.",
     "desc": "Mr. Luo, the Chief Technology Officer of Wanxiang Blockchain Inc., Director of product and development team, and Leader of ISO TC307/WG1, has over 15 years of experience in IT technology planning and management. He had worked at a securities and futures exchange under the China Securities Regulatory Commission, during that time he had participated in joint projects with leading global exchange groups including Nasdaq, NYSE, NYSE Euronext and etc. in which he had established deep connections with architects from Europe and the United States. He has a global vision and a deep technical background in the financial sector. He has strong research skill in blockchain technology and its applications in the financial industry."
 },{
     "name": "Putin Liu",
-    "position": "Chief Analyst at Huobi Research",
+    "position": "Chief Analyst, Huobi Research",
     "desc": ""
 },{
     "name": "QI Yinliang",
-    "position": "co-founder and CEO of MarineX",
+    "position": "Co-founder and CEO of MarineX",
     "desc": "Graduated from Shanghai Maritime University, Yinliang Qi was familiar with and mastered a large number of shipping basic knowledge and practical operations during his time at the Shangai Shipping Exchange. After resigning at the end of 2010, he founded the website of www.ship.sh, and built it into a veritable China's largest shipping new media in a short period of time. He has planned to host dozens of large-scale forums such as \"International Shipping and Internet Summit Forum\", \"International Shipping and Finance Summit Forum\", \"Ceremony of Top 100 in China's Shipping Industry\". He has reported dozens of influential articles in the industry, with a total of 500,000 industry users. Founded in 2018, MarineX is committed to promoting the sustainable development of the maritime industry in a digital format. Mr. Yinliang Qi has won the honorary title of China Shipping Youth, the honorary title of Shanghai May Fourth Youth Medal, and the top ten outstanding youths of Lujiazui. He also takes the positions as the Secretary-General of China Port Aviation Technology and Innovation Alliance, the Secretary General of Shanghai Maritime University Alumni Entrepreneur Association, the member of City Youth League, the member of Hongkou District Youth League Standing Committee and other social positions."
 },{
     "name": "SONG Jiaji",
