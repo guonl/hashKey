@@ -225,7 +225,7 @@ class WebGK extends React.Component {
                             }>
                                 <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
-                                    <Row className="name">Ben EI-Baz</Row>
+                                    <Row className="name">Ben El-Baz</Row>
                                     <Row className="position">HashKey Pro首席戰略官</Row>
                                 </Col>
                             </Popover>
@@ -245,7 +245,7 @@ class WebGK extends React.Component {
                 </Row>
                 <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
                     <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
-                        <Row className="title">产品</Row>
+                        <Row className="title">產品</Row>
                         <Row type="flex" justify="center" style={{ marginBottom: 35 }}><Col span={1} className="shortLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
                             <Col xl={6} lg={7}>
