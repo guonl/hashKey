@@ -174,7 +174,7 @@ class WebCN extends React.Component {
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">李启泰</Row>
-                                                <Row className="position">HashKey Group 行政总裁</Row>
+                                                <Row className="position">HashKey Group行政总裁</Row>
                                             </Col>
                                         </Col>
                                     </Popover>
