@@ -68,7 +68,7 @@ class WebEN extends React.Component {
                     <div className="langChange">
                         <a href="javascript:;" className="" onClick={() => hashHistory.push("/")}>Home</a>
                         <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
+                        <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁體</a>
                         <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
@@ -132,10 +132,10 @@ class WebEN extends React.Component {
                         <Row type="flex" justify="space-between" className="speakerFrame">
                             {speakersList.map((item, index) => {
                                 return (<Col key={index} span={5} onMouseEnter={this.showSpeakerDesc.bind(this, index)} onMouseLeave={this.hideSpeakerDesc.bind(this, index)}> {
-                                    index < 43 ? !this.state[`speaker${index}`] ?
+                                    index < 44 ? !this.state[`speaker${index}`] ?
                                         <Row type="flex" justify="center" className="eachSpeaker">
                                             <Col span={22} style={{ width: 200 }}>
-                                                {index < 43 ? <img src={require(`web-hashKey-imgs/hk/web/en/speaker_eh/${item.name}.png`)} className="avator" />
+                                                {index < 44 ? <img src={require(`web-hashKey-imgs/hk/web/en/speaker_eh/${item.name}.png`)} className="avator" />
                                                     : null}
                                             </Col>
                                             <Col span={22}>

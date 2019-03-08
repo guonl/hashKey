@@ -97,7 +97,7 @@ class WebEN extends React.Component {
                         </Col>
                         <Col span={8} style={{textAlign: 'right'}}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                            <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
+                            <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁體</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                         </Col>
                     </Col>
@@ -155,10 +155,11 @@ class WebEN extends React.Component {
                         <Row className="member" type="flex" justify="center">
                             <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
+                                    <Col span={6}></Col>
                                     <Popover placement="top" content={
                                         <div>Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry.</div>
                                     }>
-                                        <Col span={10}>
+                                        <Col span={6} style={{textAlign: 'center'}}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_06.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">Xiao Feng</Row>
@@ -170,7 +171,7 @@ class WebEN extends React.Component {
                                     <Popover placement="top" content={
                                         <div>Over 20 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong.   Ex-board of directors of UBS Securities.  Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London.</div>
                                     }>
-                                        <Col span={10} offset={4} style={{ textAlign: 'right' }}>
+                                        <Col span={6} style={{textAlign: 'center'}}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">Michel Lee</Row>
@@ -179,6 +180,7 @@ class WebEN extends React.Component {
                                             </Col>
                                         </Col>
                                     </Popover>
+                                    <Col span={6}></Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -219,10 +221,11 @@ class WebEN extends React.Component {
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="member">
+                            <Col span={6}></Col>
                             <Popover placement="top" content={
                                 <div>Stanford GSB, co-founder of Stanford's largest student-led blockchain group. 10+ years of executive experience in high-tech startups in both Silicon Valley and China. Started career as derivatives trader and analyst.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
+                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben EL-Baz</Row>
                                     <Row className="position">CSO, HashKey Pro</Row>
@@ -231,12 +234,13 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>Simon has over 17 years of experience in the financial industry. He is the former North East Asia Head of Compliance at Ant Financial, and he has held senior positions at leading financial institutions including RBC Wealth Management, HSBC, BNP Paribas, SFC and Morgan Stanley.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
+                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">Simon AuYeung</Row>
                                     <Row className="position">COO, HashKey Pro</Row>
                                 </Col>
                             </Popover>
+                            <Col span={6}></Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>

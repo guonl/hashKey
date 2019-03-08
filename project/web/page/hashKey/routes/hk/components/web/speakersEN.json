@@ -39,7 +39,7 @@
     "position": "Head of Regulatory Affairs for Asia and Europe & CCO for Asia for Circle",
     "desc": "Bénédicte is the Head of Regulatory Affairs for Asia and Europe & CCO for Asia for Circle. From 2012 to 2018 she was the Head of Risk and Strategy of the Hong Kong Securities and Futures Commission, from 2007 to 2012 she was a Managing Director at Credit Suisse, and before that an Executive Director at Goldman Sachs and an associate at White and Case. She also is a Board Member of the Hong Kong Fintech Association, a Member of the Global Digital Finance Advisory Council and the co-Head of the Educational Committee of Women in Finance. In 2016 she was a recipient of the China Daily Asian Women Leadership Awards for people who are dedicated to entrepreneurialism, innovation and change at the Asia Financial Forum. She holds a J.D. from the University of Leuven (1995 - High honours) and an LLM (1996) and  MBA (2004 - High honours) from the University of Chicago. She is admitted to the New York State Bar since 1999."
 },{
-    "name": "Ben EL-Baz",
+    "name": "Ben EI-Baz",
     "position": "CSO, HashKey Pro",
     "desc": "Stanford GSB, co-founder of Stanford's largest student-led blockchain group. 10+ years of executive experience in high-tech startups in both Silicon Valley and China. Started career as derivatives trader and analyst."
 },{
@@ -64,7 +64,7 @@
     "desc": "David Johnston has been a CEO of several technology startups, David Johnston is an active angel & venture stage investor, board member & advisor to growth stage companies and open source software projects in the blockchain space. Factom® was established in 2014 by a team of eight co-founders who recognized the need to make the world’s systems more honest. In the past, distributed records, information and documents have been difficult to protect, challenging to synchronize, and impossible to truly verify because of the manual effort involved. At Factom®, we support a future of transparent business practices with our industry changing products. We value honesty, transparency and strive to change the future through the software we build."
 },{
     "name": "David Kwan",
-    "position": "Head of Asia - Nasdaq SMARTS Market Surveillance, Nasdaq",
+    "position": "Head of Asia - SMARTS Market Surveillance, Nasdaq",
     "desc": "David Kwan is Head of Asia Nasdaq SMARTS Market Surveillance. David’s background started with degrees in Bachelors of Commence (Finance)/Bachelors of Science (Computer Science) from the University of New South Wales and for the past 11+ years have been an integral member of the SMARTS community. Throughout David’s career in surveillance he have experienced multiple roles from algorithm design/development of alerts and reports, lead business analyst, surveillance advisory and his current role managing exchange and regulator customers in Asia. David is proud to have worked with majority of Nasdaq SMARTS 50+ exchange and regulator customers in Asia, Europe and America. For the past decade in his multiple roles David has frequently travel to meet and work alongside customers to learn from global markets both emerging and developed, and most recently providing surveillance expertise for digital asset exchange start-ups."
 },{
     "name": "Dmitry Kalichkin",
@@ -163,6 +163,10 @@
     "position": "CEO, HashKey Pro",
     "desc": "20+ years of experience in global investment markets; former MD, Head of Greater China, BNP Paribas Asset Management. Active angel investor in fintech, biotech and consumer tech."
 },{
+    "name": "WENG Yiming",
+    "position": "Senior Analyst, Huobi",
+    "desc": ""
+},{
     "name": "Urszula McCormack",
     "position": "Partner, King & Wood Mallesons",
     "desc": "Urszula McCormack is one of Asia’s leading blockchain lawyers and financial regulatory specialists, with a focus on emerging technology and financial crime. In 2018, she was recognised as a Financial Times Top 10 Legal Innovator of the Year."
@@ -170,4 +174,4 @@
     "name": "YAN Sumin",
     "position": "Partner, Octopus Quant",
     "desc": "Former Chinese-funded insurance FOF fund manager, now a virtual currency quantitative investment partner."
-},{},{}]
+}]

@@ -97,7 +97,7 @@ class WebGK extends React.Component {
                         </Col>
                         <Col span={8} style={{textAlign: 'right'}}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
-                            <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
+                            <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁體</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                         </Col>
                     </Col>
@@ -155,10 +155,11 @@ class WebGK extends React.Component {
                         <Row className="member" type="flex" justify="center">
                             <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
+                                    <Col span={6}></Col>
                                     <Popover placement="top" content={
                                         <div>中國萬向控股有限公司副董事長兼執行董事，上海萬向區塊鏈股份公司董事長兼總經理。在證券和資產管理行業有超過25年的相關豐富經驗。</div>
                                     }>
-                                        <Col span={10}>
+                                        <Col span={6} style={{textAlign: 'center'}}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_06.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">肖風</Row>
@@ -169,7 +170,7 @@ class WebGK extends React.Component {
                                     <Popover placement="top" content={
                                         <div>20年以上投資銀行經驗，服務於瑞銀集團投資銀行倫敦，東京，北京及香港，前瑞銀證券董事會成員。 領導過百項大型融資和併購業務項目，並於衍生與另類私募產品市場開拓了大量創新業務及核心盈利模式。英國倫敦大學帝國學院計算機科學碩士。</div>
                                     }>
-                                        <Col span={10} offset={4} style={{ textAlign: 'right' }}>
+                                        <Col span={6} style={{ textAlign: 'center' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">李啟泰</Row>
@@ -177,6 +178,7 @@ class WebGK extends React.Component {
                                             </Col>
                                         </Col>
                                     </Popover>
+                                    <Col span={6}></Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -217,10 +219,11 @@ class WebGK extends React.Component {
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="member">
+                            <Col span={6}></Col>
                             <Popover placement="top" content={
                                 <div>畢業於斯坦福商學院，並為斯坦福大學最大的學生區塊鏈組織聯合創始人。具有10年以上矽谷和中國高科技初創企業高管經驗，職業生涯從衍生品交易員和分析師開始。</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
+                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben EL-Baz</Row>
                                     <Row className="position">HashKey Pro首席戰略官</Row>
@@ -229,12 +232,13 @@ class WebGK extends React.Component {
                             <Popover placement="top" content={
                                 <div>具有17年以上工作經驗，曾任螞蟻金服東北亞合規主管；於加皇財富管理、滙豐銀行、法巴銀行、香港證監會、摩根士丹利等大機構擔任要職。</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
+                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">歐陽健男</Row>
                                     <Row className="position">HashKey Pro首席運營官</Row>
                                 </Col>
                             </Popover>
+                            <Col span={6}></Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>
