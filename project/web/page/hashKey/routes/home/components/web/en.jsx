@@ -227,7 +227,7 @@ class WebEN extends React.Component {
                             }>
                                 <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
-                                    <Row className="name">Ben EL-Baz</Row>
+                                    <Row className="name">Ben EI-Baz</Row>
                                     <Row className="position">CSO, HashKey Pro</Row>
                                 </Col>
                             </Popover>
