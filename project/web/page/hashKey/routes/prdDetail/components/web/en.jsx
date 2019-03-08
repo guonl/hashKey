@@ -22,10 +22,10 @@ class WebEN extends React.Component {
             <WrapperFrame>
                 <Row className="headerMenu" type="flex" justify="center">
                     <Col span={22}>
-                        <Col span={18} className="title">
+                        <Col span={16} className="title">
                             <img className="logo" src={logo} />
                         </Col>
-                        <Col span={6}>
+                        <Col span={8}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁体</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
