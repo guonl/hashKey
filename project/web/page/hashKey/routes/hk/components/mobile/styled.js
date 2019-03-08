@@ -178,7 +178,7 @@ const WrapperFrame = styled.div`
             text-align: center;
             border-radius: 5px;
             font-size: 0.32rem;
-            bottom: 60px;
+            bottom: 20px;
         }
     }
     .partnerFrame {
