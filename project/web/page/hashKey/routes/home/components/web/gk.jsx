@@ -149,7 +149,7 @@ class WebGK extends React.Component {
                     </Col>
                 </Row>
                 <Row id="team" className="teamFrame" type="flex" justify="center">
-                    <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
+                    <Col lg={22} xl={16} style={{ maxWidth: 1200 }}>
                         <Row className="title">核心團隊</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="member" type="flex" justify="center">
