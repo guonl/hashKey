@@ -217,7 +217,6 @@ class WebGK extends React.Component {
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="member">
-                            <Col span={6}></Col>
                             <Popover placement="top" content={
                                 <div>畢業於斯坦福商學院，並為斯坦福大學最大的學生區塊鏈組織聯合創始人。具有10年以上矽谷和中國高科技初創企業高管經驗，職業生涯從衍生品交易員和分析師開始。</div>
                             }>
