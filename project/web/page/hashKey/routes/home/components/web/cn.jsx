@@ -216,8 +216,7 @@ class WebCN extends React.Component {
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
-                        <Row type="flex" justify="space-between" className="member">
-                            <Col span={6}></Col>
+                        <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>毕业于斯坦福商学院，并为斯坦福大学最大的学生区块链组织联合创始人。具有10年以上硅谷和中国高科技初创企业高管经验，职业生涯从衍生品交易员和分析师开始。</div>
                             }>
