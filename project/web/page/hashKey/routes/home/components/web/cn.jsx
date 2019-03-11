@@ -155,7 +155,6 @@ class WebCN extends React.Component {
                         <Row className="member" type="flex" justify="center">
                             <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
-                                    <Col span={6}></Col>
                                     <Popover placement="top" content={
                                         <div>中国万向控股有限公司副董事长兼执行董事，上海万向区块链股份公司董事长兼总经理。在证券和资产管理行业有超过25年的相关丰富经验。</div>
                                     }>
@@ -178,7 +177,6 @@ class WebCN extends React.Component {
                                             </Col>
                                         </Col>
                                     </Popover>
-                                    <Col span={6}></Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -187,7 +185,7 @@ class WebCN extends React.Component {
                             <Popover placement="top" content={
                                 <div>万向区块链早期成员。曾于博时基金、中国万向控股及通联数据任职。拥有10年以上资产管理及金融科技从业经验。</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
+                                <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">邓超</Row>
                                     <Row className="position">HashKey Capital首席执行官</Row>
@@ -211,7 +209,7 @@ class WebCN extends React.Component {
                                     <Row className="position">HashQuark首席执行官</Row>
                                 </Col>
                             </Popover>
-                            <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
+                            <Col span={6} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">段玺</Row>
                                 <Row className="position">Tokyo Hash首席执行官</Row>
@@ -238,7 +236,6 @@ class WebCN extends React.Component {
                                     <Row className="position">HashKey Pro首席运营官</Row>
                                 </Col>
                             </Popover>
-                            <Col span={6}></Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>

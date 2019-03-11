@@ -155,7 +155,6 @@ class WebGK extends React.Component {
                         <Row className="member" type="flex" justify="center">
                             <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
-                                    <Col span={6}></Col>
                                     <Popover placement="top" content={
                                         <div>中國萬向控股有限公司副董事長兼執行董事，上海萬向區塊鏈股份公司董事長兼總經理。在證券和資產管理行業有超過25年的相關豐富經驗。</div>
                                     }>
@@ -178,7 +177,6 @@ class WebGK extends React.Component {
                                             </Col>
                                         </Col>
                                     </Popover>
-                                    <Col span={6}></Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -187,7 +185,7 @@ class WebGK extends React.Component {
                             <Popover placement="top" content={
                                 <div>萬向區塊鏈早期成員。曾於博時基金、中國萬向控股及通聯數據任職。擁有10年以上資產管理及金融科技從業經驗。</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
+                                <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">鄧超</Row>
                                     <Row className="position">HashKey Capital首席執行官</Row>
@@ -211,7 +209,7 @@ class WebGK extends React.Component {
                                     <Row className="position">HashQuark首席執行官</Row>
                                 </Col>
                             </Popover>
-                            <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
+                            <Col span={6} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">段璽</Row>
                                 <Row className="position">Tokyo Hash首席執行官</Row>
@@ -238,7 +236,6 @@ class WebGK extends React.Component {
                                     <Row className="position">HashKey Pro首席運營官</Row>
                                 </Col>
                             </Popover>
-                            <Col span={6}></Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>

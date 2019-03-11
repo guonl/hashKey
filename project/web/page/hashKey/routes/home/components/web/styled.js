@@ -137,17 +137,17 @@ const WrapperWebView = styled.div`
             }
         }
         .avator {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
         }
         .name {
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 10px;
             margin-top: 16px;
             color: #373d42;
         }
         .position {
-            font-size: 16px;
+            font-size: 18px;
             color: #373d42;
             margin-bottom: 8px;
         }
@@ -193,7 +193,7 @@ const WrapperWebView = styled.div`
             }
             .text {
                 margin-top: 20px;
-                font-size: 12px;
+                font-size: 14px;
             }
         }
         .learnMore {

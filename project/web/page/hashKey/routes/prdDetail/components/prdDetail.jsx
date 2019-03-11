@@ -39,7 +39,7 @@ class Home extends React.Component {
             default:
                 return <WebEN></WebEN>;
         }
-    }
+}
 
     getMobilePage() {
         switch(LocaleStore.currentLocales) {

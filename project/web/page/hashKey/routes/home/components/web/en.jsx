@@ -155,7 +155,6 @@ class WebEN extends React.Component {
                         <Row className="member" type="flex" justify="center">
                             <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
-                                    <Col span={6}></Col>
                                     <Popover placement="top" content={
                                         <div>Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry.</div>
                                     }>
@@ -180,7 +179,6 @@ class WebEN extends React.Component {
                                             </Col>
                                         </Col>
                                     </Popover>
-                                    <Col span={6}></Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -189,7 +187,7 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>Former senior manager at Bosera Asset Management, China Wanxiang Holding, DataYes. 10+ years of experience in asset management and fintech, early founding employee at Wanxiang Blockchain.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'left' }}>
+                                <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">Deng Chao</Row>
                                     <Row className="position">CEO, HashKey Capital</Row>
@@ -213,15 +211,14 @@ class WebEN extends React.Component {
                                     <Row className="position">CEO, HashQuark</Row>
                                 </Col>
                             </Popover>
-                            <Col span={6} className="eachMember" style={{ textAlign: 'right' }}>
+                            <Col span={6} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">Andy Duan</Row>
                                 <Row className="position">CEO, Tokyo Hash </Row>
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
-                        <Row type="flex" justify="space-between" className="member">
-                            <Col span={6}></Col>
+                        <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>Stanford GSB, co-founder of Stanford's largest student-led blockchain group. 10+ years of executive experience in high-tech startups in both Silicon Valley and China. Started career as derivatives trader and analyst.</div>
                             }>
@@ -240,13 +237,12 @@ class WebEN extends React.Component {
                                     <Row className="position">COO, HashKey Pro</Row>
                                 </Col>
                             </Popover>
-                            <Col span={6}></Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>
                 </Row>
                 <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
-                    <Col lg={20} xl={16} style={{ maxWidth: 900 }}>
+                    <Col lg={20} xl={16} style={{ maxWidth: 1200 }}>
                         <Row className="title">Offerings under HashKey Group</Row>
                         <Row type="flex" justify="center" style={{ marginBottom: 35 }}><Col span={1} className="shortLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
