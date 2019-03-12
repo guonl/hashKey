@@ -167,7 +167,7 @@ class WebGK extends React.Component {
                                         </Col>
                                     </Popover>
                                     <Popover placement="top" content={
-                                        <div>20年以上投資銀行經驗，曾服務於瑞銀集團投資銀行倫敦、東京、北京及香港。領導過百項大型融資和併購業務項目，並於衍生與另類私募產品市場開拓了大量創新業務及核心盈利模式。英國倫敦大學帝國學院計算機科學碩士。</div>
+                                        <div>25年投資銀行經驗，曾服務於瑞銀集團投資銀行倫敦、東京、北京及香港，亞太區資本市場主管、前瑞銀證券董事會成員。</div>
                                     }>
                                         <Col span={6} style={{ textAlign: 'center' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>

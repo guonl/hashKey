@@ -168,7 +168,7 @@ class WebEN extends React.Component {
                                         </Col>
                                     </Popover>
                                     <Popover placement="top" content={
-                                        <div>Over 20 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong.   Ex-board of directors of UBS Securities.  Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London.</div>
+                                        <div>25 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong.  Former Head of APAC Capital Markets and Director of the Board of UBS Securities.</div>
                                     }>
                                         <Col span={6} style={{textAlign: 'center'}}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>

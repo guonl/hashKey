@@ -167,7 +167,7 @@ class WebCN extends React.Component {
                                         </Col>
                                     </Popover>
                                     <Popover placement="top" content={
-                                        <div>20年以上投资银行经验，曾服务于瑞银集团投资银行伦敦、东京、北京及香港。领导过百项大型融资和并购业务项目，并于衍生与另类私募产品市场开拓了大量创新业务及核心盈利模式。英国伦敦大学帝国学院计算机科学硕士</div>
+                                        <div>25年投资银行经验，曾服务于瑞银集团投资银行伦敦、东京、北京及香港，前亚太区资本市场主管、前瑞银证券董事会成员。</div>
                                     }>
                                         <Col span={6} style={{ textAlign: 'center' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
