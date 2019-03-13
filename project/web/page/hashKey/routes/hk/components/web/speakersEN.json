@@ -171,15 +171,15 @@
     "position": "Director Genaral, Japan Virtual Currency Exchange Association",
     "desc": "Mr. Takado Fukui is Director-General of the Japan Virtual Currency Exchanges Association. The Association was granted SRO status by the Japan Financial Service Agency in last October. It currently has 17 members, and its role covers inspection, industry guidance, and research on virtual currency exchanges."
 },{
-    "name": "WENG Yiming",
-    "position": "Senior Analyst, Huobi",
-    "desc": ""
-},{
     "name": "Urszula McCormack",
     "position": "Partner, King & Wood Mallesons",
     "desc": "Urszula McCormack is one of Asia’s leading blockchain lawyers and financial regulatory specialists, with a focus on emerging technology and financial crime. In 2018, she was recognised as a Financial Times Top 10 Legal Innovator of the Year."
 },{
+    "name": "WENG Yiming",
+    "position": "Senior Analyst, Huobi",
+    "desc": ""
+},{
     "name": "YAN Sumin",
     "position": "Partner, Octopus Quant",
     "desc": "Former Chinese-funded insurance FOF fund manager, now a virtual currency quantitative investment partner."
-}]
+},{},{}]
