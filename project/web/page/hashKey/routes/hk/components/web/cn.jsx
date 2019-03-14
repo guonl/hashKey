@@ -131,10 +131,10 @@ class WebCN extends React.Component {
                         <Row type="flex" justify="space-between" className="speakerFrame">
                             {speakersList.map((item, index) => {
                                 return (<Col key={index} span={5} onMouseEnter={this.showSpeakerDesc.bind(this, index)} onMouseLeave={this.hideSpeakerDesc.bind(this, index)}> {
-                                    index < 46 ? !this.state[`speaker${index}`] ?
+                                    index < 47 ? !this.state[`speaker${index}`] ?
                                         <Row type="flex" justify="center" className="eachSpeaker">
                                             <Col span={22} style={{ width: 200 }}>
-                                                {index < 46 ? <img src={require(`web-hashKey-imgs/hk/web/cn/speaker_ch/${item.name}.png`)} className="avator" />
+                                                {index < 47 ? <img src={require(`web-hashKey-imgs/hk/web/cn/speaker_ch/${item.name}.png`)} className="avator" />
                                                     : null}
                                             </Col>
                                             <Col span={22}>

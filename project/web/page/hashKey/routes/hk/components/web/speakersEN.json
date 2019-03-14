@@ -5,7 +5,7 @@
 },{
     "name": "Michel Lee",
     "position": "Executive President, Hashkey Group",
-    "desc": "25 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong.  Former Head of APAC Capital Markets and Director of the Board of UBS Securities. "
+    "desc": "25 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong. Former Head of APAC Capital Markets and Director of the Board of UBS Securities. Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London.  "
 },{
     "name": "Raof Latiff",
     "position": "Managing Director, DBS",
@@ -16,8 +16,8 @@
     "desc": "Ken has more than 10 years of financial industry experience, ranging from banking, consulting and fintech spaces and is an experienced thought leader. He started his career as HSBC in Hong Kong as a management trainee, spanning across retail and corporate banking businesses. During his time there, he managed more than 300 relationship managers, established the HSBC China Digital team and Asia Pacific strategic partnership team from the ground up, and drove partnerships and explored investment opportunities with global tech and fintech giants. He also worked at McKinsey and Ernst and Young advisory, specialising in serving banking and insurance companies on digital transformation and fintech strategies. He graduated from HKUST BBA and also obtained a Master of Finance (Investment Management) at HKUST. "
 },{
     "name": "Patricia Yeung",
-    "position": "Senior Manager, Fintech, InvestHK",
-    "desc": "InvestHK’s fintech team provide practical support and assistance on setting up offices, facilitating visa and banks accounts, regulators introductions, networking opportunities, guidance in government grants and funding. Patricia graduated from the University of Bristol and worked in the private sector before joining InvestHK."
+    "position": "Senior Manager of FinTech，InvestHK",
+    "desc": "Patricia Yeung is Senior Manager of FinTech at Invest Hong Kong (InvestHK), the department of the Hong Kong SAR Government responsible for Foreign Direct Investment. In 2016, InvestHK has set up a Fintech team to attract top innovative Fintech companies, entrepreneurs, investors, accelerators, R&D institutions from Mainland and overseas to supporting businesses to set up and expand in Hong Kong. The Fintech team has dedicated correspondents in Hong Kong, London and Silicon Valley. They provide practical support and assistance on setting up offices, facilitating visa and banks accounts, regulators introductions, networking opportunities, guidance in government grants and funding. Ms. Yeung graduated from University of Bristol and worked in private sector before joining InvestHK."
 },{
     "name": "QU Junjie",
     "position": "CTO，PlatON",
@@ -78,6 +78,10 @@
     "name": "DU Yu",
     "position": "Vice General Manager, Shanghai Wanxiang Blockchain Inc.",
     "desc": "Mr.Yu Du is the Vice General Manager of Wanxiang Blockchain Inc. and general director of Wanxiang Blockchain Labs. He holds a Master degree from Zhejiang University and a MBA degree from Lehigh University. Since joining Wanxiang Holdings in August 2015, Yu Du is in charge of operation and products of Wanxiang Blockchain Inc and the management of Wanxiang Blockchain Labs. He is one of the initiators of ChinaLedger and works for the Secretariat in ChinaLedger. Besides, he is Under-Secretary-General of CBD Forum. Du Yu has many years’ R&D working experience in communication industry. Previously, he worked in H3C for several years."
+},{
+    "name": "Didier Zheng",
+    "position": "Partner, Odaily",
+    "desc": ""
 },{
     "name": "E David Ellington",
     "position": "Founder & Executive Chairman, Silicon Valley Blockchain Society (SVBS)",
@@ -182,4 +186,4 @@
     "name": "YAN Sumin",
     "position": "Partner, Octopus Quant",
     "desc": "Former Chinese-funded insurance FOF fund manager, now a virtual currency quantitative investment partner."
-},{},{}]
+},{}]
