@@ -265,7 +265,7 @@ class WebGK extends React.Component {
                             <Col xl={6} lg={7}>
                                 <Row className="subTitle">HashKey Hub</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
-                                <Row className="text">簡單易用的一站式數碼資產管理平臺</Row>
+                                <Row className="text">簡單易用的一站式數碼資產管理平台</Row>
                             </Col>
                             <Col xl={6} lg={7}>
                                 <Row className="subTitle">Tokyo Hash</Row>

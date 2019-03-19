@@ -10,6 +10,7 @@ const img03 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_03.png");
 const img04 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_04.png");
 const img05 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_05.png");
 const img06 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_06.png");
+const img07 = require("web-hashKey-imgs/prdDetail/web/cn/offering_jt_07.png");
 
 @observer
 class WebEN extends React.Component {
@@ -44,11 +45,14 @@ class WebEN extends React.Component {
                         <a href="https://www.hashquark.io">
                             <img src={img04} />
                         </a>
-                        <a href="https://www.tokyohash.co.jp">
+                        <a href="javascript:;">
                             <img src={img05} />
                         </a>
-                        <a href="https://www.axonomy.pro/#/">
+                        <a href="https://www.tokyohash.co.jp">
                             <img src={img06} />
+                        </a>
+                        <a href="https://www.axonomy.pro/#/">
+                            <img src={img07} />
                         </a>
                     </Col>
                 </Row>
