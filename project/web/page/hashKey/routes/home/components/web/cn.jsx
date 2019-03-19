@@ -95,7 +95,7 @@ class WebCN extends React.Component {
                                 <div className={this.state.activeMenu == "contact" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "contact")}>联络我们</div>
                             </Row>
                         </Col>
-                        <Col span={8} style={{textAlign: 'right'}}>
+                        <Col span={8} style={{ textAlign: 'right' }}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁體</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
@@ -158,7 +158,7 @@ class WebCN extends React.Component {
                                     <Popover placement="top" content={
                                         <div>中国万向控股有限公司副董事长兼执行董事，上海万向区块链股份公司董事长兼总经理。在证券和资产管理行业有超过25年的相关丰富经验。</div>
                                     }>
-                                        <Col span={6} style={{textAlign: 'center'}}>
+                                        <Col span={6} style={{ textAlign: 'center' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_06.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">肖风</Row>
@@ -263,6 +263,11 @@ class WebCN extends React.Component {
                         <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
                             <Col xl={6} lg={7}>
+                                <Row className="subTitle">HashKey Hub</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">简单易用的一站式数字资产管理平台</Row>
+                            </Col>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">Tokyo Hash</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">您在日本当地的商业伙伴</Row>
@@ -272,7 +277,6 @@ class WebCN extends React.Component {
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">分布式商业加速器</Row>
                             </Col>
-                            <Col xl={6} lg={7}></Col>
                         </Row>
                     </Col>
                     <Col span={24} style={{ textAlign: 'center' }}>

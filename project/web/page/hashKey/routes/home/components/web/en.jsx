@@ -95,7 +95,7 @@ class WebEN extends React.Component {
                                 <div className={this.state.activeMenu == "contact" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "contact")}>Contact Us</div>
                             </Row>
                         </Col>
-                        <Col span={8} style={{textAlign: 'right'}}>
+                        <Col span={8} style={{ textAlign: 'right' }}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "gk" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "gk") }}>繁體</a>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
@@ -158,7 +158,7 @@ class WebEN extends React.Component {
                                     <Popover placement="top" content={
                                         <div>Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry.</div>
                                     }>
-                                        <Col span={6} style={{textAlign: 'center'}}>
+                                        <Col span={6} style={{ textAlign: 'center' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_06.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">Xiao Feng</Row>
@@ -170,7 +170,7 @@ class WebEN extends React.Component {
                                     <Popover placement="top" content={
                                         <div>25 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong. Former Head of APAC Capital Markets and Director of the Board of UBS Securities. Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London. </div>
                                     }>
-                                        <Col span={6} style={{textAlign: 'center'}}>
+                                        <Col span={6} style={{ textAlign: 'center' }}>
                                             <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
                                             <Col span={24}>
                                                 <Row className="name">Michel Lee</Row>
@@ -265,6 +265,11 @@ class WebEN extends React.Component {
                         <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
                             <Col xl={6} lg={7}>
+                                <Row className="subTitle">HashKey Hub</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">A Simple-to-Use & One-Stop Digital Asset Management Platform</Row>
+                            </Col>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">Tokyo Hash</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Your local business partner in Japan</Row>
@@ -274,7 +279,6 @@ class WebEN extends React.Component {
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">Distributed Business Accelerator</Row>
                             </Col>
-                            <Col xl={6} lg={7}></Col>
                         </Row>
                     </Col>
                     <Col span={24} style={{ textAlign: 'center' }}>
@@ -282,7 +286,7 @@ class WebEN extends React.Component {
                     </Col>
                 </Row>
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
-                    <Col span={16} style={{maxWidth: 900}}>
+                    <Col span={16} style={{ maxWidth: 900 }}>
                         <Row className="title">Partners</Row>
                         <Row type="flex" justify="center"><Col className="shortLine" span={1}></Col></Row>
                         <Row className="partnersList" type="flex" justify="space-between">

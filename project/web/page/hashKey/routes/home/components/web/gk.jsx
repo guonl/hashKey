@@ -263,6 +263,11 @@ class WebGK extends React.Component {
                         <Row type="flex" justify="center"><Col span={1} className="longLine"></Col></Row>
                         <Row type="flex" justify="space-between" className="eachItem">
                             <Col xl={6} lg={7}>
+                                <Row className="subTitle">HashKey Hub</Row>
+                                <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
+                                <Row className="text">簡單易用的一站式數碼資產管理平臺</Row>
+                            </Col>
+                            <Col xl={6} lg={7}>
                                 <Row className="subTitle">Tokyo Hash</Row>
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">您在日本當地的商業夥伴</Row>
@@ -272,7 +277,6 @@ class WebGK extends React.Component {
                                 <Row type="flex" justify="center"><Col span={2} className="shortLine"></Col></Row>
                                 <Row className="text">分布式商業加速器</Row>
                             </Col>
-                            <Col xl={6} lg={7}></Col>
                         </Row>
                     </Col>
                     <Col span={24} style={{ textAlign: 'center' }}>
