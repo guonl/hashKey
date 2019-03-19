@@ -16,6 +16,7 @@ const WrapperFrame = styled.div`
                 width: 150px;
                 height: 40px;
                 margin-top: 10px;
+                cursor: pointer;
             }
             span {
                 float: left;                

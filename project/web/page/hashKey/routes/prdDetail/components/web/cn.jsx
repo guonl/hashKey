@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'antd';
+import { hashHistory } from 'react-router';
 import { WrapperFrame } from './styled'
 import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
@@ -24,7 +25,7 @@ class WebEN extends React.Component {
                 <Row className="headerMenu" type="flex" justify="center">
                     <Col span={22}>
                         <Col span={16} className="title">
-                            <img className="logo" src={logo} />
+                            <img className="logo" src={logo} onClick={() => hashHistory.push("/")} />
                         </Col>
                         <Col span={8}>
                             <a href="javascript:;" className={LocaleStore.currentLocales == "en" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "en") }}>En</a>
