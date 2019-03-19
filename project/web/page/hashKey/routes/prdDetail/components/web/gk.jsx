@@ -45,7 +45,7 @@ class WebEN extends React.Component {
                         <a href="https://www.hashquark.io">
                             <img src={img04} />
                         </a>
-                        <a href="javascript:;">
+                        <a href="https://hub.hashkey.com">
                             <img src={img05} />
                         </a>
                         <a href="https://www.tokyohash.co.jp">
