@@ -7,10 +7,19 @@
     <meta name="format-detection" content="telephone=no">
     <title>HashKey</title>
     <style>
+        body {}
         img {width: 100%;}
     </style>
 </head>
 <body>
-<img src="./maintain" />
+<img id="img" src="" />
+<script type="text/javascript">
+    var dom = document.getElementById("img");
+    if(window.innerWidth > 999) {
+        dom.src = "./web.png";
+    } else {
+        dom.src = "./mobile.png";
+    }
+</script>
 </body>
 </html>
