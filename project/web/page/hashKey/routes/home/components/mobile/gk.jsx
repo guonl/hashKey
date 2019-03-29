@@ -32,7 +32,7 @@ class MobileEN extends React.Component {
                             <div span={10} className={LocaleStore.currentLocales == "en" ? "ops selected" : "ops"} onClick={() => LocaleStore.changeLocaleConfig("en")}>En</div>
                             <div span={10} className={LocaleStore.currentLocales == "gk" ? "ops selected" : "ops"} onClick={() => LocaleStore.changeLocaleConfig("gk")}>繁體中文</div>
                             <div span={10} className={LocaleStore.currentLocales == "cn" ? "ops selected" : "ops"} onClick={() => LocaleStore.changeLocaleConfig("cn")}>简体中文</div>
-                            <div span={10} className="ops" onClick={() => hashHistory.push("/digital-asset-summit-2019")}>峰會</div>
+                            {/* <div span={10} className="ops" onClick={() => hashHistory.push("/digital-asset-summit-2019")}>峰會</div> */}
                         </Row>
                     </Row> : null
                 }
@@ -42,9 +42,9 @@ class MobileEN extends React.Component {
                     </div>
                     <Carousel autoplay>
                         <img src={banner01} className="banner" />
-                        <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
+                        {/* <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                             <img src={banner02} className="banner" />
-                        </a>
+                        </a> */}
                         <img src={banner03} className="banner" />
                     </Carousel>
                 </Row>

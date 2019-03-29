@@ -87,7 +87,7 @@ class WebGK extends React.Component {
                         <Col span={13}>
                             <Row type="flex" justify="end" className="menuList">
                                 <div className={this.state.activeMenu == "about" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "about")}>關於我們</div>
-                                <div className="eachMenu" onClick={() => this.goToHK.call(this)}>峰會</div>
+                                {/* <div className="eachMenu" onClick={() => this.goToHK.call(this)}>峰會</div> */}
                                 <div className={this.state.activeMenu == "assets" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "assets")}>我們的願景</div>
                                 <div className={this.state.activeMenu == "team" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "team")}>團隊</div>
                                 <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>產品</div>
@@ -106,9 +106,9 @@ class WebGK extends React.Component {
                     <Col span={24}>
                         <Carousel autoplay>
                             <img src={banner01} />
-                            <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
+                            {/* <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                                 <img src={banner02} className="banner" />
-                            </a>
+                            </a> */}
                             <img src={banner03} />
                         </Carousel>
                     </Col>
