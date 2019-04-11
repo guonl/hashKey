@@ -45,7 +45,7 @@ class WebEN extends React.Component {
 
     getCurrentActive() {
         var currentPos = window.innerHeight + window.scrollY;
-        var key = ["about", "assets", "team", "offerings", "parteners", "contact"];
+        var key = ["about", "assets", "team", "parteners", "contact"];
         var result;
         var posList = [];
         for (var i = 0; i < key.length; i++) {
@@ -90,7 +90,7 @@ class WebEN extends React.Component {
                                 {/* <div className="eachMenu" onClick={() => this.goToHK.call(this)}>Summit</div> */}
                                 <div className={this.state.activeMenu == "assets" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "assets")}>Our Vision</div>
                                 <div className={this.state.activeMenu == "team" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "team")}>Team</div>
-                                <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>Offerings</div>
+                                {/* <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>Offerings</div> */}
                                 <div className={this.state.activeMenu == "parteners" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "parteners")}>Partners</div>
                                 <div className={this.state.activeMenu == "contact" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "contact")}>Contact Us</div>
                             </Row>
@@ -109,7 +109,7 @@ class WebEN extends React.Component {
                             {/* <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                                 <img src={banner02} className="banner" />
                             </a> */}
-                            <img src={banner03} />
+                            {/* <img src={banner03} /> */}
                         </Carousel>
                     </Col>
                 </Row>
@@ -123,15 +123,15 @@ class WebEN extends React.Component {
                         <Row className="focusContent">
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_01.png")} /></Row>
-                                <Row className="text">Asset Management</Row>
+                                <Row className="text">Technology Application</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_02.png")} /></Row>
-                                <Row className="text">Trading Platforms</Row>
+                                <Row className="text">System Development</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_03.png")} /></Row>
-                                <Row className="text">Venture Capital</Row>
+                                <Row className="text">Strategy Investment</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_04.png")} /></Row>
@@ -183,6 +183,8 @@ class WebEN extends React.Component {
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
+                        <Row className="title">Senior Management Team</Row>
+                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>Former senior manager at Bosera Asset Management, China Wanxiang Holding, DataYes. 10+ years of experience in asset management and fintech, early founding employee at Wanxiang Blockchain.</div>
@@ -190,7 +192,7 @@ class WebEN extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">Deng Chao</Row>
-                                    <Row className="position">CEO, HashKey Capital</Row>
+                                    {/* <Row className="position">CEO, HashKey Capital</Row> */}
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -199,7 +201,7 @@ class WebEN extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">TF Cheng CFA</Row>
-                                    <Row className="position">CEO, HashKey Pro</Row>
+                                    {/* <Row className="position">CEO, HashKey Pro</Row> */}
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -208,13 +210,13 @@ class WebEN extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
                                     <Row className="name">Leo Li </Row>
-                                    <Row className="position">CEO, HashQuark</Row>
+                                    {/* <Row className="position">CEO, HashQuark</Row> */}
                                 </Col>
                             </Popover>
                             <Col span={6} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">Andy Duan</Row>
-                                <Row className="position">CEO, Tokyo Hash </Row>
+                                {/* <Row className="position">CEO, Tokyo Hash </Row> */}
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
@@ -241,7 +243,7 @@ class WebEN extends React.Component {
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>
                 </Row>
-                <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
+                {/* <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
                     <Col lg={20} xl={16} style={{ maxWidth: 1200 }}>
                         <Row className="title">Offerings under HashKey Group</Row>
                         <Row type="flex" justify="center" style={{ marginBottom: 35 }}><Col span={1} className="shortLine"></Col></Row>
@@ -284,7 +286,7 @@ class WebEN extends React.Component {
                     <Col span={24} style={{ textAlign: 'center' }}>
                         <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>LEARN MORE</a>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
                     <Col span={16} style={{ maxWidth: 900 }}>
                         <Row className="title">Partners</Row>

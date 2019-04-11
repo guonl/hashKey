@@ -45,7 +45,7 @@ class WebGK extends React.Component {
 
     getCurrentActive() {
         var currentPos = window.innerHeight + window.scrollY;
-        var key = ["about", "assets", "team", "offerings", "parteners", "contact"];
+        var key = ["about", "assets", "team", "parteners", "contact"];
         var result;
         var posList = [];
         for (var i = 0; i < key.length; i++) {
@@ -90,7 +90,7 @@ class WebGK extends React.Component {
                                 {/* <div className="eachMenu" onClick={() => this.goToHK.call(this)}>峰會</div> */}
                                 <div className={this.state.activeMenu == "assets" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "assets")}>我們的願景</div>
                                 <div className={this.state.activeMenu == "team" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "team")}>團隊</div>
-                                <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>產品</div>
+                                {/* <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>產品</div> */}
                                 <div className={this.state.activeMenu == "parteners" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "parteners")}>合作夥伴</div>
                                 <div className={this.state.activeMenu == "contact" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "contact")}>聯絡我們</div>
                             </Row>
@@ -109,7 +109,7 @@ class WebGK extends React.Component {
                             {/* <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                                 <img src={banner02} className="banner" />
                             </a> */}
-                            <img src={banner03} />
+                            {/* <img src={banner03} /> */}
                         </Carousel>
                     </Col>
                 </Row>
@@ -123,15 +123,15 @@ class WebGK extends React.Component {
                         <Row className="focusContent">
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_01.png")} /></Row>
-                                <Row className="text">資產管理</Row>
+                                <Row className="text">技術應用</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_02.png")} /></Row>
-                                <Row className="text">交易平台</Row>
+                                <Row className="text">系統開發</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_03.png")} /></Row>
-                                <Row className="text">風險投資</Row>
+                                <Row className="text">戰略投資</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_04.png")} /></Row>
@@ -181,6 +181,8 @@ class WebGK extends React.Component {
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
+                        <Row className="title">高管團隊</Row>
+                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>萬向區塊鏈早期成員。曾於博時基金、中國萬向控股及通聯數據任職。擁有10年以上資產管理及金融科技從業經驗。</div>
@@ -188,7 +190,7 @@ class WebGK extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">鄧超</Row>
-                                    <Row className="position">HashKey Capital首席執行官</Row>
+                                    {/* <Row className="position">HashKey Capital首席執行官</Row> */}
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -197,7 +199,7 @@ class WebGK extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">鄭丹楓 CFA</Row>
-                                    <Row className="position">HashKey Pro首席執行官</Row>
+                                    {/* <Row className="position">HashKey Pro首席執行官</Row> */}
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -206,13 +208,13 @@ class WebGK extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
                                     <Row className="name">李晨</Row>
-                                    <Row className="position">HashQuark首席執行官</Row>
+                                    {/* <Row className="position">HashQuark首席執行官</Row> */}
                                 </Col>
                             </Popover>
                             <Col span={6} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">段璽</Row>
-                                <Row className="position">Tokyo Hash首席執行官</Row>
+                                {/* <Row className="position">Tokyo Hash首席執行官</Row> */}
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
@@ -239,7 +241,7 @@ class WebGK extends React.Component {
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>
                 </Row>
-                <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
+                {/* <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
                     <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="title">產品</Row>
                         <Row type="flex" justify="center" style={{ marginBottom: 35 }}><Col span={1} className="shortLine"></Col></Row>
@@ -282,7 +284,7 @@ class WebGK extends React.Component {
                     <Col span={24} style={{ textAlign: 'center' }}>
                         <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
                     <Col span={16} style={{ maxWidth: 900 }}>
                         <Row className="title">合作夥伴</Row>

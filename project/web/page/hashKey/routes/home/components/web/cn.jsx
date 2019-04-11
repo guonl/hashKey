@@ -45,7 +45,7 @@ class WebCN extends React.Component {
 
     getCurrentActive() {
         var currentPos = window.innerHeight + window.scrollY;
-        var key = ["about", "assets", "team", "offerings", "parteners", "contact"];
+        var key = ["about", "assets", "team", "parteners", "contact"];
         var result;
         var posList = [];
         for (var i = 0; i < key.length; i++) {
@@ -90,7 +90,7 @@ class WebCN extends React.Component {
                                 {/* <div className="eachMenu" onClick={() => this.goToHK.call(this)}>峰会</div> */}
                                 <div className={this.state.activeMenu == "assets" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "assets")}>我们的愿景</div>
                                 <div className={this.state.activeMenu == "team" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "team")}>团队</div>
-                                <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>产品</div>
+                                {/* <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>产品</div> */}
                                 <div className={this.state.activeMenu == "parteners" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "parteners")}>合作伙伴</div>
                                 <div className={this.state.activeMenu == "contact" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "contact")}>联络我们</div>
                             </Row>
@@ -109,7 +109,7 @@ class WebCN extends React.Component {
                             {/* <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                                 <img src={banner02} className="banner" />
                             </a> */}
-                            <img src={banner03} />
+                            {/* <img src={banner03} /> */}
                         </Carousel>
                     </Col>
                 </Row>
@@ -123,15 +123,15 @@ class WebCN extends React.Component {
                         <Row className="focusContent">
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_01.png")} /></Row>
-                                <Row className="text">资产管理</Row>
+                                <Row className="text">技术应用</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_02.png")} /></Row>
-                                <Row className="text">交易平台</Row>
+                                <Row className="text">系统开发</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_03.png")} /></Row>
-                                <Row className="text">风险投资</Row>
+                                <Row className="text">战略投资</Row>
                             </Col>
                             <Col span={8}>
                                 <Row><img src={require("web-hashKey-imgs/home/web/gw_04.png")} /></Row>
@@ -181,6 +181,8 @@ class WebCN extends React.Component {
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
+                        <Row className="title">高管团队</Row>
+                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>万向区块链早期成员。曾于博时基金、中国万向控股及通联数据任职。拥有10年以上资产管理及金融科技从业经验。</div>
@@ -188,7 +190,7 @@ class WebCN extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">邓超</Row>
-                                    <Row className="position">HashKey Capital首席执行官</Row>
+                                    {/* <Row className="position">HashKey Capital首席执行官</Row> */}
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -197,7 +199,7 @@ class WebCN extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">郑丹枫 CFA</Row>
-                                    <Row className="position">HashKey Pro首席执行官</Row>
+                                    {/* <Row className="position">HashKey Pro首席执行官</Row> */}
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -206,13 +208,13 @@ class WebCN extends React.Component {
                                 <Col span={6} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
                                     <Row className="name">李晨</Row>
-                                    <Row className="position">HashQuark首席执行官</Row>
+                                    {/* <Row className="position">HashQuark首席执行官</Row> */}
                                 </Col>
                             </Popover>
                             <Col span={6} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">段玺</Row>
-                                <Row className="position">Tokyo Hash首席执行官</Row>
+                                {/* <Row className="position">Tokyo Hash首席执行官</Row> */}
                             </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
@@ -239,7 +241,7 @@ class WebCN extends React.Component {
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>
                 </Row>
-                <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
+                {/* <Row id="offerings" className="offeringsFrame" type="flex" align="middle" justify="center">
                     <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="title">产品</Row>
                         <Row type="flex" justify="center" style={{ marginBottom: 35 }}><Col span={1} className="shortLine"></Col></Row>
@@ -282,7 +284,7 @@ class WebCN extends React.Component {
                     <Col span={24} style={{ textAlign: 'center' }}>
                         <a href="javascript:;" className="learnMore" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row id="parteners" className="partnersFrame" type="flex" justify="center">
                     <Col span={16} style={{ maxWidth: 900 }}>
                         <Row className="title">合作伙伴</Row>
