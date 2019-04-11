@@ -225,7 +225,7 @@ class WebGK extends React.Component {
                                 <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben El-Baz</Row>
-                                    <Row className="position">HashKey Pro首席戰略官</Row>
+                                    {/* <Row className="position">HashKey Pro首席戰略官</Row> */}
                                 </Col>
                             </Popover>
                             <Popover placement="top" content={
@@ -234,7 +234,7 @@ class WebGK extends React.Component {
                                 <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">歐陽健男</Row>
-                                    <Row className="position">HashKey Pro首席運營官</Row>
+                                    {/* <Row className="position">HashKey Pro首席運營官</Row> */}
                                 </Col>
                             </Popover>
                         </Row>
