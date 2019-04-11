@@ -161,8 +161,24 @@ const WrapperWebView = styled.div`
             opacity: 0.5;
             margin-bottom: 55px;
         }
+        .senior {
+            margin-top: 50px;
+            .title {
+                width: 400px;
+                font-size: 30px;
+                color: #2d4358;
+            }
+            .shortLine {
+                width: calc(100% - 400px);
+                height: 1px;
+                background-color: #c9c9c9;
+                opacity: 0.5;
+                margin-top: 25px;
+            }
+        }
         .eachMember {
             text-align: center;
+            margin-top: 58px;
         }
     }
     .offeringsFrame {

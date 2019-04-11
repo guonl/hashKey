@@ -182,14 +182,15 @@ class WebEN extends React.Component {
                                 </Row>
                             </Col>
                         </Row>
-                        <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
-                        <Row className="title">Senior Management Team</Row>
-                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
+                        <Row className="senior">
+                            <Col span={8} className="title">Senior Management Team</Col>
+                            <Col span={16} className="shortLine"></Col>
+                        </Row>
                         <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>Former senior manager at Bosera Asset Management, China Wanxiang Holding, DataYes. 10+ years of experience in asset management and fintech, early founding employee at Wanxiang Blockchain.</div>
                             }>
-                                <Col span={6} className="eachMember">
+                                <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">Deng Chao</Row>
                                     {/* <Row className="position">CEO, HashKey Capital</Row> */}
@@ -198,7 +199,7 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>20+ years of experience in global investment markets; former MD, Head of Greater China, BNP Paribas Asset Management. Active angel investor in fintech, biotech and consumer tech.</div>
                             }>
-                                <Col span={6} className="eachMember">
+                                <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">TF Cheng CFA</Row>
                                     {/* <Row className="position">CEO, HashKey Pro</Row> */}
@@ -207,24 +208,21 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>12 years of experience, former head of financial cloud and intelligent investment research at DataYes. Holds several patents, creator of BaaS platform, blockchain technology specialist.</div>
                             }>
-                                <Col span={6} className="eachMember">
+                                <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
                                     <Row className="name">Leo Li </Row>
                                     {/* <Row className="position">CEO, HashQuark</Row> */}
                                 </Col>
                             </Popover>
-                            <Col span={6} className="eachMember">
+                            <Col span={8} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">Andy Duan</Row>
                                 {/* <Row className="position">CEO, Tokyo Hash </Row> */}
                             </Col>
-                        </Row>
-                        <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
-                        <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>Stanford GSB, co-founder of Stanford's largest student-led blockchain group. 10+ years of executive experience in high-tech startups in both Silicon Valley and China. Started career as derivatives trader and analyst.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben El-Baz</Row>
                                     {/* <Row className="position">CSO, HashKey Pro</Row> */}
@@ -233,7 +231,7 @@ class WebEN extends React.Component {
                             <Popover placement="top" content={
                                 <div>Simon has over 17 years of experience in the financial industry. He is the former North East Asia Head of Compliance at Ant Financial, and he has held senior positions at leading financial institutions including RBC Wealth Management, HSBC, BNP Paribas, SFC and Morgan Stanley.</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">Simon AuYeung</Row>
                                     {/* <Row className="position">COO, HashKey Pro</Row> */}

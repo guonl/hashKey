@@ -4,6 +4,7 @@ import { WrapperWebView } from './styled'
 import { hashHistory } from 'react-router'
 import { observer } from 'mobx-react';
 import LocaleStore from 'web-hashKey-mobx/locale'
+import { callbackify } from 'util';
 const logo = require("web-hashKey-imgs/home/web/hashkeyLogo.png");
 const banner01 = require("web-hashKey-imgs/home/web/gk/banner_01ch.png");
 const banner02 = require("web-hashKey-imgs/home/web/banner_02.png");
@@ -180,14 +181,15 @@ class WebGK extends React.Component {
                                 </Row>
                             </Col>
                         </Row>
-                        <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
-                        <Row className="title">高管團隊</Row>
-                        <Row type="flex" justify="center"><Col className="line"></Col></Row>
+                        <Row className="senior">
+                            <Col span={8} className="title">高管團隊</Col>
+                            <Col span={16} className="shortLine" style={{width: 'calc(100% - 300px)', marginLeft: -100}}></Col>
+                        </Row>
                         <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>萬向區塊鏈早期成員。曾於博時基金、中國萬向控股及通聯數據任職。擁有10年以上資產管理及金融科技從業經驗。</div>
                             }>
-                                <Col span={6} className="eachMember">
+                                <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">鄧超</Row>
                                     {/* <Row className="position">HashKey Capital首席執行官</Row> */}
@@ -196,7 +198,7 @@ class WebGK extends React.Component {
                             <Popover placement="top" content={
                                 <div>具有20年以上全球市場投資經驗，曾任法國巴黎銀行資產管理部大中華區主管及總經理。現為一名活躍於金融科技、生物科技和消費科技領域的天使投資者。</div>
                             }>
-                                <Col span={6} className="eachMember">
+                                <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">鄭丹楓 CFA</Row>
                                     {/* <Row className="position">HashKey Pro首席執行官</Row> */}
@@ -205,24 +207,21 @@ class WebGK extends React.Component {
                             <Popover placement="top" content={
                                 <div>具有12年以上相關從業經驗及多年區塊鏈和雲計算产品經驗，並擁有多項技術專利，創建了區塊鏈創新BaaS平台並服務著名企業客户；區塊鏈社區KOL，專注區塊鏈背後的技術研究和產品模式演進。曾在通聯數據擔任金融雲端和智能投研負責人。</div>
                             }>
-                                <Col span={6} className="eachMember">
+                                <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
                                     <Row className="name">李晨</Row>
                                     {/* <Row className="position">HashQuark首席執行官</Row> */}
                                 </Col>
                             </Popover>
-                            <Col span={6} className="eachMember">
+                            <Col span={8} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">段璽</Row>
                                 {/* <Row className="position">Tokyo Hash首席執行官</Row> */}
                             </Col>
-                        </Row>
-                        <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
-                        <Row type="flex" justify="space-around" className="member">
                             <Popover placement="top" content={
                                 <div>畢業於斯坦福商學院，並為斯坦福大學最大的學生區塊鏈組織聯合創始人。具有10年以上矽谷和中國高科技初創企業高管經驗，職業生涯從衍生品交易員和分析師開始。</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben El-Baz</Row>
                                     {/* <Row className="position">HashKey Pro首席戰略官</Row> */}
@@ -231,7 +230,7 @@ class WebGK extends React.Component {
                             <Popover placement="top" content={
                                 <div>具有17年以上工作經驗，曾任螞蟻金服東北亞合規主管；於加皇財富管理、滙豐銀行、法巴銀行、香港證監會、摩根士丹利等大機構擔任要職。</div>
                             }>
-                                <Col span={6} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">歐陽健男</Row>
                                     {/* <Row className="position">HashKey Pro首席運營官</Row> */}
