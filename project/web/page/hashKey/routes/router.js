@@ -5,12 +5,12 @@ module.exports = [
             cb(null, require("./home/components/home.jsx"))
         }
     },
-    // {
-    //     path: "/digital-asset-summit-2019",
-    //     getComponent: function (location, cb) {
-    //         cb(null, require("./hk/components/hk.jsx"))
-    //     }
-    // },
+    {
+        path: "/digital-asset-summit-2019",
+        getComponent: function (location, cb) {
+            cb(null, require("./hk/components/hk.jsx"))
+        }
+    },
     {
         path: "/prdDetail",
         getComponent: function (location, cb) {

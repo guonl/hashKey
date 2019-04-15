@@ -87,7 +87,7 @@ class WebCN extends React.Component {
                         <Col span={13}>
                             <Row type="flex" justify="end" className="menuList">
                                 <div className={this.state.activeMenu == "about" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "about")}>关于我们</div>
-                                {/* <div className="eachMenu" onClick={() => this.goToHK.call(this)}>峰会</div> */}
+                                <div className="eachMenu" onClick={() => this.goToHK.call(this)}>峰会</div>
                                 <div className={this.state.activeMenu == "assets" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "assets")}>我们的愿景</div>
                                 <div className={this.state.activeMenu == "team" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "team")}>团队</div>
                                 {/* <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>产品</div> */}
@@ -106,9 +106,9 @@ class WebCN extends React.Component {
                     <Col span={24}>
                         <Carousel autoplay>
                             <img src={banner01} />
-                            {/* <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
+                            <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                                 <img src={banner02} className="banner" />
-                            </a> */}
+                            </a>
                             {/* <img src={banner03} /> */}
                         </Carousel>
                     </Col>
@@ -155,7 +155,7 @@ class WebCN extends React.Component {
                         <Row className="member" type="flex" justify="center">
                             <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
-                                    <Popover placement="top" content={
+                                    {/* <Popover placement="top" content={
                                         <div>中国万向控股有限公司副董事长兼执行董事，上海万向区块链股份公司董事长兼总经理。在证券和资产管理行业有超过25年的相关丰富经验。</div>
                                     }>
                                         <Col span={6} style={{ textAlign: 'center' }}>
@@ -165,8 +165,15 @@ class WebCN extends React.Component {
                                                 <Row className="position">HashKey Group董事长</Row>
                                             </Col>
                                         </Col>
-                                    </Popover>
-                                    <Popover placement="top" content={
+                                    </Popover> */}
+                                    <Col span={6} style={{ textAlign: 'center' }}>
+                                        <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_06.png")} /></Col>
+                                        <Col span={24}>
+                                            <Row className="name">肖风</Row>
+                                            <Row className="position">HashKey Group董事长</Row>
+                                        </Col>
+                                    </Col>
+                                    {/* <Popover placement="top" content={
                                         <div>25年投资银行经验，曾服务于瑞银集团投资银行伦敦、东京、北京及香港，前亚太区资本市场主管、前瑞银证券董事会成员。领导过百项大型融资和并购业务项目，并于衍生与另类私募产品市场开拓了大量创新业务及核心盈利模式。英国伦敦大学帝国学院计算机科学硕士。</div>
                                     }>
                                         <Col span={6} style={{ textAlign: 'center' }}>
@@ -176,65 +183,97 @@ class WebCN extends React.Component {
                                                 <Row className="position">HashKey Group行政总裁</Row>
                                             </Col>
                                         </Col>
-                                    </Popover>
+                                    </Popover> */}
+                                    <Col span={6} style={{ textAlign: 'center' }}>
+                                        <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
+                                        <Col span={24}>
+                                            <Row className="name">李启泰</Row>
+                                            <Row className="position">HashKey Group行政总裁</Row>
+                                        </Col>
+                                    </Col>
                                 </Row>
                             </Col>
                         </Row>
                         <Row className="senior">
                             <Col span={8} className="title">高管团队</Col>
-                            <Col span={16} className="shortLine" style={{width: 'calc(100% - 300px)', marginLeft: -100}}></Col>
+                            <Col span={16} className="shortLine" style={{ width: 'calc(100% - 300px)', marginLeft: -100 }}></Col>
                         </Row>
                         <Row type="flex" justify="space-around" className="member">
-                            <Popover placement="top" content={
+                            {/* <Popover placement="top" content={
                                 <div>万向区块链早期成员。曾于博时基金、中国万向控股及通联数据任职。拥有10年以上资产管理及金融科技从业经验。</div>
                             }>
                                 <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">邓超</Row>
-                                    {/* <Row className="position">HashKey Capital首席执行官</Row> */}
+                                    <Row className="position">HashKey Capital首席执行官</Row>
                                 </Col>
-                            </Popover>
-                            <Popover placement="top" content={
+                            </Popover> */}
+                            <Col span={8} className="eachMember">
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
+                                <Row className="name">邓超</Row>
+                                {/* <Row className="position">HashKey Capital首席执行官</Row> */}
+                            </Col>
+                            {/* <Popover placement="top" content={
                                 <div>具有20年以上全球市场投资经验，曾任法国巴黎银行资产管理部大中华区主管及总经理。现为一名活跃于金融科技、生物科技和消费科技领域的天使投资者。</div>
                             }>
                                 <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">郑丹枫 CFA</Row>
-                                    {/* <Row className="position">HashKey Pro首席执行官</Row> */}
+                                    <Row className="position">HashKey Pro首席执行官</Row>
                                 </Col>
-                            </Popover>
-                            <Popover placement="top" content={
+                            </Popover> */}
+                            <Col span={8} className="eachMember">
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
+                                <Row className="name">郑丹枫 CFA</Row>
+                                {/* <Row className="position">HashKey Pro首席执行官</Row> */}
+                            </Col>
+                            {/* <Popover placement="top" content={
                                 <div>具有12年以上相关从业经验及多年区块链和云计算产品经验，并拥有多项技术专利，创建了区块链创新BaaS平台并服务著名企业客户；区块链社区KOL，专注区块链背后的技术研究和产品模式演进。曾在通联数据担任金融云端和智能投研负责人。</div>
                             }>
                                 <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
                                     <Row className="name">李晨</Row>
-                                    {/* <Row className="position">HashQuark首席执行官</Row> */}
+                                    <Row className="position">HashQuark首席执行官</Row>
                                 </Col>
-                            </Popover>
+                            </Popover> */}
+                            <Col span={8} className="eachMember">
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
+                                <Row className="name">李晨</Row>
+                                {/* <Row className="position">HashQuark首席执行官</Row> */}
+                            </Col>
                             <Col span={8} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">段玺</Row>
                                 {/* <Row className="position">Tokyo Hash首席执行官</Row> */}
                             </Col>
-                            <Popover placement="top" content={
+                            {/* <Popover placement="top" content={
                                 <div>毕业于斯坦福商学院，并为斯坦福大学最大的学生区块链组织联合创始人。具有10年以上硅谷和中国高科技初创企业高管经验，职业生涯从衍生品交易员和分析师开始。</div>
                             }>
                                 <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben El-Baz</Row>
-                                    {/* <Row className="position">HashKey Pro首席战略官</Row> */}
+                                    <Row className="position">HashKey Pro首席战略官</Row>
                                 </Col>
-                            </Popover>
-                            <Popover placement="top" content={
+                            </Popover> */}
+                            <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
+                                <Row className="name">Ben El-Baz</Row>
+                                {/* <Row className="position">HashKey Pro首席战略官</Row> */}
+                            </Col>
+                            {/* <Popover placement="top" content={
                                 <div>具有17年以上工作经验，曾任蚂蚁金服东北亚合规主管；于加皇财富管理、汇丰银行、法巴银行、香港证监会、摩根士丹利等大机构担任要职。</div>
                             }>
                                 <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">欧阳健男</Row>
-                                    {/* <Row className="position">HashKey Pro首席运营官</Row> */}
+                                    <Row className="position">HashKey Pro首席运营官</Row>
                                 </Col>
-                            </Popover>
+                            </Popover> */}
+                            <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
+                                <Row className="name">欧阳健男</Row>
+                                {/* <Row className="position">HashKey Pro首席运营官</Row> */}
+                            </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>

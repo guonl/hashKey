@@ -87,22 +87,19 @@ const WrapperFrame = styled.div`
     .ticketFrame {
         background: #fff;
         padding: 100px 0 50px 0;
-        img {
-            &.content {
+        .title {width: 100%;}
+        .content {
+            margin-top: 80px;
+            margin-bottom: 88px;
+            .each {
                 width: 100%;
-                margin-top: -50px;
-            }
-        }
-        a {
-            position: relative;
-            display: inline-block;
-            margin-top: 50px;
-            left: 50%;
-            margin-left: -122px;
-            width: 243px;
-            height: 55px;
-            .buyBtn {
-                width: 100%;
+                padding: 20px 0;
+                line-height: 15px;
+                border-bottom: 1px solid #d2d2d2;
+                a {
+                    font-size: 14px;
+                    color: #181818;
+                }
             }
         }
     }

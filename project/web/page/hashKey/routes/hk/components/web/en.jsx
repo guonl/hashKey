@@ -72,9 +72,7 @@ class WebEN extends React.Component {
                         <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
-                        <a href="javascript:;" onClick={() => hashHistory.push("/")} className="bannerImg">
-                            <img src={bannerImg} />
-                        </a>
+                        <img src={bannerImg} />
                     </Col>
                 </Row>
                 <Row className="aboutFrame" type="flex" justify="center" align="middle">
@@ -106,10 +104,20 @@ class WebEN extends React.Component {
                 </Row>
                 <Row className="ticketFrame" type="flex" justify="center" align="middle">
                     <Col span={16}>
-                        <img className="content" src={ticketImg} />
-                        <a href="https://www.eventbrite.com/e/the-1st-hashkey-international-digital-asset-summit-2019-tickets-53577873863">
-                            <img className="buyBtn" src={buyImg} />
-                        </a>
+                        <img className="title" src={ticketImg} />
+                        <Row className="content" type="flex" justify="center">
+                            <Col span={16}>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1706080493">HashKey International Digital Asset Summit 2019 ：Explore best practices for digital asset custody</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1644676909">HashKey International Digital Asset Summit 2019 : Professional research and data analysis tools</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1706080493">As blockchain breaks through barriers, the HashKey International Digital Asset Summit 2019 brings the industry together to boost, invest and incubate</a>
+                                </div>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">

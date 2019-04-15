@@ -71,9 +71,7 @@ class WebCN extends React.Component {
                         <a href="javascript:;" className={LocaleStore.currentLocales == "cn" ? "selected" : ""} onClick={() => { LocaleStore.changeLocaleConfig.call(this, "cn") }}>简体</a>
                     </div>
                     <Col span={24}>
-                        <a href="javascript:;" onClick={() => hashHistory.push("/")} className="bannerImg">
-                            <img src={bannerImg} />
-                        </a>
+                        <img src={bannerImg} />
                     </Col>
                 </Row>
                 <Row className="aboutFrame" type="flex" justify="center" align="middle">
@@ -105,10 +103,20 @@ class WebCN extends React.Component {
                 </Row>
                 <Row className="ticketFrame" type="flex" justify="center" align="middle">
                     <Col span={16}>
-                        <img className="content" src={ticketImg} />
-                        <a href="https://www.eventbrite.com/e/the-1st-hashkey-international-digital-asset-summit-2019-tickets-53577873863">
-                            <img className="buyBtn" src={buyImg} />
-                        </a>
+                    <img className="title" src={ticketImg} />
+                        <Row className="content" type="flex" justify="center">
+                            <Col span={16}>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1706080493">HashKey 2019数字资产全球峰会：探讨数字资产托管的最佳实践</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1644676909">HashKey 2019数字资产全球峰会：专业研究与数据分析工具</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1706080493">随着区块链技术的不断突破，HashKey 2019数字资产全球峰会聚集整个行业，带动行业的促进、投资与孵化</a>
+                                </div>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">

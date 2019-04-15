@@ -87,7 +87,7 @@ class WebEN extends React.Component {
                         <Col span={13}>
                             <Row type="flex" justify="end" className="menuList">
                                 <div className={this.state.activeMenu == "about" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "about")}>About</div>
-                                {/* <div className="eachMenu" onClick={() => this.goToHK.call(this)}>Summit</div> */}
+                                <div className="eachMenu" onClick={() => this.goToHK.call(this)}>Summit</div>
                                 <div className={this.state.activeMenu == "assets" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "assets")}>Our Vision</div>
                                 <div className={this.state.activeMenu == "team" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "team")}>Team</div>
                                 {/* <div className={this.state.activeMenu == "offerings" ? "eachMenu active" : "eachMenu"} onClick={() => this.goToHref.call(this, "offerings")}>Offerings</div> */}
@@ -106,9 +106,9 @@ class WebEN extends React.Component {
                     <Col span={24}>
                         <Carousel autoplay>
                             <img src={banner01} />
-                            {/* <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
+                            <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                                 <img src={banner02} className="banner" />
-                            </a> */}
+                            </a>
                             {/* <img src={banner03} /> */}
                         </Carousel>
                     </Col>
@@ -117,7 +117,7 @@ class WebEN extends React.Component {
                     <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
                         <Row className="ourVision">Our Vision</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
-                        <Row className="text">We believe that distributed ledgers, blockchain technology, and digital tokens will revolutionize how value is created, captured, and distributed across multiple asset classes through greater efficiency, lower costs, and increased liquidity.</Row>
+                        <Row className="text">We believe that financial technology will revolutionize distributed ledgers, blockchain technology, and digital tokens, how value is created, captured, and distributed across multiple asset classes through greater efficiency, lower costs, and increased liquidity.</Row>
                         <Row className="ourFocus">Our Focus</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="focusContent">
@@ -155,7 +155,7 @@ class WebEN extends React.Component {
                         <Row className="member" type="flex" justify="center">
                             <Col span={24}>
                                 <Row type="flex" justify="space-around" className="member">
-                                    <Popover placement="top" content={
+                                    {/* <Popover placement="top" content={
                                         <div>Vice Chairman and Executive Director of China Wanxiang Holding, Chairman and CEO of Wanxiang Blockchain, 25 years of experience in the securities and asset management industry.</div>
                                     }>
                                         <Col span={6} style={{ textAlign: 'center' }}>
@@ -166,8 +166,16 @@ class WebEN extends React.Component {
                                                 <Row className="position"> HashKey Group</Row>
                                             </Col>
                                         </Col>
-                                    </Popover>
-                                    <Popover placement="top" content={
+                                    </Popover> */}
+                                    <Col span={6} style={{ textAlign: 'center' }}>
+                                        <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_06.png")} /></Col>
+                                        <Col span={24}>
+                                            <Row className="name">Xiao Feng</Row>
+                                            <Row className="position">Chairman</Row>
+                                            <Row className="position"> HashKey Group</Row>
+                                        </Col>
+                                    </Col>
+                                    {/* <Popover placement="top" content={
                                         <div>25 years of investment banking experience with UBS London, Tokyo, Beijing and Hong Kong. Former Head of APAC Capital Markets and Director of the Board of UBS Securities. Led over 100 large capital-raising and M&A transactions; and pioneered a large number of new services and business models in the derivatives and alternative investment product markets.  MSc in Computer Science from Imperial College London. </div>
                                     }>
                                         <Col span={6} style={{ textAlign: 'center' }}>
@@ -178,7 +186,15 @@ class WebEN extends React.Component {
                                                 <Row className="position">HashKey Group</Row>
                                             </Col>
                                         </Col>
-                                    </Popover>
+                                    </Popover> */}
+                                    <Col span={6} style={{ textAlign: 'center' }}>
+                                        <Col span={24}><img className="avator" src={require("web-hashKey-imgs/home/web/gw_07.png")} /></Col>
+                                        <Col span={24}>
+                                            <Row className="name">Michel Lee</Row>
+                                            <Row className="position">Executive President</Row>
+                                            <Row className="position">HashKey Group</Row>
+                                        </Col>
+                                    </Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -187,56 +203,81 @@ class WebEN extends React.Component {
                             <Col span={16} className="shortLine"></Col>
                         </Row>
                         <Row type="flex" justify="space-around" className="member">
-                            <Popover placement="top" content={
+                            {/* <Popover placement="top" content={
                                 <div>Former senior manager at Bosera Asset Management, China Wanxiang Holding, DataYes. 10+ years of experience in asset management and fintech, early founding employee at Wanxiang Blockchain.</div>
                             }>
                                 <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
                                     <Row className="name">Deng Chao</Row>
-                                    {/* <Row className="position">CEO, HashKey Capital</Row> */}
+                                    <Row className="position">CEO, HashKey Capital</Row>
                                 </Col>
-                            </Popover>
-                            <Popover placement="top" content={
+                            </Popover> */}
+                            <Col span={8} className="eachMember">
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_08.png")} /></Row>
+                                <Row className="name">Deng Chao</Row>
+                                {/* <Row className="position">CEO, HashKey Capital</Row> */}
+                            </Col>
+                            {/* <Popover placement="top" content={
                                 <div>20+ years of experience in global investment markets; former MD, Head of Greater China, BNP Paribas Asset Management. Active angel investor in fintech, biotech and consumer tech.</div>
                             }>
                                 <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
                                     <Row className="name">TF Cheng CFA</Row>
-                                    {/* <Row className="position">CEO, HashKey Pro</Row> */}
+                                    <Row className="position">CEO, HashKey Pro</Row>
                                 </Col>
-                            </Popover>
-                            <Popover placement="top" content={
+                            </Popover> */}
+                            <Col span={8} className="eachMember">
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_09.png")} /></Row>
+                                <Row className="name">TF Cheng CFA</Row>
+                                {/* <Row className="position">CEO, HashKey Pro</Row> */}
+                            </Col>
+                            {/* <Popover placement="top" content={
                                 <div>12 years of experience, former head of financial cloud and intelligent investment research at DataYes. Holds several patents, creator of BaaS platform, blockchain technology specialist.</div>
                             }>
                                 <Col span={8} className="eachMember">
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
                                     <Row className="name">Leo Li </Row>
-                                    {/* <Row className="position">CEO, HashQuark</Row> */}
+                                    <Row className="position">CEO, HashQuark</Row>
                                 </Col>
-                            </Popover>
+                            </Popover> */}
+                            <Col span={8} className="eachMember">
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_10.png")} /></Row>
+                                <Row className="name">Leo Li </Row>
+                                {/* <Row className="position">CEO, HashQuark</Row> */}
+                            </Col>
                             <Col span={8} className="eachMember">
                                 <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_11.png")} /></Row>
                                 <Row className="name">Andy Duan</Row>
                                 {/* <Row className="position">CEO, Tokyo Hash </Row> */}
                             </Col>
-                            <Popover placement="top" content={
+                            {/* <Popover placement="top" content={
                                 <div>Stanford GSB, co-founder of Stanford's largest student-led blockchain group. 10+ years of executive experience in high-tech startups in both Silicon Valley and China. Started career as derivatives trader and analyst.</div>
                             }>
                                 <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
                                     <Row className="name">Ben El-Baz</Row>
-                                    {/* <Row className="position">CSO, HashKey Pro</Row> */}
+                                    <Row className="position">CSO, HashKey Pro</Row>
                                 </Col>
-                            </Popover>
-                            <Popover placement="top" content={
+                            </Popover> */}
+                            <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_12.png")} /></Row>
+                                <Row className="name">Ben El-Baz</Row>
+                                {/* <Row className="position">CSO, HashKey Pro</Row> */}
+                            </Col>
+                            {/* <Popover placement="top" content={
                                 <div>Simon has over 17 years of experience in the financial industry. He is the former North East Asia Head of Compliance at Ant Financial, and he has held senior positions at leading financial institutions including RBC Wealth Management, HSBC, BNP Paribas, SFC and Morgan Stanley.</div>
                             }>
                                 <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
                                     <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
                                     <Row className="name">Simon AuYeung</Row>
-                                    {/* <Row className="position">COO, HashKey Pro</Row> */}
+                                    <Row className="position">COO, HashKey Pro</Row>
                                 </Col>
-                            </Popover>
+                            </Popover> */}
+                            <Col span={8} className="eachMember" style={{ textAlign: 'center' }}>
+                                <Row><img className="avator" src={require("web-hashKey-imgs/home/web/gw_13.png")} /></Row>
+                                <Row className="name">Simon AuYeung</Row>
+                                {/* <Row className="position">COO, HashKey Pro</Row> */}
+                            </Col>
                         </Row>
                         <Row type="flex" justify="center"><Col span={24} className="longLine"></Col></Row>
                     </Col>
