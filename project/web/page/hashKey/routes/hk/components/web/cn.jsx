@@ -113,7 +113,7 @@ class WebCN extends React.Component {
                                     <a href="https://bihu.com/article/1644676909">HashKey 2019数字资产全球峰会：专业研究与数据分析工具</a>
                                 </div>
                                 <div className="each">
-                                    <a href="https://bihu.com/article/1706080493">随着区块链技术的不断突破，HashKey 2019数字资产全球峰会聚集整个行业，带动行业的促进、投资与孵化</a>
+                                    <a href="https://www.finanzen.net/nachricht/aktien/as-blockchain-breaks-through-barriers-the-hashkey-international-digital-asset-summit-2019-brings-the-industry-together-to-boost-invest-and-incubate-7264078">随着区块链技术的不断突破，HashKey 2019数字资产全球峰会聚集整个行业，带动行业的促进、投资与孵化</a>
                                 </div>
                             </Col>
                         </Row>

@@ -115,7 +115,7 @@ class WebGK extends React.Component {
                                     <a href="https://bihu.com/article/1644676909">HashKey 2019數字資產全球峰會：專業研究與數據分析工具</a>
                                 </div>
                                 <div className="each">
-                                    <a href="https://bihu.com/article/1706080493">隨著區塊鏈技術的不斷突破，HashKey 2019數字資產全球峰會聚集整個行業，帶動行業的促進、投資與孵化</a>
+                                    <a href="https://www.finanzen.net/nachricht/aktien/as-blockchain-breaks-through-barriers-the-hashkey-international-digital-asset-summit-2019-brings-the-industry-together-to-boost-invest-and-incubate-7264078">隨著區塊鏈技術的不斷突破，HashKey 2019數字資產全球峰會聚集整個行業，帶動行業的促進、投資與孵化</a>
                                 </div>
                             </Col>
                         </Row>

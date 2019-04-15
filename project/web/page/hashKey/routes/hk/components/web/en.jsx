@@ -114,7 +114,7 @@ class WebEN extends React.Component {
                                     <a href="https://bihu.com/article/1644676909">HashKey International Digital Asset Summit 2019 : Professional research and data analysis tools</a>
                                 </div>
                                 <div className="each">
-                                    <a href="https://bihu.com/article/1706080493">As blockchain breaks through barriers, the HashKey International Digital Asset Summit 2019 brings the industry together to boost, invest and incubate</a>
+                                    <a href="https://www.finanzen.net/nachricht/aktien/as-blockchain-breaks-through-barriers-the-hashkey-international-digital-asset-summit-2019-brings-the-industry-together-to-boost-invest-and-incubate-7264078">As blockchain breaks through barriers, the HashKey International Digital Asset Summit 2019 brings the industry together to boost, invest and incubate</a>
                                 </div>
                             </Col>
                         </Row>
