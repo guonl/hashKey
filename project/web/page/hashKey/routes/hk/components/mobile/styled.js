@@ -116,22 +116,21 @@ const WrapperFrame = styled.div`
     }
     .ticketFrame {
         background: #fff;
-        img {
-            width: 100%; 
-        }
-        a {
-            position: relative;
-            display: inline-block;
-            left: 50%;
-            margin-left: -2.1rem;
-            width: 4.2rem;
-            height: 0.88rem;
-            line-height: 0.88rem;
-            color: #fff;
-            background: #4775b9;
-            text-align: center;
-            border-radius: 5px;
-            font-size: 0.32rem;
+        padding: 100px 0 50px 0;
+        .title {width: 100%;}
+        .content {
+            margin-top: 80px;
+            margin-bottom: 88px;
+            .each {
+                width: 100%;
+                padding: 20px 0;
+                line-height: 15px;
+                border-bottom: 1px solid #d2d2d2;
+                a {
+                    font-size: 14px;
+                    color: #181818;
+                }
+            }
         }
     }
     .agendaFrame {

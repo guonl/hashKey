@@ -80,9 +80,21 @@ class MobileEN extends React.Component {
                     </Col>
                 </Row>
                 <Row className="ticketFrame" type="flex" justify="center" align="middle">
-                    <Col span={24}>
-                        <img className="content" src={ticketImg} />
-                        <a href="https://www.eventbrite.com/e/the-1st-hashkey-international-digital-asset-summit-2019-tickets-53577873863">PURCHASE TICKETS</a>
+                <Col span={16}>
+                        <img className="title" src={ticketImg} />
+                        <Row className="content" type="flex" justify="center">
+                            <Col span={16}>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1706080493">HashKey International Digital Asset Summit 2019 ：Explore best practices for digital asset custody</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1644676909">HashKey International Digital Asset Summit 2019 : Professional research and data analysis tools</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://www.finanzen.net/nachricht/aktien/as-blockchain-breaks-through-barriers-the-hashkey-international-digital-asset-summit-2019-brings-the-industry-together-to-boost-invest-and-incubate-7264078">As blockchain breaks through barriers, the HashKey International Digital Asset Summit 2019 brings the industry together to boost, invest and incubate</a>
+                                </div>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">
