@@ -115,9 +115,9 @@ class WebCN extends React.Component {
                 </Row>
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
                     <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
-                        <Row className="ourVision">我们的愿景</Row>
+                        {/* <Row className="ourVision">我们的愿景</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
-                        <Row className="text">我们坚信，分布式账本、区块链技术和数字货币将彻底改变多个资产类别的价值创造、获取和分配方式，提高效率、降低成本和增加流动性。</Row>
+                        <Row className="text">我们坚信，分布式账本、区块链技术和数字货币将彻底改变多个资产类别的价值创造、获取和分配方式，提高效率、降低成本和增加流动性。</Row> */}
                         <Row className="ourFocus">关注领域</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="focusContent">

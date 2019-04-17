@@ -116,9 +116,9 @@ class WebGK extends React.Component {
                 </Row>
                 <Row id="assets" className="assetsFrame" type="flex" justify="center" align="middle">
                     <Col lg={22} xl={16} style={{ maxWidth: 900 }}>
-                        <Row className="ourVision">我們的願景</Row>
+                        {/* <Row className="ourVision">我們的願景</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
-                        <Row className="text">我們堅信，分布式賬本、區塊鏈技術和數码貨幣將徹底改變多個資產類別的價值創造、獲取和分配方式，提高效率、降低成本和增加流動性。</Row>
+                        <Row className="text">我們堅信，分布式賬本、區塊鏈技術和數码貨幣將徹底改變多個資產類別的價值創造、獲取和分配方式，提高效率、降低成本和增加流動性。</Row> */}
                         <Row className="ourFocus">關注領域</Row>
                         <Row type="flex" justify="center"><Col className="line"></Col></Row>
                         <Row className="focusContent">
