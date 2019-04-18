@@ -119,8 +119,7 @@ const WrapperFrame = styled.div`
         padding: 100px 0 50px 0;
         .title {width: 100%;}
         .content {
-            margin-top: 80px;
-            margin-bottom: 88px;
+            margin-top: 40px;
             .each {
                 width: 100%;
                 padding: 20px 0;

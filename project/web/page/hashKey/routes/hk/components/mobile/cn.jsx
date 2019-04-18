@@ -80,9 +80,21 @@ class MobileCN extends React.Component {
                     </Col>
                 </Row>
                 <Row className="ticketFrame" type="flex" justify="center" align="middle">
-                    <Col span={24}>
-                        <img className="content" src={ticketImg} />
-                        <a href="https://www.eventbrite.com/e/the-1st-hashkey-international-digital-asset-summit-2019-tickets-53577873863">立即购买</a>
+                <Col span={24}>
+                        <img className="title" src={ticketImg} />
+                        <Row className="content" type="flex" justify="center">
+                            <Col span={16}>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1706080493">HashKey 2019数字资产全球峰会：探讨数字资产托管的最佳实践</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1644676909">HashKey 2019数字资产全球峰会：专业研究与数据分析工具</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://www.finanzen.net/nachricht/aktien/as-blockchain-breaks-through-barriers-the-hashkey-international-digital-asset-summit-2019-brings-the-industry-together-to-boost-invest-and-incubate-7264078">随着区块链技术的不断突破，HashKey 2019数字资产全球峰会聚集整个行业，带动行业的促进、投资与孵化</a>
+                                </div>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">
@@ -137,7 +149,7 @@ class MobileCN extends React.Component {
                 </Row>
                 <Row id="contact" className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18}>
-                        <Row className="title">联系偶们</Row>
+                        <Row className="title">联系我们</Row>
                         <Row className="text">地址：香港数码港道100号3座D区6楼614-615室</Row>
                         <Row className="text">邮箱: contact@hashkey.com</Row>
                         <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-Limited-461036224433414/" }}>Facebook</Row>

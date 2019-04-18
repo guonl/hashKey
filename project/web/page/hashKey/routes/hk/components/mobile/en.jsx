@@ -80,7 +80,7 @@ class MobileEN extends React.Component {
                     </Col>
                 </Row>
                 <Row className="ticketFrame" type="flex" justify="center" align="middle">
-                <Col span={16}>
+                    <Col span={24}>
                         <img className="title" src={ticketImg} />
                         <Row className="content" type="flex" justify="center">
                             <Col span={16}>

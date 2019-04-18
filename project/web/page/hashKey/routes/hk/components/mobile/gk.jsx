@@ -81,8 +81,20 @@ class MobileGK extends React.Component {
                 </Row>
                 <Row className="ticketFrame" type="flex" justify="center" align="middle">
                     <Col span={24}>
-                        <img className="content" src={ticketImg} />
-                        <a href="https://www.eventbrite.com/e/the-1st-hashkey-international-digital-asset-summit-2019-tickets-53577873863">立即購買</a>
+                        <img className="title" src={ticketImg} />
+                        <Row className="content" type="flex" justify="center">
+                            <Col span={16}>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1706080493">HashKey 2019數字資產全球峰會：探討數字資產託管的最佳實踐</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://bihu.com/article/1644676909">HashKey 2019數字資產全球峰會：專業研究與數據分析工具</a>
+                                </div>
+                                <div className="each">
+                                    <a href="https://www.finanzen.net/nachricht/aktien/as-blockchain-breaks-through-barriers-the-hashkey-international-digital-asset-summit-2019-brings-the-industry-together-to-boost-invest-and-incubate-7264078">隨著區塊鏈技術的不斷突破，HashKey 2019數字資產全球峰會聚集整個行業，帶動行業的促進、投資與孵化</a>
+                                </div>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="agendaFrame" type="flex" justify="center" align="middle">
