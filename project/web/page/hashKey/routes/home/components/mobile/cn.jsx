@@ -41,19 +41,19 @@ class MobileCN extends React.Component {
                         <a href="javascript:;" className="" onClick={() => this.setState({ langChangeModal: true })}><img src={langChangeBG} /></a>
                     </div>
                     <Carousel autoplay>
-                        {/* <img src={banner01} className="banner" /> */}
+                        <img src={banner01} className="banner" />
                         <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                             <img src={banner02} className="banner" />
                         </a>
-                        <img src={banner03} className="banner" />
+                        {/* <img src={banner03} className="banner" /> */}
                     </Carousel>
                 </Row>
                 <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_01jt.png")} /></Row>
                 <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_02jt.png")} /></Row>
-                <Row className="imgFrame offerings">
+                {/* <Row className="imgFrame offerings">
                     <a href="javascript:;" className="btn" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
                     <img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_03jt.png")} />
-                </Row>
+                </Row> */}
                 <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/cn/gw_m_04jt.png")} /></Row>
                 <Row className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18}>

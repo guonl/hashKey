@@ -41,25 +41,25 @@ class MobileEN extends React.Component {
                         <a href="javascript:;" className="" onClick={() => this.setState({ langChangeModal: true })}><img src={langChangeBG} /></a>
                     </div>
                     <Carousel autoplay>
-                        {/* <img src={banner01} className="banner" /> */}
+                        <img src={banner01} className="banner" />
                         <a href="javascript:;" onClick={() => hashHistory.push("/digital-asset-summit-2019")} className="banner">
                             <img src={banner02} className="banner" />
                         </a>
-                        <img src={banner03} className="banner" />
+                        {/* <img src={banner03} className="banner" /> */}
                     </Carousel>
                 </Row>
                 <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_01ch.png")} /></Row>
                 <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_02ch.png")} /></Row>
-                <Row className="imgFrame offerings">
+                {/* <Row className="imgFrame offerings">
                     <a href="javascript:;" className="btn" onClick={() => hashHistory.push("/prdDetail")}>详细介绍</a>
                     <img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_03ch.png")} />
-                </Row>
+                </Row> */}
                 <Row className="imgFrame"><img src={require("web-hashKey-imgs/home/mobile/gk/gw_m_04ch.png")} /></Row>
                 <Row className="contactFrame" type="flex" justify="center" align="middle">
                     <Col span={18}>
-                        <Row className="title">Contact Us</Row>
-                        <Row className="text">Address: Unit 614 - 15, Level 6, Core D, Cyberport 3, 100 Cyberport Road, Hong Kong</Row>
-                        <Row className="text">Email: contact@hashkey.com</Row>
+                    <Row className="title">聯繫我們</Row>
+                        <Row className="text">地址: 香港數碼港道100號3座D区6樓614-615室</Row>
+                        <Row className="text">郵箱: contact@hashkey.com</Row>
                         <Row className="text hashkey" onClick={() => { location.href = "https://www.facebook.com/HashKey-Group-Limited-461036224433414/" }}>Facebook</Row>
                         <Row className="text hashquark" onClick={() => { location.href = "https://twitter.com/HashKeyGroup" }}>Twitter</Row>
                     </Col>
